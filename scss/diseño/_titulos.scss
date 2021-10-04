@@ -1,0 +1,378 @@
+@import "../utilities/variables";
+                                                /**TITULOS INDEX**/
+
+
+.titulo{
+    font-size: 2.3rem;
+    color: $colorAzul;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    @include telefono{
+        width: 100% ;
+        font-size: 1.72rem;
+        margin-left: -1rem;
+       }
+       @include tablet{
+        margin-left: -3rem;    
+    }
+}
+
+.tituloProductosIndex{
+    color: $colorAzul;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    text-decoration: none !important;
+    font-weight: bold;
+
+    @include telefono{
+        font-size: 1.5rem;   
+        margin-bottom: 2rem;
+       }
+    
+    @include tablet{
+        font-size: 1.5rem;
+        margin-left: 0.7rem;
+    }   
+}
+
+.tituloProductosIndex:hover{
+    color: $colorNegro;
+}
+
+.tituloProductosVariador{
+    color: $colorAzul;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    text-decoration: none !important;
+    font-weight: bold;
+
+    @include telefono{
+        font-size: 1.5rem;   
+        margin-bottom: 2rem;
+    }
+    @include tablet{
+        font-size: 1.5rem;
+    } 
+}
+
+.tituloProductosVariador:hover{
+    color: $colorNegro;
+}
+
+.tituloInfo{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: $colorNegro;
+    margin-left: 13rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+
+    @include telefono{
+        font-size: 2rem;
+        margin-left: 2rem; 
+       }
+
+    @include tablet{
+        font-size: 2rem;
+        margin-left: 10rem;
+    } 
+}
+
+.tituloDondeEstamos{
+    text-align:left;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: $colorNegro;
+    margin-bottom: 2rem;
+
+    @include tablet{
+        font-size: 2rem;
+        margin: 1rem 0rem 1.5rem 2rem;
+    } 
+}
+
+
+                                                        /**TITULOS PRODUCTOS**/
+
+.tituloPrincipalProductos{
+    text-align: center;
+    color: $colorAzul;
+    margin-top: 1rem;
+    text-decoration: underline;
+}
+
+.tituloProductos{
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: bold;
+    color: $colorAzul;
+    margin-left: 2.5rem;
+}
+
+.tituloProductos:hover{
+    color: $colorNegro;
+}
+
+                                                    /**TITULOS MOTORES ELECTRICOS**/
+
+.tituloPrincipalMotores{
+    grid-area: titulo;
+    text-align: center;
+    color: $colorAzul;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+}
+
+.tipoMotor{
+    margin-top: 0.63;
+    font-size: 2.5rem;
+    margin-left: 5.5rem;
+    color: $colorAzul;
+    font-weight: bold;
+}
+
+                                         /**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS, VARIADORES**/
+.tituloArranques{
+    text-align: center;
+    margin-top: 2rem;
+    color: $colorAzul;
+    text-decoration: underline;
+}
+
+                                         
+.tituloProductosDiv{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: $colorAzul;
+}
+
+.subtitutloDivProductos{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: italic;
+    color: $colorAzul;
+}
+
+                                             /**CONTROl Y PROTECCION**/
+.tituloPrincipalControl{
+    grid-area: titulo;
+    font-size: 2.3rem;
+    color: $colorAzul;
+    font-weight: bold;
+    text-align: center;
+
+    @include telefono{
+        font-size: 1.8rem;
+    }
+
+    @include tablet{
+        font-size: 2rem;
+    }
+}
+
+.tituloControles{
+    font-size: 1.6rem;
+    color: $colorAzul;
+    font-weight: 600;
+    text-align: center;
+
+
+    @include tablet{
+        font-size: 1.6rem;
+    }
+}
+
+.tituloControles:hover{
+    color: black;
+}
+
+.tituloControlesFactor{
+    font-size: 1.5rem;
+    color: $colorAzul;
+    font-weight: 600;
+    margin-left: 2rem;
+    
+    @include tablet{
+        margin-left: 10.5rem;
+    }
+    
+}
+
+.tituloControlesFactor:hover{
+    color: black;
+}
+
+
+                                                /**CONTROLES PAGINAS**/
+
+.tituloProductosControl{
+    text-align: center;
+    color: $colorAzul;
+    margin-top: 2rem;
+}
+
+.modeloControles{
+    font-size: 2rem;
+    text-align: center;
+    color: $colorAzul;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.itemControles{
+    font-weight: bold;
+    color: $colorAzul;
+    font-size: 1.2rem;
+}
+
+.curvaInterruptor{
+    color: $colorNegro;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+                                                            /**TITULOS SERVICIOS**/
+
+.tituloServicios{
+    color: $colorAzul;
+    margin: 2rem 0rem 2rem 0rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tituloServiciosEnMain{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: $colorAzul;
+}
+
+.tituloServiciosEnMain:hover{
+    color: $colorNegro;
+}
+
+                                                            /**TITULOS BALANCEO**/
+
+.tituloServicioBalanceo{
+    margin-left: 8rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: $colorAzul;
+}
+
+                                                            /**TITULOS MANTENIMIENTO**/
+
+.tituloServicioMantenimiento{
+    font-size: 2rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    margin-left: 3rem;
+    margin-bottom: 1.5rem;
+    color: $colorAzul;
+}
+
+
+                                                            /**TITULOS REPARACION**/
+
+.tituloServicioReparacion{
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    color: $colorAzul;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+                                                            /**TITULOS MANUALES**/
+
+.manuales{
+    font-size: 2.3rem;
+    text-align: center;
+    color: $colorNegro;
+    margin-top: 1.2rem;
+    font-weight: bold;
+    color: $colorAzul;
+}
+
+.tituloManuales{
+    margin-top: 3rem;
+    margin-left: 4rem;
+    font-size: 2.1rem;
+    color: $colorNegro;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.nombreProductoManual{
+    font-size: 1.8rem;
+    color: $colorAzul;
+    margin-left: 2.5rem;
+    margin-bottom: 1.5rem;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+
+                                                        /**TITULOS NOSOTROS**/
+
+.tituloNosotros{
+    font-size: 1.9rem;
+    width: 100%;
+    text-align: center;
+    margin: 3rem;
+    font-weight: 600;
+    color: $colorAzul;
+
+    @include telefono{
+        margin-top: -2.2rem;
+    }
+}
+
+.subtituloNosotros{
+    font-size: 1.7rem;
+    margin: 3rem;
+    font-weight: 600;
+}
+
+.tituloApueste{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    line-height: 2rem;
+    font-weight: 600;
+
+    @include telefono{
+        margin-left: 5rem;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+}
+
+.gonnetNosotros{
+    margin-left: 18rem;
+    color:$colorAzul;
+    font-weight: bold;
+
+    @include telefono{
+        margin-left: 10rem;
+    }
+
+}
+
+                                                        /**TITULOS CONTACTO**/
+                                                        
+.tituloContacto{
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $colorAzul;
+}
+

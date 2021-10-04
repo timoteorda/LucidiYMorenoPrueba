@@ -1,0 +1,1507 @@
+/*EXTENDS*/
+.mainIndex, .productosProductos, .mainMotoresElectricos, .mainControl, .mainBalanceo, .mainManuales {
+  grid-area: main;
+  display: grid; }
+
+.servicios, .mantenimiento, .reparacion, .mainNosotros, .mainContacto {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.1fr 1fr; }
+
+/*INICIO GRIDS*/
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 1fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  height: 100vh;
+  font-family: 'Manrope', sans-serif; }
+
+header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr;
+  grid-area: header;
+  height: 8rem; }
+
+/**INDEX**/
+.mainIndex {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 0.8fr 0.5fr;
+  grid-template-areas: "banner         banner           banner" "productos      productos        productos" "presentacion   presentacion     presentacion"; }
+
+.banner {
+  grid-area: banner;
+  width: 100%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .banner {
+      width: 100%;
+      margin-top: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .banner {
+      width: 100%; } }
+
+.productos {
+  grid-area: productos;
+  padding: 2rem; }
+
+.presentacion {
+  grid-area: presentacion; }
+
+/**PRODUCTOS**/
+.productosProductos {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "banner" "productos"; }
+
+.mainProductos {
+  grid-area: productos;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+  justify-items: center; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mainProductos {
+      width: 100%;
+      display: flex;
+      flex-direction: column; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mainProductos {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr; } }
+
+/**MOTORES ELECTRICOS**/
+.mainMotoresElectricos {
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 12.5rem,5rem,12.5rem,12.5rem;
+  grid-template-areas: "banner        banner" "titulo        titulo" "producto      producto" "producto      producto"; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mainMotoresElectricos {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mainMotoresElectricos {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+
+/**ARRANQUES,VARIADORES**/
+.mainDivProductos {
+  grid-area: main; }
+
+/**ELECTROBOMBAS**/
+.mainElectro {
+  grid-area: main; }
+
+/**CONTROL Y PROTECCION**/
+.mainControl {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr 1fr 1fr;
+  grid-template-areas: "banner banner banner" "titulo titulo titulo" "producto producto producto" "producto producto producto" "producto producto producto";
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mainControl {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mainControl {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+
+.mainInterruptores {
+  grid-area: main; }
+
+.mainContactoresPotencia {
+  grid-area: main; }
+
+.mainContactoresAux {
+  grid-area: main; }
+
+.mainReles {
+  grid-area: main; }
+
+.mainGuardamotores {
+  grid-area: main; }
+
+.mainArrancadores {
+  grid-area: main; }
+
+.mainCorreccion {
+  grid-area: main; }
+
+.mainMando {
+  grid-area: main; }
+
+/**SERVICIOS**/
+.servicios {
+  grid-template-areas: "banner         banner " "servicios      servicios"; }
+
+/**BALANCEO DINAMICO**/
+.mainBalanceo {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 1fr;
+  grid-template-areas: "banner banner" "body body"; }
+
+.balanceoOrden {
+  grid-area: body;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .balanceoOrden {
+      flex-direction: column; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .balanceoOrden {
+      flex-direction: column; } }
+
+/**MANTENIMIENTO DE MOTORES **/
+.mantenimiento {
+  grid-template-areas: "banner banner" "body body"; }
+
+/**INICIO REPARACION**/
+.reparacion {
+  grid-template-areas: "banner banner" "body body";
+  margin-bottom: 8rem; }
+
+/** MANUALES**/
+.mainManuales {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "banner" "manuales";
+  margin-bottom: 2rem; }
+
+/**INICIO NOSOTROS**/
+.mainNosotros {
+  grid-template-areas: "banner         banner" "nosotros      nosotros"; }
+
+/**INICIO CONTACTO**/
+.mainContacto {
+  grid-template-areas: "banner         banner" "contacto       contacto"; }
+
+.navegacion {
+  background-color: white !important;
+  z-index: 1000;
+  position: fixed;
+  width: 100%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .navegacion {
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .navegacion {
+      width: 100%; } }
+
+.tituloBarra {
+  font-size: 1.3rem;
+  color: #005fa4 !important;
+  font-weight: bold;
+  margin-top: 1rem; }
+
+.tituloBarra:hover {
+  color: black; }
+
+.subMenu {
+  font-size: 1rem;
+  color: #005fa4;
+  font-weight: bold; }
+
+footer {
+  grid-area: footer; }
+
+.piePagina {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right bottom, #4d4d4d, #3c3c3c, black); }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .piePagina {
+      flex-direction: column;
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .piePagina {
+      flex-direction: column;
+      width: 100%; } }
+
+.footerProductos {
+  width: 22%;
+  color: white; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .footerProductos {
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .footerProductos {
+      width: 100%; } }
+
+.tituloFooter {
+  text-decoration: none;
+  color: white;
+  margin-left: 3rem; }
+
+.tituloFooter:hover {
+  color: black; }
+
+.tituloFooterS {
+  text-decoration: none;
+  color: white;
+  margin-left: 3rem; }
+
+.listaSinDetalle {
+  list-style: none;
+  color: white;
+  line-height: 1.8rem;
+  margin-left: 1rem; }
+
+.footerServicios {
+  width: 28%;
+  color: white; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .footerServicios {
+      width: 90%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .footerServicios {
+      width: 90%; } }
+
+.footerHorarios {
+  width: 15%;
+  color: white; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .footerHorarios {
+      width: 90%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .footerHorarios {
+      width: 90%; } }
+
+.footerPresentacion {
+  width: 28%;
+  text-align: justify;
+  margin-left: 4rem;
+  color: white; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .footerPresentacion {
+      width: 90%;
+      margin-left: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .footerPresentacion {
+      width: 90%;
+      margin-left: 1rem; } }
+
+.parrafoFooter {
+  font-size: 0.95rem; }
+
+.finalFooter {
+  background-color: #4d4d4d;
+  height: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .finalFooter {
+      width: 100%;
+      height: 4rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .finalFooter {
+      width: 100%; } }
+
+.copyright {
+  color: white;
+  font-size: 1.4rem;
+  margin-left: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .copyright {
+      width: 100%;
+      margin-left: 0.5rem; } }
+
+.blancoFooter {
+  color: white; }
+
+.blancoFooter:hover {
+  color: black; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+a:hover {
+  color: black; }
+
+/*EXTENDS*/
+.flexProductos, .presentacionFlex, .productosDiv, .controles, .paginaServicios, .organizacionServicios, .contenidoNosotros, .contacto {
+  display: flex;
+  flex-direction: row; }
+
+.flexProductosPrincipal, .cuadrosManuales {
+  display: flex;
+  flex-direction: column; }
+
+/***************************ACA COMIENZA EL INDEX********************************/
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .flexProductos {
+    flex-direction: column; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .flexProductos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    margin-left: -1rem; } }
+
+.parrafoProductoIndex {
+  text-align: justify;
+  font-size: 1rem;
+  width: 80%;
+  margin-left: 0.5rem;
+  margin-top: 1.4rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoProductoIndex {
+      font-size: 1.2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .parrafoProductoIndex {
+      font-size: 1rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .presentacionFlex {
+    flex-direction: column; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .presentacionFlex {
+    flex-direction: column; } }
+
+.presentacion {
+  background-image: linear-gradient(to bottom, #bfbfbf, #a7a7a7);
+  margin-bottom: -3rem; }
+
+.itemUno {
+  width: 50%;
+  margin-left: 4.38rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .itemUno {
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .itemUno {
+      width: 100%; } }
+
+.parrafoPresentacion {
+  font-size: 1.5rem;
+  margin-left: 0.31rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoPresentacion {
+      width: 90%;
+      margin-left: -2.5rem;
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .parrafoPresentacion {
+      width: 90%;
+      margin-left: -2.5rem;
+      font-size: 1.4rem; } }
+
+.subParrafoPresentacion {
+  margin-top: 1.88rem;
+  font-size: 1.5rem;
+  margin-left: 0.31rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .subParrafoPresentacion {
+      width: 90%;
+      margin-left: -2.5rem;
+      font-size: 1.4rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .subParrafoPresentacion {
+      width: 90%;
+      margin-left: -2.5rem;
+      font-size: 1.4rem; } }
+
+.itemDos {
+  width: 50%;
+  margin-left: 3.13rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .itemDos {
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .itemDos {
+      width: 100%; } }
+
+.dondeEstamos {
+  margin-left: 4rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .dondeEstamos {
+      width: 100%;
+      margin-left: -1.5rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .dondeEstamos {
+      width: 100%;
+      margin-left: -1.5rem; } }
+
+.parrafoUbicacion {
+  font-size: 1.4rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoUbicacion {
+      font-size: 1.2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .parrafoUbicacion {
+      font-size: 1.2rem; } }
+
+.negrita {
+  font-weight: bold;
+  color: black; }
+
+/****************************FIN DEL INDEX******************************/
+/****************************INICIO PRODUCTOS******************************/
+.parrafoDescriptivo {
+  text-align: justify;
+  width: 18.75rem;
+  margin-left: 2.63rem;
+  margin-top: 1.56rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoDescriptivo {
+      margin-left: 3%; } }
+
+.productosUbicacion {
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+.catalogosManuales {
+  color: black;
+  font-size: 1.8rem;
+  text-decoration: underline;
+  margin-left: 2.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.5rem; }
+
+.linkManuales {
+  margin-left: 2.5rem;
+  margin-bottom: 2.5rem; }
+
+.linkNegro {
+  color: black;
+  font-size: 1.2rem; }
+
+.linkNegro:hover {
+  font-weight: bold; }
+
+.botonCompraProductos {
+  width: 11rem !important;
+  height: 3rem !important;
+  font-size: 1.4rem;
+  margin-left: 45%;
+  margin-top: 4rem;
+  color: white;
+  font-weight: bold;
+  background-color: #005fa4;
+  border-radius: 4.38rem;
+  border: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonCompraProductos {
+      margin-left: 5rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .botonCompraProductos {
+      margin-left: 18rem; } }
+
+.botonCompraProductos:hover {
+  background-color: #0078be; }
+
+/*********************INICIO MOTORES ELECTRICOS**********************/
+.motorElectrico {
+  padding: 2rem; }
+
+.bordeMotor {
+  width: 30.5rem;
+  margin-left: 2.5rem; }
+
+.botonCompra {
+  width: 11rem !important;
+  height: 3rem !important;
+  font-size: 1.4rem;
+  margin-left: 50%;
+  color: white;
+  font-weight: bold;
+  background-color: #005fa4;
+  border-radius: 4.38rem;
+  border: 0px; }
+
+.botonCompra:hover {
+  background-color: #0078be;
+  cursor: pointer; }
+
+.textoMotores {
+  width: 80%;
+  text-align: justify;
+  margin-left: 2.5rem;
+  line-height: 2rem; }
+
+.listaW22 {
+  font-size: 1rem;
+  margin-left: 4.38rem;
+  list-style: none;
+  line-height: 2rem; }
+
+/*********************INICIO ARRANQUES/VARIADORES**********************/
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .productosDiv {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 2rem; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .productosDiv {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 2rem; } }
+
+.bloqueDivProductos {
+  width: 50%;
+  margin: 2rem 0rem 0rem 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .bloqueDivProductos {
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .bloqueDivProductos {
+      width: 90%; } }
+
+.parrafoDivProductos {
+  font-size: 1.1rem;
+  text-align: justify; }
+
+.subParrafoProductos {
+  font-size: 1.1rem;
+  margin-top: 1rem; }
+
+.derechaDivProductos {
+  width: 40%; }
+
+/*********************INICIO CONTROL Y PROTECCION**********************/
+.control {
+  margin-left: 1rem; }
+
+.botonVolver {
+  width: 5rem;
+  height: 5rem;
+  margin-left: 92%;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonVolver {
+      margin-left: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .botonVolver {
+      margin-left: 88%; } }
+
+.botonVolver:hover {
+  width: 5.4rem;
+  height: 5.4rem; }
+
+.catalogo {
+  color: black;
+  font-size: 1.4rem;
+  margin-bottom: 2rem; }
+
+.catalogo:hover {
+  font-weight: bold; }
+
+/*********************CONTROLES PAGINAS**********************/
+.controles {
+  margin-left: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .controles {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-bottom: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .controles {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-bottom: 2rem; } }
+
+.interruptoresTexto {
+  width: 60%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .interruptoresTexto {
+      width: 80%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .interruptoresTexto {
+      width: 80%; } }
+
+.controlesTexto {
+  width: 55%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .controlesTexto {
+      width: 80%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .controlesTexto {
+      width: 80%; } }
+
+.parrafoControles {
+  font-size: 1rem;
+  line-height: 1.6rem; }
+
+.subParrafoControles {
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin-top: 1rem; }
+
+/****************************FIN PRODUCTOS******************************/
+/****************************INICIO SERVICIOS******************************/
+.paginaServicios {
+  grid-area: servicios; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .paginaServicios {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .paginaServicios {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+
+.textoServicios {
+  width: 60%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .textoServicios {
+      width: 90%;
+      margin-left: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .textoServicios {
+      width: 100%; } }
+
+.parrafoDescriptivoServicios {
+  text-align: justify;
+  width: 70%;
+  margin-left: 5rem;
+  margin-top: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoDescriptivoServicios {
+      width: 100%;
+      margin-left: 0rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .parrafoDescriptivoServicios {
+      width: 100%;
+      margin-left: 0rem; } }
+
+.botonVerMas {
+  font-weight: bold;
+  margin-left: 20rem;
+  color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonVerMas {
+      margin-left: 40%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .botonVerMas {
+      margin-left: 40%; } }
+
+.botonVerMas:hover {
+  color: black; }
+
+.serviciosEnMain {
+  margin-top: 3rem;
+  margin-bottom: 4rem; }
+
+.organizacionServicios {
+  grid-area: body; }
+
+.textoDescriptivoServicios {
+  text-align: justify;
+  font-size: 1.1rem;
+  width: 90%;
+  margin-left: 2rem; }
+
+/*********************INICIO BALANCEO**********************/
+.cuerpoBalanceo {
+  width: 55%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .cuerpoBalanceo {
+      width: 90%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .cuerpoBalanceo {
+      width: 90%; } }
+
+/*********************INICIO MANTENIMIENTO**********************/
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .organizacionServicios {
+    flex-direction: column; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .organizacionServicios {
+    flex-direction: column;
+    margin-bottom: 4rem; } }
+
+.infoMantenimiento {
+  width: 55%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .infoMantenimiento {
+      width: 90%;
+      font-size: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .infoMantenimiento {
+      width: 90%; } }
+
+.listaMantenimiento {
+  list-style-position: inside;
+  font-size: 1.1rem;
+  width: 80%;
+  margin-left: 3rem;
+  line-height: 2.1rem; }
+
+/*********************INICIO REPARACION**********************/
+.infoReparacion {
+  width: 55%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .infoReparacion {
+      width: 90%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .infoReparacion {
+      width: 90%; } }
+
+/****************************FIN SERVICIOS******************************/
+/****************************INICIO MANUALES******************************/
+.cuadrosManuales {
+  grid-area: manuales;
+  width: 100%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .cuadrosManuales {
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .cuadrosManuales {
+      width: 100%; } }
+
+.buscadorManuales {
+  background-color: #2d7086;
+  padding: 1rem; }
+
+.itemsBuscadorManuales {
+  margin-left: 4rem;
+  font-weight: bold; }
+
+.claseManuales {
+  margin-top: 2.5rem;
+  margin-left: 3.13rem; }
+
+.textoManual {
+  color: black;
+  font-size: 1.4rem;
+  margin-top: 1rem; }
+
+.textoManual:hover {
+  font-weight: bold; }
+
+.tablaManuales {
+  font-size: 1.6rem;
+  border: 0.13rem solid black; }
+
+.thManual {
+  width: 17rem;
+  font-size: 1.5rem;
+  border: 0.13rem solid black;
+  padding: 1rem; }
+
+.tdManual {
+  width: 22rem;
+  text-align: center; }
+
+td a {
+  font-style: italic; }
+
+.divBotonManual {
+  position: fixed;
+  z-index: 2;
+  margin-left: 85%;
+  border: solid 5px #2d7086;
+  border-radius: 50px;
+  padding: 0.2rem; }
+
+.botonArribaManuales {
+  width: 2.5rem;
+  height: 2.5rem; }
+
+/****************************FIN MANUALES******************************/
+/****************************INICIO NOSOTROS******************************/
+.contenidoNosotros {
+  grid-area: nosotros;
+  margin-top: 3rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .contenidoNosotros {
+      flex-direction: column; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .contenidoNosotros {
+      flex-direction: column; } }
+
+.cuerpoNosotros {
+  width: 60%;
+  margin-bottom: 4rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .cuerpoNosotros {
+      width: 95%;
+      margin-left: -2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .cuerpoNosotros {
+      width: 95%;
+      margin-left: -2rem; } }
+
+.parrafoNosotros {
+  line-height: 1.8rem;
+  margin-left: 3.5rem; }
+
+p b {
+  display: block; }
+
+.listaNosotros {
+  line-height: 2rem;
+  font-size: 1.2rem;
+  list-style: none;
+  margin-left: 3rem;
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+  font-weight: 600; }
+
+/****************************FIN NOSOTROS******************************/
+/****************************INICIO CONTACTO******************************/
+.banner {
+  grid-area: banner; }
+
+.contacto {
+  grid-area: contacto; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .contacto {
+      flex-direction: column; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .contacto {
+      flex-direction: column; } }
+
+.cuerpoContacto {
+  margin-left: 2rem;
+  width: 55%; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .cuerpoContacto {
+      width: 90%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .cuerpoContacto {
+      width: 90%; } }
+
+.contactoContacto {
+  margin-left: 1rem; }
+
+.parrafoContacto {
+  width: 90%;
+  margin-top: 2.5rem;
+  margin-left: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoContacto {
+      font-size: 1.3rem; } }
+
+.subParrafoContacto {
+  margin-left: 1rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .subParrafoContacto {
+      font-size: 1.3rem; } }
+
+.direccionContacto {
+  margin-top: 1rem; }
+
+.telefonoContacto {
+  margin-top: 1rem; }
+
+.mailContacto {
+  margin-top: 1rem; }
+
+.horariosContacto {
+  margin-top: 1rem; }
+
+.mapaContacto {
+  margin-top: 1rem; }
+
+/****************************FIN FIN CONTACTO******************************/
+/**TITULOS INDEX**/
+.titulo {
+  font-size: 2.3rem;
+  color: #005fa4;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .titulo {
+      width: 100%;
+      font-size: 1.72rem;
+      margin-left: -1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .titulo {
+      margin-left: -3rem; } }
+
+.tituloProductosIndex {
+  color: #005fa4;
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  text-decoration: none !important;
+  font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloProductosIndex {
+      font-size: 1.5rem;
+      margin-bottom: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloProductosIndex {
+      font-size: 1.5rem;
+      margin-left: 0.7rem; } }
+
+.tituloProductosIndex:hover {
+  color: black; }
+
+.tituloProductosVariador {
+  color: #005fa4;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  text-decoration: none !important;
+  font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloProductosVariador {
+      font-size: 1.5rem;
+      margin-bottom: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloProductosVariador {
+      font-size: 1.5rem; } }
+
+.tituloProductosVariador:hover {
+  color: black; }
+
+.tituloInfo {
+  font-size: 2.6rem;
+  font-weight: bold;
+  color: black;
+  margin-left: 13rem;
+  margin-bottom: 2rem;
+  text-decoration: underline; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloInfo {
+      font-size: 2rem;
+      margin-left: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloInfo {
+      font-size: 2rem;
+      margin-left: 10rem; } }
+
+.tituloDondeEstamos {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: black;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloDondeEstamos {
+      font-size: 2rem;
+      margin: 1rem 0rem 1.5rem 2rem; } }
+
+/**TITULOS PRODUCTOS**/
+.tituloPrincipalProductos {
+  text-align: center;
+  color: #005fa4;
+  margin-top: 1rem;
+  text-decoration: underline; }
+
+.tituloProductos {
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: bold;
+  color: #005fa4;
+  margin-left: 2.5rem; }
+
+.tituloProductos:hover {
+  color: black; }
+
+/**TITULOS MOTORES ELECTRICOS**/
+.tituloPrincipalMotores {
+  grid-area: titulo;
+  text-align: center;
+  color: #005fa4;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+  text-decoration: underline; }
+
+.tipoMotor {
+  margin-top: 0.63;
+  font-size: 2.5rem;
+  margin-left: 5.5rem;
+  color: #005fa4;
+  font-weight: bold; }
+
+/**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS, VARIADORES**/
+.tituloArranques {
+  text-align: center;
+  margin-top: 2rem;
+  color: #005fa4;
+  text-decoration: underline; }
+
+.tituloProductosDiv {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: #005fa4; }
+
+.subtitutloDivProductos {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  color: #005fa4; }
+
+/**CONTROl Y PROTECCION**/
+.tituloPrincipalControl {
+  grid-area: titulo;
+  font-size: 2.3rem;
+  color: #005fa4;
+  font-weight: bold;
+  text-align: center; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloPrincipalControl {
+      font-size: 1.8rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloPrincipalControl {
+      font-size: 2rem; } }
+
+.tituloControles {
+  font-size: 1.6rem;
+  color: #005fa4;
+  font-weight: 600;
+  text-align: center; }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloControles {
+      font-size: 1.6rem; } }
+
+.tituloControles:hover {
+  color: black; }
+
+.tituloControlesFactor {
+  font-size: 1.5rem;
+  color: #005fa4;
+  font-weight: 600;
+  margin-left: 2rem; }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloControlesFactor {
+      margin-left: 10.5rem; } }
+
+.tituloControlesFactor:hover {
+  color: black; }
+
+/**CONTROLES PAGINAS**/
+.tituloProductosControl {
+  text-align: center;
+  color: #005fa4;
+  margin-top: 2rem; }
+
+.modeloControles {
+  font-size: 2rem;
+  text-align: center;
+  color: #005fa4;
+  margin: 2rem 0rem 2rem 0rem; }
+
+.itemControles {
+  font-weight: bold;
+  color: #005fa4;
+  font-size: 1.2rem; }
+
+.curvaInterruptor {
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem; }
+
+/**TITULOS SERVICIOS**/
+.tituloServicios {
+  color: #005fa4;
+  margin: 2rem 0rem 2rem 0rem;
+  text-align: center;
+  text-decoration: underline; }
+
+.tituloServiciosEnMain {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #005fa4; }
+
+.tituloServiciosEnMain:hover {
+  color: black; }
+
+/**TITULOS BALANCEO**/
+.tituloServicioBalanceo {
+  margin-left: 8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #005fa4; }
+
+/**TITULOS MANTENIMIENTO**/
+.tituloServicioMantenimiento {
+  font-size: 2rem;
+  margin-top: 2rem;
+  font-weight: 600;
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  color: #005fa4; }
+
+/**TITULOS REPARACION**/
+.tituloServicioReparacion {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  color: #005fa4;
+  margin-top: 2rem;
+  margin-bottom: 2rem; }
+
+/**TITULOS MANUALES**/
+.manuales {
+  font-size: 2.3rem;
+  text-align: center;
+  color: black;
+  margin-top: 1.2rem;
+  font-weight: bold;
+  color: #005fa4; }
+
+.tituloManuales {
+  margin-top: 3rem;
+  margin-left: 4rem;
+  font-size: 2.1rem;
+  color: black;
+  text-decoration: underline;
+  font-weight: 600; }
+
+.nombreProductoManual {
+  font-size: 1.8rem;
+  color: #005fa4;
+  margin-left: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-decoration: underline;
+  font-weight: bolder; }
+
+/**TITULOS NOSOTROS**/
+.tituloNosotros {
+  font-size: 1.9rem;
+  width: 100%;
+  text-align: center;
+  margin: 3rem;
+  font-weight: 600;
+  color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloNosotros {
+      margin-top: -2.2rem; } }
+
+.subtituloNosotros {
+  font-size: 1.7rem;
+  margin: 3rem;
+  font-weight: 600; }
+
+.tituloApueste {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  line-height: 2rem;
+  font-weight: 600; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloApueste {
+      margin-left: 5rem;
+      font-size: 1.4rem;
+      width: 100%; } }
+
+.gonnetNosotros {
+  margin-left: 18rem;
+  color: #005fa4;
+  font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .gonnetNosotros {
+      margin-left: 10rem; } }
+
+/**TITULOS CONTACTO**/
+.tituloContacto {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #005fa4; }
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .formServicios {
+    width: 80%;
+    margin-left: 1rem; } }
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .formServicios {
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-left: 2rem; } }
+
+.tituloFormulario {
+  text-align: center;
+  color: #005fa4;
+  text-decoration: underline;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  font-weight: bold; }
+
+.formularioContacto {
+  background-color: white;
+  width: 30rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .formularioContacto {
+      width: 90%;
+      margin-top: 2rem;
+      margin-left: 2px; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .formularioContacto {
+      width: 80%;
+      margin-top: 2rem;
+      margin-left: 5px; } }
+
+.labelTitulo {
+  font-weight: bold;
+  margin-top: 1rem; }
+
+input, textarea {
+  width: 22rem;
+  margin-top: 1rem;
+  padding: 0.31rem; }
+
+textarea {
+  width: 22.1rem;
+  height: 9.38rem; }
+
+.botonFormulario {
+  margin-top: 1rem; }
+
+/**IMAGENES INDEX**/
+.imagenes {
+  width: 14.38rem;
+  height: 12.50rem;
+  border: solid 2px #005fa4;
+  border-radius: 50px;
+  transition: 2s; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenes {
+      margin-left: 1rem; } }
+
+.imagenes:hover {
+  width: 15rem;
+  height: 15rem; }
+
+.mapaIndex {
+  margin-left: 0.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1.2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mapaIndex {
+      width: 90%;
+      height: 30rem;
+      margin-left: -3rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mapaIndex {
+      width: 90%;
+      height: 30rem;
+      margin-left: -3rem; } }
+
+.mapaIndexFrente {
+  margin-left: 4rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mapaIndexFrente {
+      display: none; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mapaIndexFrente {
+      width: 90%;
+      height: 30rem;
+      margin-left: -1.7rem; } }
+
+/**IMAGENES PRODUCTOS**/
+.imagenesPaginaProducto {
+  border: solid #005fa4 2px;
+  width: 15.63rem;
+  height: 15.63rem;
+  border-radius: 4.38rem;
+  margin-left: 4rem;
+  margin-top: 1.25rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenesPaginaProducto {
+      margin-left: 10%; } }
+
+.imagenesPaginaProducto:hover {
+  transform: scale(1.1, 1.1); }
+
+/**IMAGENES MOTORES ELECTRICOS**/
+.imagenMotores {
+  width: 21.88rem;
+  height: 17.5rem;
+  margin-left: 5rem;
+  margin-top: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenMotores {
+      margin-left: 1rem;
+      width: 18rem; } }
+
+/**IMAGENES ARRANQUES**/
+.imagenArranques {
+  width: 30rem;
+  height: 25rem;
+  margin: 8rem 0rem 0rem 5rem; }
+
+.imagenArranquesTres {
+  width: 40rem;
+  height: 35rem;
+  margin: 8rem 0rem 0rem 0rem; }
+
+/**IMAGENES VARIADORES**/
+.imagenVariadores {
+  width: 28rem;
+  height: 25rem;
+  margin: 10rem 0rem 0rem 8rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenVariadores {
+      width: 20rem;
+      height: 15rem;
+      margin: 2rem 0rem 0rem 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenVariadores {
+      width: 25rem;
+      height: 20rem; } }
+
+/**IMAGENES CONTROL Y PROTECCION**/
+.imagenControl {
+  width: 22rem;
+  height: 18rem;
+  border: solid 2px #005fa4;
+  border-radius: 70px;
+  margin-left: 2rem;
+  transition: 2s; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenControl {
+      width: 80%;
+      height: 15rem;
+      margin-left: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenControl {
+      width: 40%;
+      height: 15rem;
+      margin-left: 14rem; } }
+
+.imagenControl:hover {
+  width: 24rem;
+  height: 20rem; }
+
+.imagenInterruptor {
+  width: 34rem;
+  height: 30rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenInterruptor {
+      width: 80%;
+      height: 15rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenInterruptor {
+      width: 70%;
+      height: 25rem;
+      margin-left: 4rem; } }
+
+.imagenInterruptorDos {
+  width: 28rem;
+  height: 25rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenInterruptorDos {
+      width: 80%;
+      height: 15rem; } }
+
+.imagenAccesorio {
+  width: 30rem;
+  height: 30rem;
+  margin-left: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenAccesorio {
+      width: 90%;
+      height: 15rem;
+      margin-left: -1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenAccesorio {
+      width: 70%;
+      height: 25rem;
+      margin-left: 4rem; } }
+
+.imagenCorreccion {
+  width: 30rem;
+  height: 20rem;
+  margin: 5rem 0rem 0rem 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenCorreccion {
+      width: 60%rem;
+      height: 20rem;
+      margin-left: -5rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenCorreccion {
+      width: 30rem;
+      height: 20rem;
+      margin: 5rem 0rem 0rem 2rem; } }
+
+/**IMAGENES NOSOTROS**/
+.imagenesNosotros {
+  width: 40%;
+  margin-left: 14rem;
+  align-self: flex-start; }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenesNosotros {
+      position: relative;
+      display: flex;
+      flex-direction: row; } }
+
+.imagenNosotros {
+  margin-top: 5rem;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenNosotros {
+      margin-left: -12.5rem;
+      width: 18rem;
+      margin-top: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenNosotros {
+      width: 15rem;
+      margin-left: -9rem;
+      margin-top: -3rem; } }
+
+.iconoNosotros {
+  margin-left: 19rem;
+  margin-top: 3rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .iconoNosotros {
+      margin-left: 10rem; } }
+
+.imagenNosotrosDos {
+  margin-top: 5rem;
+  margin-bottom: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenNosotrosDos {
+      margin-left: -12.5rem;
+      width: 18rem;
+      margin-top: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenNosotrosDos {
+      width: 15rem;
+      margin-top: -3rem;
+      margin-left: 5rem; } }
+
+.mapaContacto {
+  margin-top: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mapaContacto {
+      width: 90%;
+      height: 20rem;
+      margin-left: -2.7rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mapaContacto {
+      width: 100%;
+      height: 20rem;
+      margin-left: -2rem; } }
+
+/*IMAGEN ERROR 404*/
+.errorImagen {
+  height: 22rem;
+  width: 50rem; }
+
+* {
+  margin: 0;
+  padding: 0; }

@@ -1,0 +1,287 @@
+@import "../utilities/mediaquerys";
+@import "../utilities/variables";
+
+/*EXTENDS*/
+
+%gridArea{
+    grid-area: main;
+    display: grid;
+}
+
+%mainDosRowColumn{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 1fr;
+}
+                                                        /*INICIO GRIDS*/
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  0.5fr 1fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    height: 100vh;
+    font-family: 'Manrope', sans-serif;
+
+    }
+
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr;
+    grid-area: header;
+    height: 8rem;
+}
+                                                        /**INDEX**/
+.mainIndex{
+    @extend %gridArea;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.8fr 0.5fr;
+    grid-template-areas: 
+    "banner         banner           banner"
+    "productos      productos        productos"
+    "presentacion   presentacion     presentacion";
+
+}
+
+.banner{
+    grid-area: banner;
+    width: 100%;
+
+    @include telefono{
+        width: 100%;  
+        margin-top: 1rem;
+       }
+    
+       @include tablet{
+        width: 100%;   
+    }
+}
+
+.productos{
+    grid-area: productos;
+    padding: 2rem;
+}
+
+.presentacion{
+    grid-area: presentacion;
+}
+
+                                                    /**PRODUCTOS**/
+.productosProductos{
+    @extend %gridArea;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "banner"
+    "productos";
+}
+
+.mainProductos{
+    grid-area: productos;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 2rem;
+    justify-items: center;
+
+    @include telefono{
+        width: 100%;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    @include tablet{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+
+                                                      /**MOTORES ELECTRICOS**/
+.mainMotoresElectricos{
+    @extend %gridArea;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12.5rem,5rem,12.5rem,12.5rem;
+    grid-template-areas: 
+    "banner        banner"
+    "titulo        titulo"
+    "producto      producto"
+    "producto      producto"
+    ;
+
+    @include telefono{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+                                                        /**ARRANQUES,VARIADORES**/
+
+.mainDivProductos{
+    grid-area: main;
+}
+                                                        /**ELECTROBOMBAS**/
+.mainElectro{
+    grid-area: main;
+}
+
+                                                    /**CONTROL Y PROTECCION**/
+
+.mainControl{
+    @extend %gridArea;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.2fr 1fr 1fr;
+    grid-template-areas: 
+    "banner banner banner"
+    "titulo titulo titulo"
+    "producto producto producto"
+    "producto producto producto"
+    "producto producto producto";
+    ;
+    column-gap: 2rem;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+
+    @include telefono{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}        
+
+.mainInterruptores{
+    grid-area:main;
+}
+
+.mainContactoresPotencia{
+    grid-area: main;
+}
+
+.mainContactoresAux{
+    grid-area: main;
+}
+
+.mainReles{
+    grid-area: main;
+}
+
+.mainGuardamotores{
+    grid-area: main;
+}
+
+.mainArrancadores{
+    grid-area: main;
+}
+
+.mainCorreccion{
+    grid-area: main;
+}
+
+.mainMando{
+    grid-area: main;
+}
+
+                                                        /**SERVICIOS**/
+
+.servicios{
+    @extend %mainDosRowColumn;
+    grid-template-areas: 
+    "banner         banner "
+    "servicios      servicios";
+}
+
+                                                    /**BALANCEO DINAMICO**/
+
+.mainBalanceo{
+    @extend %gridArea;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
+    grid-template-areas: 
+    "banner banner"
+    "body body";   
+}
+
+.balanceoOrden{
+    grid-area: body;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+
+    @include telefono{
+        flex-direction: column;
+    }
+
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+                                                /**MANTENIMIENTO DE MOTORES **/
+
+.mantenimiento{
+    @extend %mainDosRowColumn;
+    grid-template-areas: 
+    "banner banner"
+    "body body";
+
+}
+
+                                                /**INICIO REPARACION**/
+
+.reparacion{
+    @extend %mainDosRowColumn;
+    grid-template-areas: 
+    "banner banner"
+    "body body";   
+    margin-bottom: 8rem;
+}
+
+                                                    /** MANUALES**/
+
+.mainManuales{
+    @extend %gridArea;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "banner"
+    "manuales";   
+    margin-bottom: 2rem;
+}
+
+                                                /**INICIO NOSOTROS**/
+
+.mainNosotros{
+    @extend %mainDosRowColumn;
+    grid-template-areas: 
+    "banner         banner"
+    "nosotros      nosotros";   
+}
+
+                                                /**INICIO CONTACTO**/
+
+.mainContacto{
+    @extend %mainDosRowColumn;
+    grid-template-areas: 
+    "banner         banner"
+    "contacto       contacto";   
+}

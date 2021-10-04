@@ -1,0 +1,34 @@
+@import "../utilities/variables";
+@import "../utilities/mediaquerys";
+
+.navegacion{
+    background-color: $colorBlanco !important;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+
+    @include telefono{
+        width: 100%;   
+       }
+       @include tablet{
+        width: 100%;   
+    }
+}
+
+.tituloBarra{
+    font-size: 1.3rem;
+    color: $colorAzul !important;
+    font-weight: bold;
+    margin-top: 1rem;
+    
+}
+
+.tituloBarra:hover{
+    color: $colorNegro;
+}
+
+.subMenu{
+    font-size: 1rem;
+    color: $colorAzul;
+    font-weight: bold;
+}

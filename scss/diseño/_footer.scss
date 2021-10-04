@@ -1,0 +1,147 @@
+@import "../utilities/variables";
+@import "../utilities/mediaquerys";
+
+footer{
+    grid-area: footer;
+}
+
+.piePagina{
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to right bottom, #4d4d4d, #3c3c3c, $colorNegro);
+
+    @include telefono{
+        flex-direction: column;
+        width: 100%;   
+       }
+    @include tablet{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.footerProductos{
+    width: 22%;
+    color: $colorBlanco;
+
+    @include telefono{
+        width: 100%;   
+       }
+
+    @include tablet{
+        width: 100%;
+    }
+}
+
+.tituloFooter{
+    text-decoration: none;
+    color: $colorBlanco;
+    margin-left: 3rem;
+}
+
+.tituloFooter:hover{
+    color: $colorNegro;
+}
+
+.tituloFooterS{
+    text-decoration: none;
+    color: $colorBlanco;
+    margin-left: 3rem;
+}
+
+.listaSinDetalle{
+    list-style: none;
+    color: $colorBlanco;
+    line-height: 1.8rem;
+    margin-left: 1rem;
+}
+
+.footerServicios{
+    width: 28%;
+    color: $colorBlanco;
+
+    @include telefono{
+        width: 90%;   
+       }
+
+    @include tablet{
+        width: 90%;   
+    }
+}
+
+.footerHorarios{
+    width: 15%;
+    color: $colorBlanco;
+    
+    @include telefono{
+        width: 90%;   
+       }
+    
+    @include tablet{
+        width: 90%;   
+    }
+}
+
+.footerPresentacion{
+    width: 28%;
+    text-align: justify;
+    margin-left: 4rem;
+    color: $colorBlanco;
+
+    @include telefono{
+        width: 90%;   
+        margin-left: 1rem;
+       }
+
+    @include tablet{
+        width: 90%;
+        margin-left: 1rem;   
+    }
+}
+
+.parrafoFooter{
+    font-size: 0.95rem;
+}
+
+.finalFooter{
+    background-color: #4d4d4d;
+    height: 2rem;
+
+    @include telefono{
+        width: 100%;
+        height: 4rem;  
+       }
+
+    @include tablet{
+        width: 100%;
+    }
+
+}
+
+.copyright{
+    color: $colorBlanco;
+    font-size: 1.4rem;
+    margin-left: 2rem;
+
+    @include telefono{
+        width: 100%;  
+        margin-left: 0.5rem; 
+       }
+}
+
+.blancoFooter{
+    color: $colorBlanco;
+}
+
+.blancoFooter:hover{
+    color: $colorNegro;
+}
+
+a{
+    text-decoration: none;
+    color: $colorBlanco;
+}
+
+a:hover{
+    color: $colorNegro;
+}

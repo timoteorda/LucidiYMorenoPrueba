@@ -1,0 +1,768 @@
+@import "../utilities/variables";
+@import "../utilities/mediaquerys";
+
+/*EXTENDS*/
+
+%flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+%flexColumn{
+    display: flex;
+    flex-direction: column;
+}
+
+/***************************ACA COMIENZA EL INDEX********************************/
+
+.flexProductos{
+    @extend %flexRow;
+
+        @include telefono{
+            flex-direction: column;
+            }    
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            column-gap: 1rem;
+            row-gap: 1rem;
+            margin-left: -1rem;
+    }
+}
+
+.parrafoProductoIndex{
+    text-align: justify;
+    font-size: 1rem;
+    width: 80%;
+    margin-left: 0.5rem;
+    margin-top: 1.4rem;
+
+    @include telefono{
+        font-size: 1.2rem;   
+    }
+    @include tablet{
+        font-size: 1rem    
+    }
+}
+
+.presentacionFlex{
+    @extend %flexRow;
+    
+    @include telefono{
+        flex-direction: column;   
+    }
+    @include tablet{
+        flex-direction: column;
+    }
+
+}
+
+.presentacion{
+    background-image: linear-gradient(to bottom,rgb(191,191,191), rgb(167,167,167));
+    margin-bottom: -3rem;
+}
+
+.itemUno{
+    width: 50%;
+    margin-left: 4.38rem;
+
+    @include telefono{
+     width: 100%;   
+    }
+
+    @include tablet{
+     width: 100%;   
+    }
+}
+
+.parrafoPresentacion{
+    font-size: 1.5rem;
+    margin-left: 0.31rem;
+
+    @include telefono{
+    width: 90%;
+    margin-left: -2.5rem;
+    font-size: 1.4rem;;   
+    }
+
+    @include tablet{
+    width: 90%;
+    margin-left: -2.5rem;
+    font-size: 1.4rem;;
+    }
+}
+
+.subParrafoPresentacion{
+    margin-top: 1.88rem;
+    font-size: 1.5rem;
+    margin-left: 0.31rem;
+
+    @include telefono{
+    width: 90%;
+    margin-left: -2.5rem;
+    font-size: 1.4rem;;
+    }
+    @include tablet{
+    width: 90%;
+    margin-left: -2.5rem;
+    font-size: 1.4rem;
+    }
+}
+
+.itemDos{
+    width: 50%;
+    margin-left: 3.13rem;
+
+    @include telefono{
+     width: 100%;   
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+}
+
+.dondeEstamos{
+    margin-left: 4rem;
+    
+    @include telefono{
+        width: 100%;   
+        margin-left: -1.5rem;
+       }
+    
+       @include tablet{
+        width: 100%;   
+        margin-left: -1.5rem;
+       }
+}
+
+.parrafoUbicacion{
+    font-size: 1.4rem;
+
+    @include telefono{
+        font-size: 1.2rem;   
+    }
+    
+    @include tablet{
+        font-size: 1.2rem;
+    }
+}
+
+.negrita{
+    font-weight: bold;
+    color: $colorNegro;
+}
+
+/****************************FIN DEL INDEX******************************/
+
+/****************************INICIO PRODUCTOS******************************/
+
+.flexProductosPrincipal{
+    @extend %flexColumn;
+}
+
+.parrafoDescriptivo{
+    text-align: justify;
+    width: 18.75rem;
+    margin-left: 2.63rem;
+    margin-top: 1.56rem;
+
+    @include telefono{
+        margin-left: 3%;
+    }
+}
+
+.productosUbicacion{
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.catalogosManuales{
+    color: $colorNegro;
+    font-size: 1.8rem;
+    text-decoration: underline;
+    margin-left: 2.5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.linkManuales{
+    margin-left:2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.linkNegro{
+    color: black;
+    font-size: 1.2rem;
+}
+
+.linkNegro:hover{
+    font-weight: bold;
+}
+
+.botonCompraProductos{
+    width: 11rem !important;
+    height: 3rem !important;
+    font-size: 1.4rem;
+    margin-left: 45%;
+    margin-top: 4rem;
+    color: $colorBlanco;
+    font-weight: bold;
+    background-color: $colorAzul;
+    border-radius: 4.38rem;
+    border: 0px;
+
+    @include telefono{
+        margin-left: 5rem;
+    }
+
+    @include tablet{
+        margin-left: 18rem;       
+    }
+}
+
+.botonCompraProductos:hover{
+    background-color: $colorAzulClaro;
+}
+/*********************INICIO MOTORES ELECTRICOS**********************/
+
+.motorElectrico{
+    padding: 2rem;
+}
+
+.bordeMotor{
+    width: 30.5rem;
+    margin-left: 2.5rem;
+}
+
+.botonCompra{
+    width: 11rem !important;
+    height: 3rem !important;
+    font-size: 1.4rem;
+    margin-left: 50%;
+    color: $colorBlanco;
+    font-weight: bold;
+    background-color: $colorAzul;
+    border-radius: 4.38rem;
+    border: 0px;
+}
+
+.botonCompra:hover{
+    background-color: $colorAzulClaro;
+    cursor: pointer;    
+}
+
+.textoMotores{
+    width: 80%;
+    text-align: justify;
+    margin-left: 2.5rem;
+    line-height: 2rem;
+}
+
+.listaW22{
+    font-size: 1rem;
+    margin-left: 4.38rem;
+    list-style: none;
+    line-height: 2rem;
+}
+
+/*********************INICIO ARRANQUES/VARIADORES**********************/
+
+.productosDiv{
+    @extend %flexRow;
+
+    @include telefono{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+.bloqueDivProductos{
+    width: 50%;
+    margin: 2rem 0rem 0rem 2rem;
+    
+    @include telefono{
+        width: 100%;
+    }
+
+    @include tablet{
+        width: 90%;       
+    }
+}
+
+.parrafoDivProductos{
+    font-size: 1.1rem;
+    text-align:justify ;
+}
+
+.subParrafoProductos{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.derechaDivProductos{
+    width: 40%;
+}
+
+/*********************INICIO CONTROL Y PROTECCION**********************/
+
+.control{
+    margin-left: 1rem;
+}
+
+.botonVolver{
+    width: 5rem;
+    height: 5rem;
+    margin-left: 92%;
+    margin-bottom: 2rem;
+    
+    @include telefono{
+        margin-left: 1rem;
+    }
+
+    @include tablet{
+        margin-left: 88%;
+    }
+}
+
+.botonVolver:hover{
+    width: 5.4rem;
+    height: 5.4rem;
+}
+
+.catalogo{
+    color: $colorNegro;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}  
+
+.catalogo:hover{
+    font-weight: bold;   
+}
+
+/*********************CONTROLES PAGINAS**********************/
+
+.controles{
+    @extend %flexRow;
+    margin-left: 2rem;
+
+    @include telefono{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
+
+.interruptoresTexto{
+    width: 60%;
+
+    @include telefono{
+        width: 80%;
+    }
+
+    @include tablet{
+        width: 80%;
+    }
+}
+
+.controlesTexto{
+    width: 55%;
+
+    @include telefono{
+        width: 80%;
+    }
+
+    @include tablet{
+        width: 80%;
+    }
+}
+
+.parrafoControles{
+    font-size: 1rem;
+    line-height: 1.6rem;
+}
+
+.subParrafoControles{
+    font-size: 1rem;
+    line-height: 1.6rem;
+    margin-top: 1rem;
+}
+
+/****************************FIN PRODUCTOS******************************/
+
+/****************************INICIO SERVICIOS******************************/
+
+.paginaServicios{
+    grid-area: servicios;
+    @extend %flexRow;
+
+    @include telefono{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    @include tablet{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.textoServicios{
+    width: 60%;
+
+    @include telefono{
+        width: 90%;
+        margin-left: 1rem;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+}
+
+.parrafoDescriptivoServicios{
+    text-align: justify;
+    width: 70%;
+    margin-left: 5rem;
+    margin-top: 2rem;
+
+    @include telefono{
+        width: 100%;
+        margin-left: 0rem;
+    }
+
+    @include tablet{
+        width: 100%;
+        margin-left: 0rem;
+    }
+}
+
+.botonVerMas{
+    font-weight: bold;
+    margin-left: 20rem;
+    color: $colorAzul;
+
+    @include telefono{
+        margin-left: 40%;
+    }
+
+    @include tablet{
+        margin-left: 40%;
+    }
+}
+
+.botonVerMas:hover{
+    color: $colorNegro;
+}
+
+.serviciosEnMain{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.organizacionServicios{
+    grid-area: body;
+    @extend %flexRow;
+}
+
+.textoDescriptivoServicios{
+    text-align: justify;
+    font-size: 1.1rem;
+    width: 90%;
+    margin-left: 2rem;
+}
+
+/*********************INICIO BALANCEO**********************/
+
+.cuerpoBalanceo{
+    width: 55%;
+
+    @include telefono{
+        width: 90%;
+    }
+
+    @include tablet{
+        width: 90%;
+    }
+}
+
+/*********************INICIO MANTENIMIENTO**********************/
+
+.organizacionServicios{
+    @include telefono{
+        flex-direction: column;
+    }
+
+    @include tablet{
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+}
+
+.infoMantenimiento{
+    width: 55%;
+
+    @include telefono{
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    @include tablet{
+        width: 90%;
+    }
+}
+
+.listaMantenimiento{
+    list-style-position: inside;
+    font-size: 1.1rem;
+    width: 80%;
+    margin-left: 3rem;
+    line-height: 2.1rem;
+}
+
+/*********************INICIO REPARACION**********************/
+
+.infoReparacion{
+    width: 55%;
+
+    @include telefono{
+        width: 90%;
+    }
+
+    @include tablet{
+        width: 90%;
+    }
+}
+
+/****************************FIN SERVICIOS******************************/
+
+/****************************INICIO MANUALES******************************/
+
+.cuadrosManuales{
+    grid-area: manuales;
+    @extend %flexColumn;
+    width: 100%;
+   
+        @include telefono{
+            width: 100%;
+           }
+    
+        @include tablet{
+            width: 100%;
+        }
+}
+
+.buscadorManuales{
+    background-color: rgb(45, 112, 134);
+    padding: 1rem;
+}
+
+.itemsBuscadorManuales{
+    margin-left: 4rem;
+    font-weight: bold;
+}
+
+.claseManuales{
+    margin-top: 2.5rem;
+    margin-left: 3.13rem;
+}
+
+.textoManual{
+    color: $colorNegro;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.textoManual:hover{
+    font-weight: bold;
+}
+
+.tablaManuales{
+    font-size: 1.6rem;
+    border: 0.13rem solid $colorNegro;
+}
+
+.thManual{
+    width: 17rem;
+    font-size: 1.5rem;
+    border: 0.13rem solid $colorNegro;
+    padding: 1rem;
+}
+
+.tdManual{
+    width: 22rem;
+    text-align: center;
+}
+
+td a{
+    font-style: italic;
+}
+
+.divBotonManual{
+    position: fixed;
+    z-index: 2;
+    margin-left: 85%;
+    border: solid 5px  rgb(45, 112, 134);
+    border-radius: 50px;
+    padding: 0.2rem;
+}
+
+.botonArribaManuales{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+/****************************FIN MANUALES******************************/
+
+/****************************INICIO NOSOTROS******************************/
+
+.contenidoNosotros{
+    grid-area: nosotros;
+    @extend %flexRow;
+    margin-top: 3rem;
+
+    @include telefono{
+        flex-direction: column;
+    }
+
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.cuerpoNosotros{
+    width: 60%;
+    margin-bottom: 4rem;
+
+    @include telefono{
+        width: 95%;
+        margin-left: -2rem;
+    }
+
+    @include tablet{
+        width: 95%;
+        margin-left: -2rem;
+    }
+}
+
+.parrafoNosotros{
+    line-height: 1.8rem;
+    margin-left: 3.5rem;
+}
+
+p b{
+    display: block;
+}
+
+.listaNosotros{
+    line-height: 2rem;
+    font-size: 1.2rem;
+    list-style: none;
+    margin-left: 3rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+/****************************FIN NOSOTROS******************************/
+
+/****************************INICIO CONTACTO******************************/
+
+.banner{
+    grid-area: banner;
+}
+
+.contacto{
+    grid-area: contacto;
+    @extend %flexRow;
+
+    @include telefono{
+        flex-direction: column;
+    }
+
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.cuerpoContacto{
+    margin-left: 2rem;
+    width: 55%;
+
+    @include telefono{
+        width: 90%;
+    }
+
+    @include tablet{
+        width: 90%;
+    }
+}
+
+.contactoContacto{
+    margin-left: 1rem;
+}
+
+.parrafoContacto{
+    width: 90%;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+
+    @include telefono{
+        font-size: 1.3rem;
+    }
+
+}
+
+.subParrafoContacto{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+
+    @include telefono{
+     font-size: 1.3rem;   
+    }
+
+}
+
+.direccionContacto{
+    margin-top: 1rem;  
+}
+
+.telefonoContacto{
+    margin-top: 1rem;  
+}
+
+.mailContacto{
+    margin-top: 1rem;  
+}
+
+.horariosContacto{
+    margin-top: 1rem;  
+}
+
+.mapaContacto{
+    margin-top: 1rem;  
+}
+
+/****************************FIN FIN CONTACTO******************************/
