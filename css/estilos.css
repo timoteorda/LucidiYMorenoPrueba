@@ -1320,7 +1320,7 @@ textarea {
   border-radius: 4.38rem;
   margin-left: 4rem;
   margin-top: 1.25rem;
-  transition: 2seg; }
+  transition: 2s; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenesPaginaProducto {
       margin-left: 10%; } }
