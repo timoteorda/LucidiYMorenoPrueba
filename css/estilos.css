@@ -1325,7 +1325,8 @@ textarea {
       margin-left: 10%; } }
 
 .imagenesPaginaProducto:hover {
-  transform: scale(1.1, 1.1); }
+  width: 17rem;
+  height: 17rem; }
 
 /**IMAGENES MOTORES ELECTRICOS**/
 .imagenMotores {
