@@ -1276,15 +1276,14 @@ textarea {
   width: 14.38rem;
   height: 12.50rem;
   border: solid 2px #005fa4;
-  border-radius: 50px;
-  transition: 2s; }
+  border-radius: 50px; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenes {
       margin-left: 1rem; } }
 
 .imagenes:hover {
   width: 15rem;
-  height: 15rem; }
+  height: 13.5rem; }
 
 .mapaIndex {
   margin-left: 0.5rem;
@@ -1319,15 +1318,14 @@ textarea {
   height: 15.63rem;
   border-radius: 4.38rem;
   margin-left: 4rem;
-  margin-top: 1.25rem;
-  transition: 2s; }
+  margin-top: 1.25rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenesPaginaProducto {
       margin-left: 10%; } }
 
 .imagenesPaginaProducto:hover {
-  width: 17rem;
-  height: 17rem; }
+  width: 18rem;
+  height: 18rem; }
 
 /**IMAGENES MOTORES ELECTRICOS**/
 .imagenMotores {
@@ -1369,11 +1367,10 @@ textarea {
 /**IMAGENES CONTROL Y PROTECCION**/
 .imagenControl {
   width: 22rem;
-  height: 18rem;
+  height: 17rem;
   border: solid 2px #005fa4;
   border-radius: 70px;
-  margin-left: 2rem;
-  transition: 2s; }
+  margin-left: 1.8rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenControl {
       width: 80%;
@@ -1387,7 +1384,7 @@ textarea {
 
 .imagenControl:hover {
   width: 24rem;
-  height: 20rem; }
+  height: 19rem; }
 
 .imagenInterruptor {
   width: 34rem;

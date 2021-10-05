@@ -7,7 +7,6 @@
     height: 12.50rem;
     border:solid 2px $colorAzul;
     border-radius: 50px;
-    transition: 2s;
 
     @include telefono{
         margin-left: 1rem;
@@ -16,7 +15,7 @@
 
 .imagenes:hover{
     width: 15rem;
-    height: 15rem;
+    height: 13.5rem;
 }
 
 .mapaIndex{
@@ -60,8 +59,7 @@
     height: 15.63rem;
     border-radius: 4.38rem;
     margin-left: 4rem;
-    margin-top: 1.25rem;
-    transition: 2s;     
+    margin-top: 1.25rem;   
     
     @include telefono{
         margin-left: 10%;
@@ -70,8 +68,8 @@
 }
 
 .imagenesPaginaProducto:hover{
-    width: 17rem;
-    height: 17rem;
+    width: 18rem;
+    height: 18rem;
 }
 
                                                     /**IMAGENES MOTORES ELECTRICOS**/
@@ -130,11 +128,10 @@
 
 .imagenControl{
     width: 22rem;
-    height: 18rem;
+    height: 17rem;
     border: solid 2px $colorAzul;
     border-radius: 70px;
-    margin-left: 2rem;
-    transition: 2s;
+    margin-left: 1.8rem;
 
     @include telefono{
         width: 80%;
@@ -151,7 +148,7 @@
 
 .imagenControl:hover{
     width: 24rem;
-    height: 20rem;
+    height: 19rem;
 }
 
 .imagenInterruptor{
