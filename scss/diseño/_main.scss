@@ -564,7 +564,8 @@
     width: 100%;
    
         @include telefono{
-            width: 100%;
+            width: 90%;
+            margin-left: -2rem;
            }
     
         @include tablet{
