@@ -1240,6 +1240,9 @@ p b {
   font-size: 1.8rem;
   margin-top: 2rem;
   font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloFormulario {
+      margin-top: 4rem; } }
 
 .formularioContacto {
   background-color: white;
@@ -1487,14 +1490,13 @@ textarea {
   margin-top: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mapaContacto {
-      width: 90%;
+      width: 75%;
       height: 20rem;
       margin-left: -2.7rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .mapaContacto {
       width: 100%;
-      height: 20rem;
-      margin-left: -2rem; } }
+      height: 20rem; } }
 
 /*IMAGEN ERROR 404*/
 .errorImagen {

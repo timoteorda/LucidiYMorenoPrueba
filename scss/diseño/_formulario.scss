@@ -23,6 +23,10 @@
     font-size: 1.8rem;
     margin-top: 2rem;
     font-weight: bold;
+
+    @include telefono{
+        margin-top: 4rem
+    }
 }
 
 .formularioContacto{
