@@ -659,9 +659,7 @@ a:hover {
     .paginaServicios {
       display: flex;
       flex-direction: column;
-      width: 90%;
-      margin-left: 1rem;
-      margin-right: 1rem; } }
+      width: 90%; } }
 
 .textoServicios {
   width: 60%; }
@@ -684,8 +682,9 @@ a:hover {
       margin-left: 0rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoDescriptivoServicios {
-      width: 100%;
-      margin-left: 0rem; } }
+      width: 90%;
+      margin-left: 1rem;
+      margin-right: 1rem; } }
 
 .botonVerMas {
   font-weight: bold;
