@@ -373,8 +373,7 @@ a:hover {
     flex-direction: column; } }
 
 .presentacion {
-  background-image: linear-gradient(to bottom, #bfbfbf, #a7a7a7);
-  margin-bottom: -3rem; }
+  background-image: linear-gradient(to bottom, #bfbfbf, #a7a7a7); }
 
 .itemUno {
   width: 50%;
