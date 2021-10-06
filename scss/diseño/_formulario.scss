@@ -25,7 +25,8 @@
     font-weight: bold;
 
     @include telefono{
-        margin-top: 4rem
+        margin-top: 4rem;
+        margin-bottom: 2rem;        
     }
 }
 

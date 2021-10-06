@@ -375,5 +375,9 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: $colorAzul;
+
+    @include telefono{
+        margin-top: -2rem;
+    }
 }
 

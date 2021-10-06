@@ -19,9 +19,11 @@
 }
 
 .mapaIndex{
-    margin-left: 0.5rem;
+    margin-left: 0.4rem;
     margin-top: 2rem;
     margin-bottom: 1.2rem;
+    width: 37.5rem;
+    height: 23.75rem;
 
     @include telefono{
         width: 90%;
@@ -273,10 +275,12 @@
 }
 
 .mapaContacto{
-    margin-top: 1rem;  
+    margin-top: 1rem; 
+    width: 500px;
+    height: 400px;
 
     @include telefono{
-        width: 75%;
+        width: 80%;
         height: 20rem;
         margin-left: -2.7rem;
     }
