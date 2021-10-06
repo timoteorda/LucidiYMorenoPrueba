@@ -792,7 +792,7 @@ a:hover {
   padding: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .buscadorManuales {
-      width: 120%; } }
+      width: 120.5%; } }
 
 .itemsBuscadorManuales {
   margin-left: 4rem;
