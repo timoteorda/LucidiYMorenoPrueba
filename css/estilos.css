@@ -1501,7 +1501,7 @@ textarea {
   height: 400px; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mapaContacto {
-      width: 20rem;
+      width: 25rem;
       height: 20rem;
       margin-left: -1.5rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
