@@ -596,13 +596,17 @@
     padding: 1rem;
 
     @include telefono{
-        width: 100%;
+        width: 121%;
     }
 }
 
 .itemsBuscadorManuales{
     margin-left: 4rem;
     font-weight: bold;
+
+    @include telefono{
+        margin-top: 1rem;
+    }
 }
 
 .claseManuales{
@@ -654,7 +658,7 @@ td a{
     padding: 0.2rem;
 
     @include telefono{
-        margin-left: 90%;
+        margin-left: 92%;
     }
 }
 
@@ -700,6 +704,9 @@ td a{
 .parrafoNosotros{
     line-height: 1.8rem;
     margin-left: 3.5rem;
+    @include telefono{
+        width: 80%;
+    }
 }
 
 p b{

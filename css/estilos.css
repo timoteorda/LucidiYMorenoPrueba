@@ -792,11 +792,14 @@ a:hover {
   padding: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .buscadorManuales {
-      width: 100%; } }
+      width: 121%; } }
 
 .itemsBuscadorManuales {
   margin-left: 4rem;
   font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .itemsBuscadorManuales {
+      margin-top: 1rem; } }
 
 .claseManuales {
   margin-top: 2.5rem;
@@ -839,7 +842,7 @@ td a {
   padding: 0.2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .divBotonManual {
-      margin-left: 90%; } }
+      margin-left: 92%; } }
 
 .botonArribaManuales {
   width: 2.5rem;
@@ -872,6 +875,9 @@ td a {
 .parrafoNosotros {
   line-height: 1.8rem;
   margin-left: 3.5rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoNosotros {
+      width: 80%; } }
 
 p b {
   display: block; }
