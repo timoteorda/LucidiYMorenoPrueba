@@ -423,7 +423,9 @@
     @include tablet{
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
