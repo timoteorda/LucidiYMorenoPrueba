@@ -13,7 +13,8 @@
         width: 100% ;
         font-size: 1.72rem;
         margin-left: -1rem;
-        margin-top: -2.2rem;
+        margin-top: -1.2rem;
+        text-decoration: underline;
        }
        @include tablet{
         margin-left: -3rem;    
@@ -148,20 +149,27 @@
     }
 }
 
-                                         /**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS, VARIADORES**/
+                                         /**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS,**/
 .tituloArranques{
     text-align: center;
     margin-top: 2rem;
     color: $colorAzul;
     text-decoration: underline;
-}
 
-                                         
+    @include telefono{
+        font-size: 2.2rem;
+    }
+}
+                                   
 .tituloProductosDiv{
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: 2rem;
     color: $colorAzul;
+
+    @include telefono{
+        font-size: 1.8rem;
+    }
 }
 
 .subtitutloDivProductos{
@@ -265,6 +273,11 @@
     margin: 2rem 0rem 2rem 0rem;
     text-align: center;
     text-decoration: underline;
+
+    @include telefono{
+        font-size: 2.2rem;
+    }
+    
 }
 
 .tituloServiciosEnMain{
@@ -272,6 +285,10 @@
     font-weight: 600;
     text-align: center;
     color: $colorAzul;
+
+    @include telefono{
+        font-size: 1.8rem;
+    }
 }
 
 .tituloServiciosEnMain:hover{
@@ -297,6 +314,10 @@
     margin-left: 3rem;
     margin-bottom: 1.5rem;
     color: $colorAzul;
+
+    @include telefono{
+        margin-top: -2rem;
+    }
 }
 
 

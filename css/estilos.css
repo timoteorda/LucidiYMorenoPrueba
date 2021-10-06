@@ -726,7 +726,8 @@ a:hover {
   width: 55%; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cuerpoBalanceo {
-      width: 90%; } }
+      width: 90%;
+      margin-top: -5rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .cuerpoBalanceo {
       width: 90%; } }
@@ -947,7 +948,8 @@ p b {
       width: 100%;
       font-size: 1.72rem;
       margin-left: -1rem;
-      margin-top: -2.2rem; } }
+      margin-top: -1.2rem;
+      text-decoration: underline; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .titulo {
       margin-left: -3rem; } }
@@ -1058,18 +1060,24 @@ p b {
       margin-left: 1rem;
       font-size: 1.9rem; } }
 
-/**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS, VARIADORES**/
+/**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS,**/
 .tituloArranques {
   text-align: center;
   margin-top: 2rem;
   color: #005fa4;
   text-decoration: underline; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloArranques {
+      font-size: 2.2rem; } }
 
 .tituloProductosDiv {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 2rem;
   color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloProductosDiv {
+      font-size: 1.8rem; } }
 
 .subtitutloDivProductos {
   font-size: 1.5rem;
@@ -1149,12 +1157,18 @@ p b {
   margin: 2rem 0rem 2rem 0rem;
   text-align: center;
   text-decoration: underline; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloServicios {
+      font-size: 2.2rem; } }
 
 .tituloServiciosEnMain {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
   color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloServiciosEnMain {
+      font-size: 1.8rem; } }
 
 .tituloServiciosEnMain:hover {
   color: black; }
@@ -1175,6 +1189,9 @@ p b {
   margin-left: 3rem;
   margin-bottom: 1.5rem;
   color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloServicioMantenimiento {
+      margin-top: -2rem; } }
 
 /**TITULOS REPARACION**/
 .tituloServicioReparacion {
