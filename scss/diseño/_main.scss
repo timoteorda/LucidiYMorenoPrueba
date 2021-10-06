@@ -599,6 +599,10 @@
     color: $colorNegro;
     font-size: 1.4rem;
     margin-top: 1rem;
+
+    @include telefono{
+        font-size: 1.2rem;
+    }
 }
 
 .textoManual:hover{
@@ -633,6 +637,10 @@ td a{
     border: solid 5px  rgb(45, 112, 134);
     border-radius: 50px;
     padding: 0.2rem;
+
+    @include telefono{
+        margin-left: 90%;
+    }
 }
 
 .botonArribaManuales{
@@ -766,10 +774,6 @@ p b{
 }
 
 .horariosContacto{
-    margin-top: 1rem;  
-}
-
-.mapaContacto{
     margin-top: 1rem;  
 }
 
