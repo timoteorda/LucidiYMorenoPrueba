@@ -524,6 +524,9 @@ a:hover {
   background-color: #005fa4;
   border-radius: 4.38rem;
   border: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonCompra {
+      margin-left: 4rem; } }
 
 .botonCompra:hover {
   background-color: #0078be;
@@ -569,6 +572,9 @@ a:hover {
 .parrafoDivProductos {
   font-size: 1.1rem;
   text-align: justify; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .parrafoDivProductos {
+      width: 90%; } }
 
 .subParrafoProductos {
   font-size: 1.1rem;
@@ -1036,6 +1042,10 @@ p b {
   margin-bottom: 3rem;
   margin-top: 2rem;
   text-decoration: underline; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloPrincipalMotores {
+      margin-left: 1rem;
+      font-size: 2.1rem; } }
 
 .tipoMotor {
   margin-top: 0.63;
@@ -1043,6 +1053,10 @@ p b {
   margin-left: 5.5rem;
   color: #005fa4;
   font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tipoMotor {
+      margin-left: 1rem;
+      font-size: 1.9rem; } }
 
 /**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS, VARIADORES**/
 .tituloArranques {
@@ -1106,12 +1120,18 @@ p b {
   text-align: center;
   color: #005fa4;
   margin-top: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloProductosControl {
+      font-size: 2.2rem; } }
 
 .modeloControles {
   font-size: 2rem;
   text-align: center;
   color: #005fa4;
   margin: 2rem 0rem 2rem 0rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .modeloControles {
+      font-size: 1.8rem; } }
 
 .itemControles {
   font-weight: bold;
@@ -1371,11 +1391,22 @@ textarea {
   width: 30rem;
   height: 25rem;
   margin: 8rem 0rem 0rem 5rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenArranques {
+      margin-left: -2rem;
+      width: 30rem;
+      height: 22rem; } }
 
 .imagenArranquesTres {
   width: 40rem;
   height: 35rem;
   margin: 8rem 0rem 0rem 0rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenArranquesTres {
+      margin-left: -2rem;
+      margin-top: -1rem;
+      width: 30rem;
+      height: 22rem; } }
 
 /**IMAGENES VARIADORES**/
 .imagenVariadores {

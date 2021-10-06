@@ -248,6 +248,10 @@
     background-color: $colorAzul;
     border-radius: 4.38rem;
     border: 0px;
+
+    @include telefono{
+        margin-left: 4rem;
+    }
 }
 
 .botonCompra:hover{
@@ -305,6 +309,10 @@
 .parrafoDivProductos{
     font-size: 1.1rem;
     text-align:justify ;
+
+    @include telefono{
+        width: 90%;
+    }
 }
 
 .subParrafoProductos{
