@@ -1246,17 +1246,16 @@ p b {
   font-weight: bold; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloFormulario {
-      margin-top: 4rem; } }
+      margin-top: 3rem; } }
 
 .formularioContacto {
   background-color: white;
   width: 30rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .formularioContacto {
-      width: 90%;
+      width: 80%;
       margin-top: 2rem;
-      margin-left: 2px;
-      margin-bottom: 1rem; } }
+      margin-left: 2px; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .formularioContacto {
       width: 80%;
@@ -1278,6 +1277,9 @@ textarea {
 
 .botonFormulario {
   margin-top: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonFormulario {
+      margin-bottom: 1rem; } }
 
 /**IMAGENES INDEX**/
 .imagenes {
@@ -1499,9 +1501,9 @@ textarea {
   height: 400px; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mapaContacto {
-      width: 100%;
+      width: 85%;
       height: 20rem;
-      margin-left: -1rem; } }
+      margin-left: -1.5rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .mapaContacto {
       width: 100%;

@@ -25,7 +25,7 @@
     font-weight: bold;
 
     @include telefono{
-        margin-top: 4rem;     
+        margin-top: 3rem;     
     }
 }
 
@@ -34,10 +34,9 @@
     width: 30rem;
 
     @include telefono{
-        width: 90%;
+        width: 80%;
         margin-top: 2rem;
         margin-left: 2px;
-        margin-bottom: 1rem;
        }
 
     @include tablet{
@@ -65,4 +64,8 @@ textarea{
 
 .botonFormulario{
     margin-top: 1rem;
+
+    @include telefono{
+        margin-bottom: 1rem;
+    }
 }
