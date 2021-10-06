@@ -39,7 +39,9 @@
     margin-top: 1.4rem;
 
     @include telefono{
-        font-size: 1.2rem;   
+        font-size: 1.2rem;
+        width: 90%; 
+        margin-left: -1rem;
     }
     @include tablet{
         font-size: 1rem    
@@ -577,6 +579,10 @@
 .buscadorManuales{
     background-color: rgb(45, 112, 134);
     padding: 1rem;
+
+    @include telefono{
+        width: 100%;
+    }
 }
 
 .itemsBuscadorManuales{

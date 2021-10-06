@@ -13,7 +13,7 @@
         width: 100% ;
         font-size: 1.72rem;
         margin-left: -1rem;
-        margin-top: -2rem;
+        margin-top: -2.5rem;
        }
        @include tablet{
         margin-left: -3rem;    
@@ -28,8 +28,9 @@
     font-weight: bold;
 
     @include telefono{
-        font-size: 1.5rem;   
+        font-size: 1.6rem;   
         margin-bottom: 2rem;
+        margin-left: -1rem;
        }
     
     @include tablet{
@@ -50,8 +51,9 @@
     font-weight: bold;
 
     @include telefono{
-        font-size: 1.5rem;   
+        font-size: 1.4rem;   
         margin-bottom: 2rem;
+        margin-left: -1rem;
     }
     @include tablet{
         font-size: 1.5rem;
@@ -317,6 +319,11 @@
     margin-bottom: 1.5rem;
     text-decoration: underline;
     font-weight: bolder;
+
+    @include telefono{
+        margin-left: 1rem;
+        font-size: 1.6rem;
+    }
 }
 
 

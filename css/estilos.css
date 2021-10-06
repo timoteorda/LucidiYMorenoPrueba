@@ -28,7 +28,7 @@ header {
 /**INDEX**/
 .mainIndex {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.1fr 0.8fr 1fr;
+  grid-template-rows: 20rem 20 rem 20rem;
   grid-template-areas: "banner         banner           banner" "productos      productos        productos" "presentacion   presentacion     presentacion"; }
 
 .banner {
@@ -359,7 +359,9 @@ a:hover {
   margin-top: 1.4rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoProductoIndex {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      width: 90%;
+      margin-left: -1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoProductoIndex {
       font-size: 1rem; } }
@@ -776,6 +778,9 @@ a:hover {
 .buscadorManuales {
   background-color: #2d7086;
   padding: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .buscadorManuales {
+      width: 100%; } }
 
 .itemsBuscadorManuales {
   margin-left: 4rem;
@@ -933,7 +938,7 @@ p b {
       width: 100%;
       font-size: 1.72rem;
       margin-left: -1rem;
-      margin-top: -2rem; } }
+      margin-top: -2.5rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .titulo {
       margin-left: -3rem; } }
@@ -946,8 +951,9 @@ p b {
   font-weight: bold; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosIndex {
-      font-size: 1.5rem;
-      margin-bottom: 2rem; } }
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      margin-left: -1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosIndex {
       font-size: 1.5rem;
@@ -964,8 +970,9 @@ p b {
   font-weight: bold; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosVariador {
-      font-size: 1.5rem;
-      margin-bottom: 2rem; } }
+      font-size: 1.4rem;
+      margin-bottom: 2rem;
+      margin-left: -1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosVariador {
       font-size: 1.5rem; } }
@@ -1179,6 +1186,10 @@ p b {
   margin-bottom: 1.5rem;
   text-decoration: underline;
   font-weight: bolder; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .nombreProductoManual {
+      margin-left: 1rem;
+      font-size: 1.6rem; } }
 
 /**TITULOS NOSOTROS**/
 .tituloNosotros {
@@ -1291,7 +1302,7 @@ textarea {
   border-radius: 50px; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenes {
-      margin-left: 1rem; } }
+      margin-left: -1.4rem; } }
 
 .imagenes:hover {
   width: 15rem;
