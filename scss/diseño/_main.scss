@@ -176,7 +176,7 @@
     margin-top: 1.56rem;
 
     @include telefono{
-        margin-left: 3%;
+        margin-left: 2rem;
     }
 }
 
@@ -596,7 +596,7 @@
     padding: 1rem;
 
     @include telefono{
-        width: 121%;
+        width: 120%;
     }
 }
 
@@ -704,8 +704,9 @@ td a{
 .parrafoNosotros{
     line-height: 1.8rem;
     margin-left: 3.5rem;
+    
     @include telefono{
-        width: 80%;
+        width: 90%;
     }
 }
 

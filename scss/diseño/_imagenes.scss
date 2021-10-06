@@ -64,7 +64,7 @@
     margin-top: 1.25rem;   
     
     @include telefono{
-        margin-left: 10%;
+        margin-left: 3rem;
        }
 
 }
@@ -295,7 +295,7 @@
     height: 400px;
 
     @include telefono{
-        width: 70%;
+        width: 90%;
         height: 20rem;
     }
 

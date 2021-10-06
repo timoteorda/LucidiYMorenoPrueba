@@ -114,6 +114,10 @@
     font-weight: bold;
     color: $colorAzul;
     margin-left: 2.5rem;
+
+    @include telefono{
+        margin-left: 0rem;
+    }
 }
 
 .tituloProductos:hover{

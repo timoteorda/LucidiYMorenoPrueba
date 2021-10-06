@@ -464,7 +464,7 @@ a:hover {
   margin-top: 1.56rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoDescriptivo {
-      margin-left: 3%; } }
+      margin-left: 2rem; } }
 
 .productosUbicacion {
   align-self: center;
@@ -792,7 +792,7 @@ a:hover {
   padding: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .buscadorManuales {
-      width: 121%; } }
+      width: 120%; } }
 
 .itemsBuscadorManuales {
   margin-left: 4rem;
@@ -877,7 +877,7 @@ td a {
   margin-left: 3.5rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoNosotros {
-      width: 80%; } }
+      width: 90%; } }
 
 p b {
   display: block; }
@@ -1043,6 +1043,9 @@ p b {
   font-weight: bold;
   color: #005fa4;
   margin-left: 2.5rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloProductos {
+      margin-left: 0rem; } }
 
 .tituloProductos:hover {
   color: black; }
@@ -1401,7 +1404,7 @@ textarea {
   margin-top: 1.25rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenesPaginaProducto {
-      margin-left: 10%; } }
+      margin-left: 3rem; } }
 
 .imagenesPaginaProducto:hover {
   width: 18rem;
@@ -1582,7 +1585,7 @@ textarea {
   height: 400px; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mapaContacto {
-      width: 70%;
+      width: 90%;
       height: 20rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .mapaContacto {
