@@ -298,8 +298,7 @@
                                                             /**TITULOS BALANCEO**/
 
 .tituloServicioBalanceo{
-    padding: 1rem;
-    margin-left: 8rem;
+    text-align: center;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
@@ -307,7 +306,7 @@
 
     @include telefono{
         font-size: 2rem;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
 }
