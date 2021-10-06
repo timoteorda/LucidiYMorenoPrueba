@@ -243,6 +243,7 @@
 
     @include tablet{
         width: 15rem;
+        height: 10rem;
         margin-left: -9rem;
         margin-top: -3rem;
     }
@@ -269,6 +270,7 @@
 
     @include tablet{
         width: 15rem;
+        height: 10rem;
         margin-top: -3rem;
         margin-left: 5rem;
     }
