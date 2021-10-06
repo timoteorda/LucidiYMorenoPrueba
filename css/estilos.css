@@ -869,7 +869,8 @@ p b {
   grid-area: contacto; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .contacto {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .contacto {
       flex-direction: column; } }

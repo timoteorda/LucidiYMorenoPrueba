@@ -699,6 +699,7 @@ p b{
 
     @include telefono{
         flex-direction: column;
+        margin-bottom: 2rem;
     }
 
     @include tablet{
