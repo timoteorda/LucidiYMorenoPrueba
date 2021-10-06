@@ -450,6 +450,11 @@ a:hover {
   font-weight: bold;
   color: black; }
 
+.telefonoIndex {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
 /****************************FIN DEL INDEX******************************/
 /****************************INICIO PRODUCTOS******************************/
 .parrafoDescriptivo {
