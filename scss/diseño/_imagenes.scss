@@ -280,9 +280,9 @@
     height: 400px;
 
     @include telefono{
-        width: 80%;
+        width: 100%;
         height: 20rem;
-        margin-left: -2.7rem;
+        margin-left: -1rem;
     }
 
     @include tablet{
