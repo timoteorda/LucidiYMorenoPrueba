@@ -726,8 +726,7 @@ a:hover {
   width: 55%; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cuerpoBalanceo {
-      width: 90%;
-      margin-top: -5rem; } }
+      width: 90%; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .cuerpoBalanceo {
       width: 90%; } }
@@ -1175,11 +1174,16 @@ p b {
 
 /**TITULOS BALANCEO**/
 .tituloServicioBalanceo {
+  padding: 1rem;
   margin-left: 8rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
   color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloServicioBalanceo {
+      font-size: 2rem;
+      margin-left: 1rem; } }
 
 /**TITULOS MANTENIMIENTO**/
 .tituloServicioMantenimiento {
