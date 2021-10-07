@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 /*EXTENDS*/
 .mainIndex, .productosProductos, .mainMotoresElectricos, .mainControl, .mainBalanceo, .mainManuales {
   grid-area: main;
@@ -14,7 +19,9 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-areas: "header header header"
+ "main main main"
+ "footer footer footer";
   height: 100vh;
   font-family: 'Manrope', sans-serif; }
 
@@ -29,7 +36,9 @@ header {
 .mainIndex {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20rem 20 rem 20rem;
-  grid-template-areas: "banner         banner           banner" "productos      productos        productos" "presentacion   presentacion     presentacion"; }
+  grid-template-areas: "banner         banner           banner"
+ "productos      productos        productos"
+ "presentacion   presentacion     presentacion"; }
 
 .banner {
   grid-area: banner;
@@ -53,7 +62,8 @@ header {
 .productosProductos {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "banner" "productos"; }
+  grid-template-areas: "banner"
+ "productos"; }
 
 .mainProductos {
   grid-area: productos;
@@ -78,7 +88,10 @@ header {
 .mainMotoresElectricos {
   grid-template-columns: 50% 50%;
   grid-template-rows: 12.5rem,5rem,12.5rem,12.5rem;
-  grid-template-areas: "banner        banner" "titulo        titulo" "producto      producto" "producto      producto"; }
+  grid-template-areas: "banner        banner"
+ "titulo        titulo"
+ "producto      producto"
+ "producto      producto"; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mainMotoresElectricos {
       display: flex;
@@ -102,7 +115,11 @@ header {
 .mainControl {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.2fr 1fr 1fr;
-  grid-template-areas: "banner banner banner" "titulo titulo titulo" "producto producto producto" "producto producto producto" "producto producto producto";
+  grid-template-areas: "banner banner banner"
+ "titulo titulo titulo"
+ "producto producto producto"
+ "producto producto producto"
+ "producto producto producto";
   column-gap: 2rem;
   row-gap: 2rem;
   margin-bottom: 2rem; }
@@ -143,13 +160,15 @@ header {
 
 /**SERVICIOS**/
 .servicios {
-  grid-template-areas: "banner         banner " "servicios      servicios"; }
+  grid-template-areas: "banner         banner "
+ "servicios      servicios"; }
 
 /**BALANCEO DINAMICO**/
 .mainBalanceo {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr 1fr;
-  grid-template-areas: "banner banner" "body body"; }
+  grid-template-areas: "banner banner"
+ "body body"; }
 
 .balanceoOrden {
   grid-area: body;
@@ -165,27 +184,32 @@ header {
 
 /**MANTENIMIENTO DE MOTORES **/
 .mantenimiento {
-  grid-template-areas: "banner banner" "body body"; }
+  grid-template-areas: "banner banner"
+ "body body"; }
 
 /**INICIO REPARACION**/
 .reparacion {
-  grid-template-areas: "banner banner" "body body";
+  grid-template-areas: "banner banner"
+ "body body";
   margin-bottom: 8rem; }
 
 /** MANUALES**/
 .mainManuales {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "banner" "manuales";
+  grid-template-areas: "banner"
+ "manuales";
   margin-bottom: 2rem; }
 
 /**INICIO NOSOTROS**/
 .mainNosotros {
-  grid-template-areas: "banner         banner" "nosotros      nosotros"; }
+  grid-template-areas: "banner         banner"
+ "nosotros      nosotros"; }
 
 /**INICIO CONTACTO**/
 .mainContacto {
-  grid-template-areas: "banner         banner" "contacto       contacto"; }
+  grid-template-areas: "banner         banner"
+ "contacto       contacto"; }
 
 .navegacion {
   background-color: white !important;
@@ -960,7 +984,8 @@ p b {
       font-size: 1.72rem;
       margin-left: -1rem;
       margin-top: -1.2rem;
-      text-decoration: underline; } }
+      text-decoration: underline;
+      font-weight: bold; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .titulo {
       margin-left: -3rem; } }
@@ -1190,7 +1215,7 @@ p b {
 /**TITULOS BALANCEO**/
 .tituloServicioBalanceo {
   text-align: center;
-  margin-top: 0.2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   font-weight: bold;
   color: #005fa4; }
