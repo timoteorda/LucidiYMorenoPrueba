@@ -155,7 +155,7 @@ header {
   grid-area: body;
   display: flex;
   flex-direction: row;
-  margin-bottom: 2rem; }
+  margin-bottom: 0.2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .balanceoOrden {
       flex-direction: column; } }

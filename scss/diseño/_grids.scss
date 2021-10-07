@@ -225,7 +225,7 @@ header{
     grid-area: body;
     display: flex;
     flex-direction: row;
-    margin-bottom: 2rem;
+    margin-bottom: 0.2rem;
 
     @include telefono{
         flex-direction: column;
