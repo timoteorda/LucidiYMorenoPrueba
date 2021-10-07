@@ -150,7 +150,6 @@ header{
     "producto producto producto"
     "producto producto producto"
     "producto producto producto";
-    ;
     column-gap: 2rem;
     row-gap: 2rem;
     margin-bottom: 2rem;
@@ -162,9 +161,18 @@ header{
     }
 
     @include tablet{
-        display: flex;
-        flex-direction: column;
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.3fr 1fr;
+        grid-template-areas:    
+        "banner banner"
+        "titulo titulo"
+        "producto producto"
+        "producto producto"
+        "producto producto"
+        "producto producto"
+        ;
     }
     
 }        

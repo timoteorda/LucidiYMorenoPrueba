@@ -155,13 +155,39 @@
     }
 
     @include tablet{
-        width: 40%;
-        height: 15rem;
-        margin-left: 14rem;
+        width: 15rem;
+        height: 12rem;
+        margin-left: 2.5rem;
     }
 }
 
 .imagenControl:hover{
+    width: 24rem;
+    height: 19rem;
+}
+
+.imagenControlMando{
+    width: 22rem;
+    height: 17rem;
+    border: solid 2px $colorAzul;
+    border-radius: 70px;
+    margin-left: 1.8rem;
+
+    @include telefono{
+        width: 80%;
+        height: 15rem;
+        margin-left: 1rem;
+    }
+
+    @include tablet{
+        width: 15rem;
+        height: 12rem;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
+    }
+}
+
+.imagenControlMando:hover{
     width: 24rem;
     height: 19rem;
 }
@@ -255,7 +281,7 @@
        }
 
     @include tablet{
-        width: 20rem;
+        width: 24rem;
         height: 15rem;
         margin-left: -9rem;
         margin-top: -3rem;
@@ -282,10 +308,10 @@
        }
 
     @include tablet{
-        width: 20rem;
+        width: 24rem;
         height: 15rem;
         margin-top: -3rem;
-        margin-left: 5rem;
+        margin-left: 3rem;
     }
 }
 

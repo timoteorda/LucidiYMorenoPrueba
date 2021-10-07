@@ -91,6 +91,10 @@ textarea{
         width: 18rem;
     }
 
+    @include tablet{
+        width: 34rem;
+    }
+
     
 }
 

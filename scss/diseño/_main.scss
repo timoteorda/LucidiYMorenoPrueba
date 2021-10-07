@@ -468,9 +468,9 @@
     }
 
     @include tablet{
-        width: 90%;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        width: 80%;
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
@@ -659,6 +659,10 @@ td a{
 
     @include telefono{
         margin-left: 92%;
+    }
+
+    @include tablet{
+        margin-left: 90%;
     }
 }
 

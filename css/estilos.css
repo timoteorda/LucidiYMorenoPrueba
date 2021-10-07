@@ -1,8 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-}
-
 /*EXTENDS*/
 .mainIndex, .productosProductos, .mainMotoresElectricos, .mainControl, .mainBalanceo, .mainManuales {
   grid-area: main;
@@ -19,9 +14,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.5fr 1fr 1fr;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer";
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
   height: 100vh;
   font-family: 'Manrope', sans-serif; }
 
@@ -36,9 +29,7 @@ header {
 .mainIndex {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 20rem 20 rem 20rem;
-  grid-template-areas: "banner         banner           banner"
- "productos      productos        productos"
- "presentacion   presentacion     presentacion"; }
+  grid-template-areas: "banner         banner           banner" "productos      productos        productos" "presentacion   presentacion     presentacion"; }
 
 .banner {
   grid-area: banner;
@@ -47,7 +38,7 @@ header {
     .banner {
       width: 100%;
       margin-top: 1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .banner {
       width: 100%; } }
 
@@ -62,8 +53,7 @@ header {
 .productosProductos {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "banner"
- "productos"; }
+  grid-template-areas: "banner" "productos"; }
 
 .mainProductos {
   grid-area: productos;
@@ -77,7 +67,7 @@ header {
       width: 100%;
       display: flex;
       flex-direction: column; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .mainProductos {
       width: 100%;
       display: grid;
@@ -88,16 +78,13 @@ header {
 .mainMotoresElectricos {
   grid-template-columns: 50% 50%;
   grid-template-rows: 12.5rem,5rem,12.5rem,12.5rem;
-  grid-template-areas: "banner        banner"
- "titulo        titulo"
- "producto      producto"
- "producto      producto"; }
+  grid-template-areas: "banner        banner" "titulo        titulo" "producto      producto" "producto      producto"; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mainMotoresElectricos {
       display: flex;
       flex-direction: column;
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .mainMotoresElectricos {
       display: flex;
       flex-direction: column;
@@ -115,11 +102,7 @@ header {
 .mainControl {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 0.2fr 1fr 1fr;
-  grid-template-areas: "banner banner banner"
- "titulo titulo titulo"
- "producto producto producto"
- "producto producto producto"
- "producto producto producto";
+  grid-template-areas: "banner banner banner" "titulo titulo titulo" "producto producto producto" "producto producto producto" "producto producto producto";
   column-gap: 2rem;
   row-gap: 2rem;
   margin-bottom: 2rem; }
@@ -128,11 +111,13 @@ header {
       display: flex;
       flex-direction: column;
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .mainControl {
-      display: flex;
-      flex-direction: column;
-      width: 100%; } }
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 0.3fr 1fr;
+      grid-template-areas: "banner banner" "titulo titulo" "producto producto" "producto producto" "producto producto" "producto producto"; } }
 
 .mainInterruptores {
   grid-area: main; }
@@ -160,15 +145,13 @@ header {
 
 /**SERVICIOS**/
 .servicios {
-  grid-template-areas: "banner         banner "
- "servicios      servicios"; }
+  grid-template-areas: "banner         banner " "servicios      servicios"; }
 
 /**BALANCEO DINAMICO**/
 .mainBalanceo {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.3fr 1fr;
-  grid-template-areas: "banner banner"
- "body body"; }
+  grid-template-areas: "banner banner" "body body"; }
 
 .balanceoOrden {
   grid-area: body;
@@ -178,38 +161,33 @@ header {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .balanceoOrden {
       flex-direction: column; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .balanceoOrden {
       flex-direction: column; } }
 
 /**MANTENIMIENTO DE MOTORES **/
 .mantenimiento {
-  grid-template-areas: "banner banner"
- "body body"; }
+  grid-template-areas: "banner banner" "body body"; }
 
 /**INICIO REPARACION**/
 .reparacion {
-  grid-template-areas: "banner banner"
- "body body";
+  grid-template-areas: "banner banner" "body body";
   margin-bottom: 8rem; }
 
 /** MANUALES**/
 .mainManuales {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "banner"
- "manuales";
+  grid-template-areas: "banner" "manuales";
   margin-bottom: 2rem; }
 
 /**INICIO NOSOTROS**/
 .mainNosotros {
-  grid-template-areas: "banner         banner"
- "nosotros      nosotros"; }
+  grid-template-areas: "banner         banner" "nosotros      nosotros"; }
 
 /**INICIO CONTACTO**/
 .mainContacto {
-  grid-template-areas: "banner         banner"
- "contacto       contacto"; }
+  grid-template-areas: "banner         banner" "contacto       contacto"; }
 
 .navegacion {
   background-color: white !important;
@@ -219,7 +197,7 @@ header {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .navegacion {
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .navegacion {
       width: 100%; } }
 
@@ -248,7 +226,7 @@ footer {
     .piePagina {
       flex-direction: column;
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .piePagina {
       flex-direction: column;
       width: 100%; } }
@@ -259,7 +237,7 @@ footer {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .footerProductos {
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .footerProductos {
       width: 100%; } }
 
@@ -288,7 +266,7 @@ footer {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .footerServicios {
       width: 90%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .footerServicios {
       width: 90%; } }
 
@@ -298,7 +276,7 @@ footer {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .footerHorarios {
       width: 90%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .footerHorarios {
       width: 90%; } }
 
@@ -311,7 +289,7 @@ footer {
     .footerPresentacion {
       width: 90%;
       margin-left: 1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .footerPresentacion {
       width: 90%;
       margin-left: 1rem; } }
@@ -326,7 +304,7 @@ footer {
     .finalFooter {
       width: 100%;
       height: 4rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .finalFooter {
       width: 100%; } }
 
@@ -367,7 +345,7 @@ a:hover {
     flex-direction: column;
     margin-left: 2rem; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .flexProductos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -386,7 +364,7 @@ a:hover {
       font-size: 1.2rem;
       width: 90%;
       margin-left: -1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .parrafoProductoIndex {
       font-size: 1rem; } }
 
@@ -394,7 +372,7 @@ a:hover {
   .presentacionFlex {
     flex-direction: column; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .presentacionFlex {
     flex-direction: column; } }
 
@@ -407,7 +385,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .itemUno {
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .itemUno {
       width: 100%; } }
 
@@ -419,7 +397,7 @@ a:hover {
       width: 90%;
       margin-left: -2.5rem;
       font-size: 1.4rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .parrafoPresentacion {
       width: 90%;
       margin-left: -2.5rem;
@@ -434,7 +412,7 @@ a:hover {
       width: 90%;
       margin-left: -2.5rem;
       font-size: 1.4rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .subParrafoPresentacion {
       width: 90%;
       margin-left: -2.5rem;
@@ -446,7 +424,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .itemDos {
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .itemDos {
       width: 100%; } }
 
@@ -456,7 +434,7 @@ a:hover {
     .dondeEstamos {
       width: 100%;
       margin-left: -1.5rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .dondeEstamos {
       width: 100%;
       margin-left: -1.5rem; } }
@@ -466,7 +444,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoUbicacion {
       font-size: 1.2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .parrafoUbicacion {
       font-size: 1.2rem; } }
 
@@ -528,7 +506,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .botonCompraProductos {
       margin-left: 5rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .botonCompraProductos {
       margin-left: 18rem; } }
 
@@ -581,7 +559,7 @@ a:hover {
     width: 90%;
     margin-bottom: 2rem; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .productosDiv {
     display: flex;
     flex-direction: column;
@@ -594,7 +572,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .bloqueDivProductos {
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .bloqueDivProductos {
       width: 90%; } }
 
@@ -624,7 +602,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .botonVolver {
       margin-left: 1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .botonVolver {
       margin-left: 88%; } }
 
@@ -649,7 +627,7 @@ a:hover {
       flex-direction: column;
       width: 90%;
       margin-bottom: 2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .controles {
       display: flex;
       flex-direction: column;
@@ -661,7 +639,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .interruptoresTexto {
       width: 80%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .interruptoresTexto {
       width: 80%; } }
 
@@ -670,7 +648,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .controlesTexto {
       width: 80%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .controlesTexto {
       width: 80%; } }
 
@@ -692,7 +670,7 @@ a:hover {
       display: flex;
       flex-direction: column;
       width: 100%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .paginaServicios {
       display: flex;
       flex-direction: column;
@@ -704,7 +682,7 @@ a:hover {
     .textoServicios {
       width: 90%;
       margin-left: 1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .textoServicios {
       width: 100%; } }
 
@@ -717,11 +695,11 @@ a:hover {
     .parrafoDescriptivoServicios {
       width: 100%;
       margin-left: 0rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .parrafoDescriptivoServicios {
-      width: 90%;
-      margin-left: 1rem;
-      margin-right: 1rem; } }
+      width: 80%;
+      margin-left: 5rem;
+      margin-right: 5rem; } }
 
 .botonVerMas {
   font-weight: bold;
@@ -730,7 +708,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .botonVerMas {
       margin-left: 40%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .botonVerMas {
       margin-left: 40%; } }
 
@@ -757,7 +735,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cuerpoBalanceo {
       width: 90%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .cuerpoBalanceo {
       width: 90%; } }
 
@@ -766,7 +744,7 @@ a:hover {
   .organizacionServicios {
     flex-direction: column; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .organizacionServicios {
     flex-direction: column;
     margin-bottom: 4rem; } }
@@ -777,7 +755,7 @@ a:hover {
     .infoMantenimiento {
       width: 90%;
       font-size: 1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .infoMantenimiento {
       width: 90%; } }
 
@@ -794,7 +772,7 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .infoReparacion {
       width: 90%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .infoReparacion {
       width: 90%; } }
 
@@ -807,7 +785,7 @@ a:hover {
     .cuadrosManuales {
       width: 90%;
       margin-left: -2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .cuadrosManuales {
       width: 100%; } }
 
@@ -867,6 +845,9 @@ td a {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .divBotonManual {
       margin-left: 92%; } }
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
+    .divBotonManual {
+      margin-left: 90%; } }
 
 .botonArribaManuales {
   width: 2.5rem;
@@ -880,7 +861,7 @@ td a {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .contenidoNosotros {
       flex-direction: column; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .contenidoNosotros {
       flex-direction: column; } }
 
@@ -891,7 +872,7 @@ td a {
     .cuerpoNosotros {
       width: 95%;
       margin-left: -2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .cuerpoNosotros {
       width: 95%;
       margin-left: -2rem; } }
@@ -926,7 +907,7 @@ p b {
     .contacto {
       flex-direction: column;
       margin-bottom: 2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .contacto {
       flex-direction: column; } }
 
@@ -936,7 +917,7 @@ p b {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cuerpoContacto {
       width: 90%; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .cuerpoContacto {
       width: 90%; } }
 
@@ -986,7 +967,7 @@ p b {
       margin-top: -1.2rem;
       text-decoration: underline;
       font-weight: bold; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .titulo {
       margin-left: -3rem; } }
 
@@ -1001,7 +982,7 @@ p b {
       font-size: 1.6rem;
       margin-bottom: 2rem;
       margin-left: -1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloProductosIndex {
       font-size: 1.5rem;
       margin-left: 0.7rem; } }
@@ -1020,7 +1001,7 @@ p b {
       font-size: 1.4rem;
       margin-bottom: 2rem;
       margin-left: -1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloProductosVariador {
       font-size: 1.5rem; } }
 
@@ -1038,7 +1019,7 @@ p b {
     .tituloInfo {
       font-size: 2rem;
       margin-left: 2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloInfo {
       font-size: 2rem;
       margin-left: 10rem; } }
@@ -1050,7 +1031,7 @@ p b {
   text-decoration: underline;
   color: black;
   margin-bottom: 2rem; }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloDondeEstamos {
       font-size: 2rem;
       margin: 1rem 0rem 1.5rem 2rem; } }
@@ -1134,7 +1115,7 @@ p b {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloPrincipalControl {
       font-size: 1.8rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloPrincipalControl {
       font-size: 2rem; } }
 
@@ -1143,9 +1124,10 @@ p b {
   color: #005fa4;
   font-weight: 600;
   text-align: center; }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloControles {
-      font-size: 1.6rem; } }
+      font-size: 1.6rem;
+      margin-left: -1rem; } }
 
 .tituloControles:hover {
   color: black; }
@@ -1155,9 +1137,10 @@ p b {
   color: #005fa4;
   font-weight: 600;
   margin-left: 2rem; }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloControlesFactor {
-      margin-left: 10.5rem; } }
+      margin-left: 1rem;
+      font-size: 1.6rem; } }
 
 .tituloControlesFactor:hover {
   color: black; }
@@ -1195,10 +1178,16 @@ p b {
   color: #005fa4;
   margin: 2rem 0rem 2rem 0rem;
   text-align: center;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-size: 2.5rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloServicios {
       font-size: 2.2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
+    .tituloServicios {
+      font-weight: bold;
+      font-size: 2.5rem;
+      margin-left: 2rem; } }
 
 .tituloServiciosEnMain {
   font-size: 2rem;
@@ -1324,7 +1313,7 @@ p b {
     width: 80%;
     margin-left: 1rem; } }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 426px) and (max-width: 1024px) {
   .formServicios {
     width: 80%;
     margin-bottom: 2rem;
@@ -1349,7 +1338,7 @@ p b {
       width: 80%;
       margin-top: 2rem;
       margin-left: 2px; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .formularioContacto {
       width: 80%;
       margin-top: 2rem;
@@ -1393,6 +1382,9 @@ textarea {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .formControl {
       width: 18rem; } }
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
+    .formControl {
+      width: 34rem; } }
 
 /**IMAGENES INDEX**/
 .imagenes {
@@ -1419,7 +1411,7 @@ textarea {
       width: 90%;
       height: 30rem;
       margin-left: -3rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .mapaIndex {
       width: 90%;
       height: 30rem;
@@ -1430,7 +1422,7 @@ textarea {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .mapaIndexFrente {
       display: none; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .mapaIndexFrente {
       width: 90%;
       height: 30rem;
@@ -1495,7 +1487,7 @@ textarea {
       width: 20rem;
       height: 15rem;
       margin: 2rem 0rem 0rem 2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenVariadores {
       width: 25rem;
       height: 20rem; } }
@@ -1512,13 +1504,35 @@ textarea {
       width: 80%;
       height: 15rem;
       margin-left: 1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenControl {
-      width: 40%;
-      height: 15rem;
-      margin-left: 14rem; } }
+      width: 15rem;
+      height: 12rem;
+      margin-left: 2.5rem; } }
 
 .imagenControl:hover {
+  width: 24rem;
+  height: 19rem; }
+
+.imagenControlMando {
+  width: 22rem;
+  height: 17rem;
+  border: solid 2px #005fa4;
+  border-radius: 70px;
+  margin-left: 1.8rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenControlMando {
+      width: 80%;
+      height: 15rem;
+      margin-left: 1rem; } }
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
+    .imagenControlMando {
+      width: 15rem;
+      height: 12rem;
+      margin-left: 2.5rem;
+      margin-top: 2rem; } }
+
+.imagenControlMando:hover {
   width: 24rem;
   height: 19rem; }
 
@@ -1529,7 +1543,7 @@ textarea {
     .imagenInterruptor {
       width: 80%;
       height: 15rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenInterruptor {
       width: 70%;
       height: 25rem;
@@ -1552,7 +1566,7 @@ textarea {
       width: 90%;
       height: 15rem;
       margin-left: -1rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenAccesorio {
       width: 70%;
       height: 25rem;
@@ -1567,7 +1581,7 @@ textarea {
       width: 60%rem;
       height: 20rem;
       margin-left: -5rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenCorreccion {
       width: 30rem;
       height: 20rem;
@@ -1578,7 +1592,7 @@ textarea {
   width: 40%;
   margin-left: 14rem;
   align-self: flex-start; }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenesNosotros {
       position: relative;
       display: flex;
@@ -1592,9 +1606,9 @@ textarea {
       margin-left: -12.5rem;
       width: 18rem;
       margin-top: 2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenNosotros {
-      width: 20rem;
+      width: 24rem;
       height: 15rem;
       margin-left: -9rem;
       margin-top: -3rem; } }
@@ -1614,12 +1628,12 @@ textarea {
       margin-left: -12.5rem;
       width: 18rem;
       margin-top: 2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .imagenNosotrosDos {
-      width: 20rem;
+      width: 24rem;
       height: 15rem;
       margin-top: -3rem;
-      margin-left: 5rem; } }
+      margin-left: 3rem; } }
 
 .mapaContacto {
   margin-top: 1rem;
@@ -1629,7 +1643,7 @@ textarea {
     .mapaContacto {
       width: 90%;
       height: 20rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
+  @media screen and (min-width: 426px) and (max-width: 1024px) {
     .mapaContacto {
       width: 100%;
       height: 20rem; } }
