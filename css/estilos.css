@@ -443,7 +443,8 @@ a:hover {
   font-size: 1.4rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoUbicacion {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      width: 15rem; } }
   @media screen and (min-width: 426px) and (max-width: 1024px) {
     .parrafoUbicacion {
       font-size: 1.2rem; } }

@@ -142,7 +142,8 @@
     font-size: 1.4rem;
 
     @include telefono{
-        font-size: 1.2rem;   
+        font-size: 1.2rem;
+        width: 15rem;  
     }
     
     @include tablet{
