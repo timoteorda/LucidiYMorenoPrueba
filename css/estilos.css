@@ -457,6 +457,9 @@ a:hover {
   color: black;
   font-size: 1.4rem;
   font-weight: bold; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .telefonoIndex {
+      font-size: 1.6rem; } }
 
 /****************************FIN DEL INDEX******************************/
 /****************************INICIO PRODUCTOS******************************/
@@ -964,10 +967,9 @@ p b {
     .titulo {
       width: 100%;
       font-size: 1.72rem;
-      margin-left: -1rem;
-      margin-top: -1.2rem;
-      text-decoration: underline;
-      font-weight: bold; } }
+      margin-left: 1rem;
+      margin-top: -1rem;
+      text-decoration: underline; } }
   @media screen and (min-width: 426px) and (max-width: 1024px) {
     .titulo {
       margin-left: -3rem; } }
@@ -1050,9 +1052,6 @@ p b {
   font-weight: bold;
   color: #005fa4;
   margin-left: 2.5rem; }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    .tituloProductos {
-      margin-left: 0rem; } }
 
 .tituloProductos:hover {
   color: black; }
@@ -1127,8 +1126,7 @@ p b {
   text-align: center; }
   @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloControles {
-      font-size: 1.6rem;
-      margin-left: -1rem; } }
+      font-size: 1.6rem; } }
 
 .tituloControles:hover {
   color: black; }
@@ -1140,8 +1138,7 @@ p b {
   margin-left: 2rem; }
   @media screen and (min-width: 426px) and (max-width: 1024px) {
     .tituloControlesFactor {
-      margin-left: 1rem;
-      font-size: 1.6rem; } }
+      margin-left: 10.5rem; } }
 
 .tituloControlesFactor:hover {
   color: black; }
@@ -1153,7 +1150,8 @@ p b {
   margin-top: 2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosControl {
-      font-size: 2.2rem; } }
+      font-size: 2.4rem;
+      font-weight: bold; } }
 
 .modeloControles {
   font-size: 2rem;
@@ -1179,16 +1177,10 @@ p b {
   color: #005fa4;
   margin: 2rem 0rem 2rem 0rem;
   text-align: center;
-  text-decoration: underline;
-  font-size: 2.5rem; }
+  text-decoration: underline; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloServicios {
       font-size: 2.2rem; } }
-  @media screen and (min-width: 426px) and (max-width: 1024px) {
-    .tituloServicios {
-      font-weight: bold;
-      font-size: 2.5rem;
-      margin-left: 2rem; } }
 
 .tituloServiciosEnMain {
   font-size: 2rem;
@@ -1205,7 +1197,7 @@ p b {
 /**TITULOS BALANCEO**/
 .tituloServicioBalanceo {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   font-weight: bold;
   color: #005fa4; }
@@ -1308,6 +1300,9 @@ p b {
   margin-top: 2rem;
   margin-bottom: 2rem;
   color: #005fa4; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloContacto {
+      margin-top: -2rem; } }
 
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .formServicios {
