@@ -157,9 +157,13 @@
 }
 
 .telefonoIndex{
-    color: black;
+    color: $colorNegro;
     font-size: 1.4rem;
     font-weight: bold;
+
+    @include telefono{
+        font-size: 1.6rem;   
+    }
 }
 
 /****************************FIN DEL INDEX******************************/

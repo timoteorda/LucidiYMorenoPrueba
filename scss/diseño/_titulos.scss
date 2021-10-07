@@ -9,17 +9,16 @@
     text-align: center;
     margin-bottom: 3rem;
 
-        @include telefono{
+    @include telefono{
         width: 100% ;
         font-size: 1.72rem;
-        margin-left: -1rem;
-        margin-top: -1.2rem;
+        margin-left: 1rem;
+        margin-top: -1rem;
         text-decoration: underline;
-        font-weight: bold;
-        }
-        @include tablet{
+       }
+       @include tablet{
         margin-left: -3rem;    
-        }
+    }
 }
 
 .tituloProductosIndex{
@@ -115,10 +114,6 @@
     font-weight: bold;
     color: $colorAzul;
     margin-left: 2.5rem;
-
-    @include telefono{
-        margin-left: 0rem;
-    }
 }
 
 .tituloProductos:hover{
@@ -210,7 +205,6 @@
 
     @include tablet{
         font-size: 1.6rem;
-        margin-left: -1rem;
     }
 }
 
@@ -225,8 +219,7 @@
     margin-left: 2rem;
     
     @include tablet{
-        margin-left: 1rem;
-        font-size: 1.6rem;
+        margin-left: 10.5rem;
     }
     
 }
@@ -280,16 +273,9 @@
     margin: 2rem 0rem 2rem 0rem;
     text-align: center;
     text-decoration: underline;
-    font-size: 2.5rem;
 
     @include telefono{
         font-size: 2.2rem;
-    }
-
-    @include tablet{
-       font-weight: bold;
-       font-size: 2.5rem;
-       margin-left: 2rem;
     }
     
 }
@@ -313,7 +299,7 @@
 
 .tituloServicioBalanceo{
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
     color: $colorAzul;
@@ -442,5 +428,9 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: $colorAzul;
+
+    @include telefono{
+        margin-top: -2rem;
+    }
 }
 
