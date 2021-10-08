@@ -11,8 +11,8 @@
 
     @include telefono{
         width: 100% ;
-        font-size: 1.72rem;
-        margin-left: 1rem;
+        font-size: 1.75rem;
+        margin-left: 0.2rem;
         margin-top: -1rem;
         text-decoration: underline;
        }
@@ -31,7 +31,7 @@
     @include telefono{
         font-size: 1.6rem;   
         margin-bottom: 2rem;
-        margin-left: -1rem;
+        margin-left: -0.8rem;
        }
     
     @include tablet{
@@ -106,6 +106,7 @@
     color: $colorAzul;
     margin-top: 1rem;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 .tituloProductos{
@@ -114,6 +115,11 @@
     font-weight: bold;
     color: $colorAzul;
     margin-left: 2.5rem;
+
+    @include telefono{
+        margin-left: 0rem;
+        font-size: 1.6rem;
+    }
 }
 
 .tituloProductos:hover{
@@ -348,6 +354,10 @@
     margin-top: 1.2rem;
     font-weight: bold;
     color: $colorAzul;
+
+    @include telefono{
+        font-size: 2rem;
+    }
 }
 
 .tituloManuales{
@@ -431,7 +441,7 @@
     color: $colorAzul;
 
     @include telefono{
-        margin-top: -2rem;
+        margin-top: -0.5rem;
     }
 }
 

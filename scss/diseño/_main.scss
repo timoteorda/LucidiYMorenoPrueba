@@ -41,7 +41,7 @@
     @include telefono{
         font-size: 1.2rem;
         width: 90%; 
-        margin-left: -1rem;
+        margin-left: -0.5rem;
     }
     @include tablet{
         font-size: 1rem    
@@ -162,7 +162,7 @@
     font-weight: bold;
 
     @include telefono{
-        font-size: 1.6rem;   
+        font-size: 1.3rem;   
     }
 }
 
@@ -181,7 +181,8 @@
     margin-top: 1.56rem;
 
     @include telefono{
-        margin-left: 2rem;
+        margin-left: 2.5rem;
+        width: 15rem;
     }
 }
 
@@ -601,7 +602,8 @@
     padding: 1rem;
 
     @include telefono{
-        width: 120.5%;
+        width: 121.5%;
+        padding: 0.5rem;
     }
 }
 
@@ -778,7 +780,7 @@ p b{
     margin-left: 1rem;
 
     @include telefono{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
 }
@@ -788,7 +790,7 @@ p b{
     margin-bottom: 2rem;
 
     @include telefono{
-     font-size: 1.3rem;   
+     font-size: 1.1rem;   
     }
 
 }
