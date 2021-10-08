@@ -140,6 +140,11 @@
         margin-left: 1rem;
         font-size: 2.1rem;
     }
+
+    @include tablet{
+        font-size: 2.2rem;
+        font-weight: bold;   
+    }
 }
 
 .tipoMotor{
@@ -153,6 +158,10 @@
         margin-left: 1rem;
         font-size: 1.9rem;
     }
+
+    @include tablet{
+        font-size: 2rem;   
+    }
 }
 
                                          /**TITULOS ARRANQUES,VARIADORES, MOTORES ELECTRICOS,**/
@@ -164,6 +173,10 @@
 
     @include telefono{
         font-size: 2.2rem;
+    }
+
+    @include tablet{
+        font-weight: bold;
     }
 }
                                    
@@ -225,7 +238,7 @@
     margin-left: 2rem;
     
     @include tablet{
-        margin-left: 10.5rem;
+        margin-left: 3rem;
     }
     
 }
@@ -283,6 +296,12 @@
 
     @include telefono{
         font-size: 2.2rem;
+    }
+
+    @include tablet{
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-left: 1rem;
     }
     
 }
