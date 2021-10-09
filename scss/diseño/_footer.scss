@@ -37,6 +37,7 @@ footer{
     text-decoration: none;
     color: $colorBlanco;
     margin-left: 3rem;
+    font-size: 1.2rem;
 }
 
 .tituloFooter:hover{
@@ -47,13 +48,15 @@ footer{
     text-decoration: none;
     color: $colorBlanco;
     margin-left: 3rem;
+    font-size: 1.2rem;
 }
 
 .listaSinDetalle{
     list-style: none;
     color: $colorBlanco;
-    line-height: 1.8rem;
+    line-height: 1.4rem;
     margin-left: 1rem;
+    font-size: 1rem;
 }
 
 .footerServicios{
@@ -100,7 +103,7 @@ footer{
 }
 
 .parrafoFooter{
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 .finalFooter{
