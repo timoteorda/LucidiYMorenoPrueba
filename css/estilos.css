@@ -475,7 +475,7 @@ a:hover {
   text-align: justify;
   width: 18.75rem;
   margin-left: 2.63rem;
-  margin-top: 1.56rem; }
+  margin-top: 1.4rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoDescriptivo {
       margin-left: 2.5rem;
@@ -607,7 +607,7 @@ a:hover {
 /*********************INICIO CONTROL Y PROTECCION**********************/
 .control {
   margin-left: 1rem;
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
 .botonVolver {
   width: 5rem;
@@ -1483,8 +1483,7 @@ textarea {
       margin-left: 2rem; } }
 
 .imagenesPaginaProducto:hover {
-  width: 18rem;
-  height: 18rem; }
+  transform: scale(1.07); }
 
 /**IMAGENES MOTORES ELECTRICOS**/
 .imagenMotores {
@@ -1536,11 +1535,12 @@ textarea {
 
 /**IMAGENES CONTROL Y PROTECCION**/
 .imagenControl {
-  width: 22rem;
-  height: 17rem;
+  width: 18rem;
+  height: 15rem;
   border: solid 2px #005fa4;
   border-radius: 70px;
-  margin-left: 1.8rem; }
+  margin-left: 4rem;
+  margin-top: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenControl {
       width: 80%;
@@ -1553,15 +1553,15 @@ textarea {
       margin-left: 2.5rem; } }
 
 .imagenControl:hover {
-  width: 24rem;
-  height: 19rem; }
+  transform: scale(1.1); }
 
 .imagenControlMando {
-  width: 22rem;
-  height: 17rem;
+  width: 18rem;
+  height: 15rem;
   border: solid 2px #005fa4;
   border-radius: 70px;
-  margin-left: 1.8rem; }
+  margin-left: 4rem;
+  margin-top: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenControlMando {
       width: 80%;
@@ -1575,8 +1575,7 @@ textarea {
       margin-top: 2rem; } }
 
 .imagenControlMando:hover {
-  width: 24rem;
-  height: 19rem; }
+  transform: scale(1.1); }
 
 .imagenInterruptor {
   width: 34rem;

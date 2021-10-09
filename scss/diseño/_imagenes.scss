@@ -62,7 +62,7 @@
     height: 15.63rem;
     border-radius: 4.38rem;
     margin-left: 4rem;
-    margin-top: 1.25rem;   
+    margin-top: 1.25rem;
     
     @include telefono{
         margin-left: 2rem;
@@ -71,8 +71,7 @@
 }
 
 .imagenesPaginaProducto:hover{
-    width: 18rem;
-    height: 18rem;
+    transform: scale(1.07);
 }
 
                                                     /**IMAGENES MOTORES ELECTRICOS**/
@@ -143,11 +142,13 @@
                                                     /**IMAGENES CONTROL Y PROTECCION**/
 
 .imagenControl{
-    width: 22rem;
-    height: 17rem;
+    width: 18rem;
+    height: 15rem;
     border: solid 2px $colorAzul;
     border-radius: 70px;
-    margin-left: 1.8rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+    
 
     @include telefono{
         width: 80%;
@@ -163,16 +164,16 @@
 }
 
 .imagenControl:hover{
-    width: 24rem;
-    height: 19rem;
+    transform: scale(1.1);
 }
 
 .imagenControlMando{
-    width: 22rem;
-    height: 17rem;
+    width: 18rem;
+    height: 15rem;
     border: solid 2px $colorAzul;
     border-radius: 70px;
-    margin-left: 1.8rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
 
     @include telefono{
         width: 80%;
@@ -189,8 +190,7 @@
 }
 
 .imagenControlMando:hover{
-    width: 24rem;
-    height: 19rem;
+    transform: scale(1.1);
 }
 
 .imagenInterruptor{
