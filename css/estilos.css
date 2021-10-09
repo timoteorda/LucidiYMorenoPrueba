@@ -343,19 +343,20 @@ a:hover {
   flex-direction: column; }
 
 /***************************ACA COMIENZA EL INDEX********************************/
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .flexProductos {
-    flex-direction: column;
-    margin-left: 2rem; } }
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .flexProductos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    column-gap: 2rem;
-    row-gap: 1rem;
-    margin-left: 2rem; } }
+.flexProductos {
+  margin-right: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .flexProductos {
+      flex-direction: column;
+      margin-left: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .flexProductos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 2rem;
+      row-gap: 1rem;
+      margin-left: 2rem; } }
 
 .parrafoProductoIndex {
   text-align: justify;
@@ -467,6 +468,9 @@ a:hover {
 
 /****************************FIN DEL INDEX******************************/
 /****************************INICIO PRODUCTOS******************************/
+.flexProductosPrincipal {
+  margin-bottom: 3rem; }
+
 .parrafoDescriptivo {
   text-align: justify;
   width: 18.75rem;
@@ -561,19 +565,20 @@ a:hover {
   line-height: 2rem; }
 
 /*********************INICIO ARRANQUES/VARIADORES**********************/
-@media screen and (min-width: 320px) and (max-width: 425px) {
-  .productosDiv {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-bottom: 2rem; } }
-
-@media screen and (min-width: 426px) and (max-width: 768px) {
-  .productosDiv {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin-bottom: 2rem; } }
+.productosDiv {
+  margin-bottom: 3rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .productosDiv {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-bottom: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .productosDiv {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      margin-bottom: 2rem; } }
 
 .bloqueDivProductos {
   width: 50%;
@@ -601,7 +606,8 @@ a:hover {
 
 /*********************INICIO CONTROL Y PROTECCION**********************/
 .control {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  margin-bottom: 2rem; }
 
 .botonVolver {
   width: 5rem;
@@ -740,13 +746,16 @@ a:hover {
 
 /*********************INICIO BALANCEO**********************/
 .cuerpoBalanceo {
-  width: 55%; }
+  width: 55%;
+  margin-bottom: 10rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cuerpoBalanceo {
-      width: 90%; } }
+      width: 90%;
+      margin-bottom: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .cuerpoBalanceo {
-      width: 90%; } }
+      width: 90%;
+      margin-bottom: 1rem; } }
 
 /*********************INICIO MANTENIMIENTO**********************/
 @media screen and (min-width: 320px) and (max-width: 425px) {
@@ -759,7 +768,8 @@ a:hover {
     margin-bottom: 4rem; } }
 
 .infoMantenimiento {
-  width: 55%; }
+  width: 55%;
+  margin-bottom: 3rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .infoMantenimiento {
       width: 90%;
@@ -789,14 +799,17 @@ a:hover {
 /****************************INICIO MANUALES******************************/
 .cuadrosManuales {
   grid-area: manuales;
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 3rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .cuadrosManuales {
       width: 90%;
-      margin-left: -2rem; } }
+      margin-left: -2rem;
+      margin-bottom: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .cuadrosManuales {
-      width: 100%; } }
+      width: 100%;
+      margin-bottom: 1rem; } }
 
 .buscadorManuales {
   background-color: #2d7086;
@@ -870,10 +883,12 @@ td a {
   margin-top: 3rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .contenidoNosotros {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .contenidoNosotros {
-      flex-direction: column; } }
+      flex-direction: column;
+      margin-bottom: 1rem; } }
 
 .cuerpoNosotros {
   width: 60%;
@@ -912,7 +927,8 @@ p b {
   grid-area: banner; }
 
 .contacto {
-  grid-area: contacto; }
+  grid-area: contacto;
+  margin-bottom: 3rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .contacto {
       flex-direction: column;
@@ -1416,7 +1432,8 @@ textarea {
   width: 14.38rem;
   height: 12.50rem;
   border: solid 2px #005fa4;
-  border-radius: 50px; }
+  border-radius: 50px;
+  margin-right: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenes {
       margin-left: -1.2rem; } }

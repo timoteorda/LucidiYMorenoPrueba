@@ -17,6 +17,7 @@
 
 .flexProductos{
     @extend %flexRow;
+    margin-right: 1rem;
 
         @include telefono{
             flex-direction: column;
@@ -37,7 +38,7 @@
     font-size: 1rem;
     width: 80%;
     margin-left: 0.5rem;
-    margin-top: 1.4rem;
+    margin-top: 1.4rem; 
 
     @include telefono{
         font-size: 1.2rem;
@@ -173,6 +174,7 @@
 
 .flexProductosPrincipal{
     @extend %flexColumn;
+    margin-bottom: 3rem;
 }
 
 .parrafoDescriptivo{
@@ -290,6 +292,7 @@
 
 .productosDiv{
     @extend %flexRow;
+    margin-bottom: 3rem;
 
     @include telefono{
         display: flex;
@@ -341,6 +344,7 @@
 
 .control{
     margin-left: 1rem;
+    margin-bottom: 2rem;
 }
 
 .botonVolver{
@@ -521,13 +525,16 @@
 
 .cuerpoBalanceo{
     width: 55%;
+    margin-bottom: 10rem;
 
     @include telefono{
         width: 90%;
+        margin-bottom: 1rem;
     }
 
     @include tablet{
         width: 90%;
+        margin-bottom: 1rem;
     }
 }
 
@@ -546,6 +553,7 @@
 
 .infoMantenimiento{
     width: 55%;
+    margin-bottom: 3rem;
 
     @include telefono{
         width: 90%;
@@ -587,14 +595,17 @@
     grid-area: manuales;
     @extend %flexColumn;
     width: 100%;
+    margin-bottom: 3rem;
    
         @include telefono{
             width: 90%;
             margin-left: -2rem;
+            margin-bottom: 1rem;
            }
     
         @include tablet{
             width: 100%;
+            margin-bottom: 1rem;
         }
 }
 
@@ -691,10 +702,12 @@ td a{
 
     @include telefono{
         flex-direction: column;
+        margin-bottom: 1rem;
     }
 
     @include tablet{
         flex-direction: column;
+        margin-bottom: 1rem;
     }
 }
 
@@ -747,6 +760,7 @@ p b{
 .contacto{
     grid-area: contacto;
     @extend %flexRow;
+    margin-bottom: 3rem;
 
     @include telefono{
         flex-direction: column;
