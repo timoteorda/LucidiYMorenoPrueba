@@ -760,11 +760,11 @@ p b{
 .contacto{
     grid-area: contacto;
     @extend %flexRow;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 
     @include telefono{
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     @include tablet{
@@ -816,6 +816,11 @@ p b{
 
 .telefonoContacto{
     margin-top: 1rem;  
+}
+
+.telefonoContactoDos{
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .mailContacto{
