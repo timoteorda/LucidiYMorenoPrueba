@@ -629,8 +629,7 @@ a:hover {
       margin-left: 88%; } }
 
 .botonVolver:hover {
-  width: 5.4rem;
-  height: 5.4rem; }
+  transform: scale(1.1); }
 
 .catalogo {
   color: black;
@@ -1640,9 +1639,9 @@ textarea {
   margin: 5rem 0rem 0rem 2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenCorreccion {
-      width: 60%rem;
-      height: 20rem;
-      margin-left: -5rem; } }
+      width: 20rem;
+      height: 18rem;
+      margin-left: -2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .imagenCorreccion {
       width: 30rem;

@@ -253,9 +253,9 @@
     margin:5rem 0rem 0rem 2rem;
 
     @include telefono{
-        width: 60%rem;
-        height: 20rem;
-        margin-left: -5rem;
+        width: 20rem;
+        height: 18rem;
+        margin-left: -2rem;
     }
 
     @include tablet{
