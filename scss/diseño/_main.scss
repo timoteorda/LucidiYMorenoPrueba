@@ -349,6 +349,9 @@
 
 .derechaDivProductos{
     width: 40%;
+    @include telefono{
+     width: 0%;
+    }
 }
 
 /*********************INICIO CONTROL Y PROTECCION**********************/
