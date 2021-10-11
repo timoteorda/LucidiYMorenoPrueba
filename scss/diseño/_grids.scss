@@ -17,34 +17,30 @@
                                                         /*INICIO GRIDS*/
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows:  0.5fr 1fr 1fr;
     grid-template-areas:
-    "header header header"
-    "main main main"
-    "footer footer footer";
+    "header header"
+    "main main"
+    "footer footer";
     height: 100vh;
     font-family: 'Manrope', sans-serif;
-
-    }
-
+}
 
 header{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr;
     grid-area: header;
     height: 8rem;
 }
+
                                                         /**INDEX**/
 .mainIndex{
     @extend %gridArea;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 20rem 20 rem 20rem;
     grid-template-areas: 
-    "banner         banner           banner"
-    "productos      productos        productos"
-    "presentacion   presentacion     presentacion";
+    "banner         banner "
+    "productos      productos "
+    "presentacion   presentacion ";
 
 }
 
@@ -107,7 +103,7 @@ header{
 .mainMotoresElectricos{
     @extend %gridArea;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 12.5rem,5rem,12.5rem,12.5rem;
+    grid-template-rows: 12.5rem,12.5rem;
     grid-template-areas: 
     "banner        banner"
     "titulo        titulo"
