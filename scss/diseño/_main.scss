@@ -251,6 +251,10 @@
 .bordeMotor{
     width: 30.5rem;
     margin-left: 2.5rem;
+
+    @include telefono{
+        width: 100%;
+    }
 }
 
 .botonCompra{
@@ -279,6 +283,13 @@
     text-align: justify;
     margin-left: 2.5rem;
     line-height: 2rem;
+
+    @include telefono{
+        width: 90%;
+        margin-left: 0rem;
+}
+
+
 }
 
 .listaW22{

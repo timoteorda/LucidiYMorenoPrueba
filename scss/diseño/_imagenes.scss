@@ -87,9 +87,18 @@
         margin-left: -1rem;
         width: 18rem;
     }
+}
 
-    @include tablet{
-        
+.imagenMotoresW12{
+    width: 21.88rem;
+    height: 17.5rem;
+    margin-left: 5rem;
+    margin-top: 1rem;
+
+    
+    @include telefono{
+        margin-left: -5rem;
+        width: 18rem;
     }
 }
 
