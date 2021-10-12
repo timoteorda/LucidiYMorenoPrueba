@@ -112,7 +112,7 @@ footer{
 
     @include telefono{
         width: 100%;
-        height: 4rem;  
+        height: 2rem;  
        }
 
     @include tablet{
@@ -123,12 +123,12 @@ footer{
 
 .copyright{
     color: $colorBlanco;
-    font-size: 1.4rem;
-    margin-left: 2rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
 
     @include telefono{
-        width: 100%;  
-        margin-left: 0.5rem; 
+        width: 100%;
+        margin-left: 0rem;  
        }
 }
 
