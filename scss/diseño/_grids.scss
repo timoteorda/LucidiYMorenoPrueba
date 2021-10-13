@@ -133,7 +133,7 @@ header{
 .mainElectro{
     @extend %gridArea;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.2fr 1fr 1fr;
+    grid-template-rows: 0.4fr 0.2fr 1fr 1fr;
     grid-template-areas: 
     "banner banner banner"
     "titulo titulo titulo"

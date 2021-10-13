@@ -94,7 +94,7 @@ header {
 /**ELECTROBOMBAS**/
 .mainElectro {
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.2fr 1fr 1fr;
+  grid-template-rows: 0.4fr 0.2fr 1fr 1fr;
   grid-template-areas: "banner banner banner" "titulo titulo titulo" "producto producto producto" "producto producto producto" "producto producto producto";
   column-gap: 2rem;
   row-gap: 2rem;
@@ -356,6 +356,68 @@ a:hover {
   display: flex;
   flex-direction: column; }
 
+/***************************BOTONES DE COMPRA********************************/
+.botonCompraProductos {
+  width: 11rem !important;
+  height: 3rem !important;
+  font-size: 1.4rem;
+  margin-left: 45%;
+  margin-top: 4rem;
+  color: white;
+  font-weight: bold;
+  background-color: #005fa4;
+  border-radius: 4.38rem;
+  border: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonCompraProductos {
+      margin-left: 5rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .botonCompraProductos {
+      margin-left: 18rem; } }
+
+.botonCompraProductos:hover {
+  background-color: #0078be; }
+
+.botonCompra {
+  width: 11rem !important;
+  height: 3rem !important;
+  font-size: 1.4rem;
+  margin-left: 50%;
+  color: white;
+  font-weight: bold;
+  background-color: #005fa4;
+  border-radius: 4.38rem;
+  border: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonCompra {
+      margin-left: 4rem; } }
+
+.botonCompra:hover {
+  background-color: #0078be;
+  cursor: pointer; }
+
+.botonCompraElectro {
+  width: 11rem !important;
+  height: 3rem !important;
+  font-size: 1.4rem;
+  margin-left: 50%;
+  margin-top: 3rem;
+  color: white;
+  font-weight: bold;
+  background-color: #005fa4;
+  border-radius: 4.38rem;
+  border: 0px; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .botonCompraElectro {
+      margin-left: 4rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .botonCompraElectro {
+      margin-left: 10rem; } }
+
+.botonCompraElectro:hover {
+  background-color: #0078be;
+  cursor: pointer; }
+
 /***************************ACA COMIENZA EL INDEX********************************/
 .flexProductos {
   margin-right: 1rem; }
@@ -524,27 +586,6 @@ a:hover {
 .linkNegro:hover {
   font-weight: bold; }
 
-.botonCompraProductos {
-  width: 11rem !important;
-  height: 3rem !important;
-  font-size: 1.4rem;
-  margin-left: 45%;
-  margin-top: 4rem;
-  color: white;
-  font-weight: bold;
-  background-color: #005fa4;
-  border-radius: 4.38rem;
-  border: 0px; }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    .botonCompraProductos {
-      margin-left: 5rem; } }
-  @media screen and (min-width: 426px) and (max-width: 768px) {
-    .botonCompraProductos {
-      margin-left: 18rem; } }
-
-.botonCompraProductos:hover {
-  background-color: #0078be; }
-
 /*********************INICIO MOTORES ELECTRICOS**********************/
 .motorElectrico {
   padding: 2rem; }
@@ -556,24 +597,6 @@ a:hover {
     .bordeMotor {
       width: 90%;
       margin-left: 3.8rem; } }
-
-.botonCompra {
-  width: 11rem !important;
-  height: 3rem !important;
-  font-size: 1.4rem;
-  margin-left: 50%;
-  color: white;
-  font-weight: bold;
-  background-color: #005fa4;
-  border-radius: 4.38rem;
-  border: 0px; }
-  @media screen and (min-width: 320px) and (max-width: 425px) {
-    .botonCompra {
-      margin-left: 4rem; } }
-
-.botonCompra:hover {
-  background-color: #0078be;
-  cursor: pointer; }
 
 .textoMotores {
   width: 80%;
@@ -705,7 +728,6 @@ a:hover {
   line-height: 1.6rem;
   margin-top: 1rem; }
 
-/*********************ELECTROBOMBAS**********************/
 /****************************FIN PRODUCTOS******************************/
 /****************************INICIO SERVICIOS******************************/
 .paginaServicios {
@@ -1254,12 +1276,18 @@ p b {
   text-decoration: underline;
   color: #005fa4;
   text-align: center; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloElectrobombas {
+      font-size: 2.5rem; } }
 
 .tipoElectrobomba {
   font-size: 1.6rem;
   text-align: center;
   color: #005fa4;
   font-weight: bold; }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tipoElectrobomba {
+      font-size: 1.4rem; } }
 
 /**TITULOS SERVICIOS**/
 .tituloServicios {

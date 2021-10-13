@@ -13,6 +13,81 @@
     flex-direction: column;
 }
 
+
+/***************************BOTONES DE COMPRA********************************/
+
+.botonCompraProductos{
+    width: 11rem !important;
+    height: 3rem !important;
+    font-size: 1.4rem;
+    margin-left: 45%;
+    margin-top: 4rem;
+    color: $colorBlanco;
+    font-weight: bold;
+    background-color: $colorAzul;
+    border-radius: 4.38rem;
+    border: 0px;
+
+    @include telefono{
+        margin-left: 5rem;
+    }
+
+    @include tablet{
+        margin-left: 18rem;       
+    }
+}
+
+.botonCompraProductos:hover{
+    background-color: $colorAzulClaro;
+}
+
+.botonCompra{
+    width: 11rem !important;
+    height: 3rem !important;
+    font-size: 1.4rem;
+    margin-left: 50%;
+    color: $colorBlanco;
+    font-weight: bold;
+    background-color: $colorAzul;
+    border-radius: 4.38rem;
+    border: 0px;
+
+    @include telefono{
+        margin-left: 4rem;
+    }
+}
+
+.botonCompra:hover{
+    background-color: $colorAzulClaro;
+    cursor: pointer;    
+}
+
+.botonCompraElectro{
+    width: 11rem !important;
+    height: 3rem !important;
+    font-size: 1.4rem;
+    margin-left: 50%;
+    margin-top: 3rem;
+    color: $colorBlanco;
+    font-weight: bold;
+    background-color: $colorAzul;
+    border-radius: 4.38rem;
+    border: 0px;
+
+    @include telefono{
+        margin-left: 4rem;
+    }
+
+    @include tablet{
+        margin-left: 10rem;
+    }
+}
+
+.botonCompraElectro:hover{
+    background-color: $colorAzulClaro;
+    cursor: pointer;    
+}
+
 /***************************ACA COMIENZA EL INDEX********************************/
 
 .flexProductos{
@@ -224,30 +299,6 @@
     font-weight: bold;
 }
 
-.botonCompraProductos{
-    width: 11rem !important;
-    height: 3rem !important;
-    font-size: 1.4rem;
-    margin-left: 45%;
-    margin-top: 4rem;
-    color: $colorBlanco;
-    font-weight: bold;
-    background-color: $colorAzul;
-    border-radius: 4.38rem;
-    border: 0px;
-
-    @include telefono{
-        margin-left: 5rem;
-    }
-
-    @include tablet{
-        margin-left: 18rem;       
-    }
-}
-
-.botonCompraProductos:hover{
-    background-color: $colorAzulClaro;
-}
 /*********************INICIO MOTORES ELECTRICOS**********************/
 
 .motorElectrico{
@@ -262,27 +313,6 @@
         width: 90%;
         margin-left: 3.8rem;
     }
-}
-
-.botonCompra{
-    width: 11rem !important;
-    height: 3rem !important;
-    font-size: 1.4rem;
-    margin-left: 50%;
-    color: $colorBlanco;
-    font-weight: bold;
-    background-color: $colorAzul;
-    border-radius: 4.38rem;
-    border: 0px;
-
-    @include telefono{
-        margin-left: 4rem;
-    }
-}
-
-.botonCompra:hover{
-    background-color: $colorAzulClaro;
-    cursor: pointer;    
 }
 
 .textoMotores{
@@ -452,11 +482,6 @@
     line-height: 1.6rem;
     margin-top: 1rem;
 }
-
-/*********************ELECTROBOMBAS**********************/
-
-
-
 
 /****************************FIN PRODUCTOS******************************/
 
