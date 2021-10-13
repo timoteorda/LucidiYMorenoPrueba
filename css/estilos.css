@@ -1,5 +1,5 @@
 /*EXTENDS*/
-.mainIndex, .productosProductos, .mainMotoresElectricos, .mainControl, .mainBalanceo, .mainManuales {
+.mainIndex, .productosProductos, .mainMotoresElectricos, .mainElectro, .mainControl, .mainBalanceo, .mainManuales {
   grid-area: main;
   display: grid; }
 
@@ -93,7 +93,24 @@ header {
 
 /**ELECTROBOMBAS**/
 .mainElectro {
-  grid-area: main; }
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.2fr 1fr 1fr;
+  grid-template-areas: "banner banner banner" "titulo titulo titulo" "producto producto producto" "producto producto producto" "producto producto producto";
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .mainElectro {
+      display: flex;
+      flex-direction: column;
+      width: 100%; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .mainElectro {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 0.3fr 1fr;
+      grid-template-areas: "banner banner" "titulo titulo" "producto producto" "producto producto" "producto producto" "producto producto"; } }
 
 /**CONTROL Y PROTECCION**/
 .mainControl {
@@ -688,6 +705,7 @@ a:hover {
   line-height: 1.6rem;
   margin-top: 1rem; }
 
+/*********************ELECTROBOMBAS**********************/
 /****************************FIN PRODUCTOS******************************/
 /****************************INICIO SERVICIOS******************************/
 .paginaServicios {
@@ -1229,6 +1247,20 @@ p b {
   font-weight: bold;
   font-size: 1.1rem; }
 
+/**TITULOS ELECTROBOMBAS**/
+.tituloElectrobombas {
+  grid-area: titulo;
+  font-size: 3rem;
+  text-decoration: underline;
+  color: #005fa4;
+  text-align: center; }
+
+.tipoElectrobomba {
+  font-size: 1.6rem;
+  text-align: center;
+  color: #005fa4;
+  font-weight: bold; }
+
 /**TITULOS SERVICIOS**/
 .tituloServicios {
   color: #005fa4;
@@ -1563,6 +1595,17 @@ textarea {
     .imagenVariadores {
       width: 25rem;
       height: 20rem; } }
+
+/**IMAGENES ELECTROBOMBAS**/
+.imagenElectrobombas {
+  width: 20rem;
+  height: 17.5rem;
+  margin-left: 3rem;
+  margin-top: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .imagenElectrobombas {
+      margin-left: 1rem;
+      width: 18rem; } }
 
 /**IMAGENES CONTROL Y PROTECCION**/
 .imagenControl {

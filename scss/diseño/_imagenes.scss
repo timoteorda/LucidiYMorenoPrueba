@@ -148,6 +148,20 @@
     }
 } 
 
+                                                /**IMAGENES ELECTROBOMBAS**/
+.imagenElectrobombas{
+    width: 20rem;
+    height: 17.5rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+
+    
+    @include telefono{
+        margin-left: 1rem;
+        width: 18rem;
+    }
+}
+
                                                     /**IMAGENES CONTROL Y PROTECCION**/
 
 .imagenControl{

@@ -290,6 +290,22 @@
     font-size: 1.1rem;
 }
 
+                                                /**TITULOS ELECTROBOMBAS**/
+.tituloElectrobombas{
+    grid-area: titulo;
+    font-size: 3rem;
+    text-decoration: underline;
+    color: $colorAzul;
+    text-align: center;
+}
+
+.tipoElectrobomba{
+    font-size: 1.6rem;
+    text-align: center;
+    color: $colorAzul;
+    font-weight: bold;
+}
+
 
                                                             /**TITULOS SERVICIOS**/
 
