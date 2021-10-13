@@ -91,6 +91,11 @@
     text-decoration: underline;
     color: $colorNegro;
     margin-bottom: 2rem;
+    
+    @include telefono{
+        font-size: 1.8rem;
+        margin-left: 1rem;
+    } 
 
     @include tablet{
         font-size: 2rem;
@@ -425,7 +430,7 @@
 }
 
 .tituloApueste{
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin-top: 1rem;
     margin-left: 3rem;
     line-height: 2rem;
@@ -446,6 +451,7 @@
 
     @include telefono{
         margin-left: 10rem;
+        font-size: 2rem;
     }
 
 }

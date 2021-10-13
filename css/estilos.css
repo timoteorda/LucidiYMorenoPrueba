@@ -386,10 +386,12 @@ a:hover {
   margin-left: 4.38rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .itemUno {
-      width: 100%; } }
+      width: 100%;
+      margin-left: 0rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .itemUno {
-      width: 100%; } }
+      width: 100%;
+      margin-left: 0rem; } }
 
 .parrafoPresentacion {
   font-size: 1.5rem;
@@ -397,12 +399,12 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoPresentacion {
       width: 90%;
-      margin-left: -2.5rem;
+      margin-left: 1rem;
       font-size: 1.4rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoPresentacion {
       width: 90%;
-      margin-left: -2.5rem;
+      margin-left: 1rem;
       font-size: 1.4rem; } }
 
 .subParrafoPresentacion {
@@ -412,17 +414,16 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .subParrafoPresentacion {
       width: 90%;
-      margin-left: -2.5rem;
+      margin-left: 1rem;
       font-size: 1.4rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .subParrafoPresentacion {
       width: 90%;
-      margin-left: -2.5rem;
+      margin-left: 1rem;
       font-size: 1.4rem; } }
 
 .itemDos {
-  width: 50%;
-  margin-left: 3.13rem; }
+  width: 100%; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .itemDos {
       width: 100%; } }
@@ -431,11 +432,12 @@ a:hover {
       width: 100%; } }
 
 .dondeEstamos {
-  margin-left: 4rem; }
+  margin-left: 4rem;
+  width: 70%; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .dondeEstamos {
-      width: 100%;
-      margin-left: -1.5rem; } }
+      width: 70%;
+      margin-left: 0rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .dondeEstamos {
       width: 100%;
@@ -446,10 +448,12 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoUbicacion {
       font-size: 1.2rem;
-      width: 15rem; } }
+      width: 15rem;
+      margin-left: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoUbicacion {
-      font-size: 1.2rem; } }
+      font-size: 1.2rem;
+      margin-left: 1rem; } }
 
 .negrita {
   font-weight: bold;
@@ -461,7 +465,8 @@ a:hover {
   font-weight: bold; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .telefonoIndex {
-      font-size: 1.3rem; } }
+      font-size: 1.1rem;
+      margin-left: 1rem; } }
 
 /****************************FIN DEL INDEX******************************/
 /****************************INICIO PRODUCTOS******************************/
@@ -532,7 +537,8 @@ a:hover {
   margin-left: 2.5rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .bordeMotor {
-      width: 100%; } }
+      width: 90%;
+      margin-left: 3.8rem; } }
 
 .botonCompra {
   width: 11rem !important;
@@ -714,8 +720,8 @@ a:hover {
   margin-top: 2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoDescriptivoServicios {
-      width: 100%;
-      margin-left: 0rem; } }
+      width: 90%;
+      margin-left: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoDescriptivoServicios {
       width: 80%;
@@ -1066,6 +1072,10 @@ p b {
   text-decoration: underline;
   color: black;
   margin-bottom: 2rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloDondeEstamos {
+      font-size: 1.8rem;
+      margin-left: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloDondeEstamos {
       font-size: 2rem;
@@ -1329,7 +1339,7 @@ p b {
   font-weight: 600; }
 
 .tituloApueste {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   margin-left: 3rem;
   line-height: 2rem;
@@ -1346,7 +1356,8 @@ p b {
   font-weight: bold; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .gonnetNosotros {
-      margin-left: 10rem; } }
+      margin-left: 10rem;
+      font-size: 2rem; } }
 
 /**TITULOS CONTACTO**/
 .tituloContacto {
@@ -1462,12 +1473,12 @@ textarea {
     .mapaIndex {
       width: 90%;
       height: 30rem;
-      margin-left: -3rem; } }
+      margin-left: 1rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .mapaIndex {
       width: 90%;
       height: 30rem;
-      margin-left: -3rem; } }
+      margin-left: 1rem; } }
 
 .mapaIndexFrente {
   margin-left: 4rem; }

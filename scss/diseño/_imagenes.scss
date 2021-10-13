@@ -29,13 +29,13 @@
     @include telefono{
         width: 90%;
         height: 30rem;
-        margin-left: -3rem;   
+        margin-left: 1rem;   
        }
 
     @include tablet{
         width: 90%;
         height: 30rem;
-        margin-left: -3rem;
+        margin-left: 1rem;
     } 
 }
 
