@@ -1336,7 +1336,7 @@ p b {
   font-weight: 600; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloApueste {
-      margin-left: 5rem;
+      margin-left: 3rem;
       font-size: 1.4rem;
       width: 100%; } }
 
@@ -1664,7 +1664,7 @@ textarea {
   margin-bottom: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenNosotros {
-      margin-left: -13rem;
+      margin-left: -11rem;
       width: 18rem;
       margin-top: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -1679,7 +1679,7 @@ textarea {
   margin-bottom: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenNosotrosDos {
-      margin-left: -13rem;
+      margin-left: -11rem;
       width: 18rem;
       margin-top: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
