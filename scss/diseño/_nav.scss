@@ -2,7 +2,7 @@
 @import "../utilities/mediaquerys";
 
 .navegacion{
-    background-color: rgb(253, 255, 236) !important;
+    background-color: $colorBlanco !important;
     z-index: 1000;
     position: fixed;
     width: 100%;
