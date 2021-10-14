@@ -204,7 +204,7 @@ header {
   grid-template-areas: "banner         banner" "contacto       contacto"; }
 
 .navegacion {
-  background-color: rgba(251, 251, 251, 0.993) !important;
+  background-color: #fdffec !important;
   z-index: 1000;
   position: fixed;
   width: 100%; }
