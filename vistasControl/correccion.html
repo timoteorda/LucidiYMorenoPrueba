@@ -16,9 +16,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -104,7 +105,7 @@
                                       <!--CARROUSEL-->
                         <h1 class="tituloProductosControl">Correccion del factor de potencia</h1>
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">UCW - Condensadores monofásicos (kvar)</h2>
               <h3 class="itemControles">Principales Características</h3>
               <ul>
@@ -123,14 +124,14 @@
               <a href= "https://static.weg.net/medias/downloadcenter/h06/h61/WEG-10005056256-condensadores-en-corriente-alterna-manual-de-seguridad-y-aplicaciones-es.pdf" target="_blank"><h6 class="catalogo">Ver manual</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenCorreccion" src="../img/correccionUCW.png" alt="Correccion">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
           </div>
 
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">UCWT - Condensadores trifásicas (kvar)</h2>
               <h3 class="itemControles">Principales Características</h3>
               <ul>
@@ -145,7 +146,7 @@
               <a href= "https://static.weg.net/medias/downloadcenter/h06/h61/WEG-10005056256-condensadores-en-corriente-alterna-manual-de-seguridad-y-aplicaciones-es.pdf" target="_blank"><h6 class="catalogo">Ver manual</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenCorreccion" src="../img/correccionUCWT.png" alt="Correccion">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
@@ -214,7 +215,14 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+<!--SCRIPT SCROLL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 500
+  });
+</script>
 </body>
 
 </html>

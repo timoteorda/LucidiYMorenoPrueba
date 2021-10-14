@@ -17,8 +17,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -106,42 +109,42 @@
 
           <h1 class="tituloPrincipalControl">Control y protección</h1>
                                   
-          <div class="control">
+          <div class="control" data-aos="fade-right">
             <a href="../vistasControl/interruptores.html"><h2 class="tituloControles">Interruptores</h2></a>
             <a href="../vistasControl/interruptores.html"><img class="imagenControl" src="../img/interruptorDWB.jpg" alt="interruptor"></a>
           </div>
 
-          <div class="control">
+          <div class="control" data-aos="fade-right">
             <a href="../vistasControl/contactoresPotencia.html"><h2 class="tituloControles">Contactores de potencia</h2></a>
             <a href="../vistasControl/contactoresPotencia.html"><img class="imagenControl" src="../img/contactorCWB.jpg" alt="contactor"></a>
           </div>
 
-          <div class="control">
+          <div class="control" data-aos="fade-right">
             <a href="../vistasControl/contactoresAuxiliares.html"><h2 class="tituloControles">Contactores auxiliares</h2></a>
             <a href="../vistasControl/contactoresAuxiliares.html"><img class="imagenControl" src="../img/contactorCWCA0.jpg" alt="Contactor auxiliar"></a>
           </div>
           
-          <div class="control">
+          <div class="control" data-aos="fade-left">
             <a href="../vistasControl/reles.html"><h2 class="tituloControles">Relés de sobrecarga</h2></a>
             <a href="../vistasControl/reles.html"><img class="imagenControl" src="../img/relesRWE.jpg" alt="Relés"></a>
           </div>  
 
-          <div class="control">
+          <div class="control" data-aos="fade-left">
             <a href="../vistasControl/guardamotores.html"><h2 class="tituloControles">Guardamotores</h2></a>
             <a href="../vistasControl/guardamotores.html"><img class="imagenControl" src="../img/guardaMPW.jpg" alt="Guardamotores"></a>
           </div>  
 
-          <div class="control">
+          <div class="control" data-aos="fade-left">
             <a href="../vistasControl/arrancadores.html"><h2 class="tituloControles">Arrancadores en caja</h2></a>
             <a href="../vistasControl/arrancadores.html"><img class="imagenControl" src="../img/arrancadoresCaja.jpg" alt="Arrancadores"></a>
           </div>  
 
-          <div class="control">
+          <div class="control" data-aos="fade-right">
             <a href="../vistasControl/correccion.html"><h2 class="tituloControlesFactor">Corrección del factor de potencia</h2></a>
             <a href="../vistasControl/correccion.html"><img class="imagenControl" src="../img/correccionUCW.png" alt="Correcion"></a>
           </div>  
 
-          <div class="control">
+          <div class="control" data-aos="fade-right">
             <a href="../vistasControl/mando.html"><h2 class="tituloControles">Mando y señalización</h2></a>
             <a href="../vistasControl/mando.html"><img class="imagenControlMando" src="../img/pulsador.jpg" alt="mando y señalización"></a>
           </div>  
@@ -203,7 +206,15 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+    
+  <!--SCRIPT SCROLL-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      offset: 200,
+      duration: 500
+    });
+    </script>
 
 </body>
 

@@ -17,8 +17,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -109,7 +112,7 @@
               </div>
               <div class="mainProductos">           
 
-                      <div>
+                      <div  data-aos="fade-down">
                           <div class="productosUbicacion"> 
                               <a href="../vistasProductos/arranques.html"><h2 class="tituloProductos">Arranques Suaves</h2></a>
                               <a href="../vistasProductos/arranques.html"><img class="imagenesPaginaProducto" src="../img/suave.jpg" alt="Arranques"></a>                      
@@ -118,7 +121,7 @@
                           </div>
                       </div>
                       
-                      <div>    
+                      <div data-aos="fade-down">    
                           <div class="productosUbicacion">          
                               <a href="../vistasProductos/controles.html"><h2 class="tituloProductos">Controles y Protección</h2></a>
                               <a href="../vistasProductos/controles.html"><img class="imagenesPaginaProducto" src="../img/control.jpg" alt="Controles"></a>                    
@@ -127,7 +130,7 @@
                           </div>
                       </div>
                   
-                      <div>                
+                      <div data-aos="fade-down">                
                           <div class="productosUbicacion">
                               <a href="../vistasProductos/motores.html"><h2 class="tituloProductos">Motores eléctricos</h2></a>
                               <a href="../vistasProductos/motores.html"><img class="imagenesPaginaProducto" src="../img/motorw21.jpg" alt="Motores"></a>
@@ -137,7 +140,7 @@
                       </div>
                       
                       
-                      <div>    
+                      <div data-aos="fade-down">    
                           <div class="productosUbicacion">
                               <a href="../vistasProductos/variadores.html"><h2 class="tituloProductos">Variadores de Frecuencia</h2></a>
                               <a href="../vistasProductos/variadores.html"><img class="imagenesPaginaProducto" src="../img/variadorfrecuencia.jpg" alt="Variadores"></a>
@@ -147,7 +150,7 @@
                       </div>
 
                       
-                      <div>    
+                      <div data-aos="fade-down">    
                           <div class="productosUbicacion">
                               <a href="../vistasProductos/electrobombas.html"><h2 class="tituloProductos">Electrobombas</h2></a>
                               <a href="../vistasProductos/electrobombas.html"><img class="imagenesPaginaProducto" src="../img/electrobomba.jpg" alt="Electrobomba"></a>
@@ -215,8 +218,17 @@
         
     </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     
+<!--SCRIPT SCROLL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+      offset: 200,
+      duration: 500
+    });
+</script>
+
 </body>
 </html>

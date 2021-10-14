@@ -16,9 +16,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -104,7 +105,7 @@
                                       <!--CARROUSEL-->
                 <h1 class="tituloProductosControl">Relés de sobrecarga</h1>
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">Relés de Sobrecarga Electrónicos RW_E</h2>
               <p class="parrafoControles">Los RW_E fueron diseñados para la protección de motores eléctricos de baja tensión en corriente alternas sinusoidales de 50/60 Hz donde la fiabilidad, baja disipación de potencia y facilidad de gestión de mantenimiento son imprescindibles.
               </p>
@@ -125,14 +126,14 @@
               <a href= "https://static.weg.net/medias/downloadcenter/h1a/h33/WEG-rw_e-reles-de-sobrecarga-electronicos-50052277-es.pdf" target="_blank"><h6 class="catalogo">Ver catálogo</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenInterruptor" src="../img/relesRWE.jpg" alt="Relé RW_E">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
           </div>
 
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">Relés de Sobrecarga Térmico RW</h2>
               <p class="parrafoControles">Los relés de sobrecarga RW protegen las cargas contra el calentamiento indebido, causado por sobrecargas o por falta de fase. Cuando tenemos una sobrecarga o una falta de fase en el circuito, ocurre un aumento en la corriente del motor. Esta elevación de corriente causa el accionamiento del mecanismo de disparo que actuará sobre los contactos auxiliares 95-96 (NF) y 97-98 (NA).</p> 
               <p  class="subParrafoControles">Los contactos auxiliares apagan la carga por medio de un contactor. El tiempo para el apagado está relacionado con la corriente de sobrecarga y con la corriente ajustada en el relé, que se encuentra debidamente representada en la curva de disparo del relé.
@@ -140,14 +141,14 @@
               <a href= "https://static.weg.net/medias/downloadcenter/h2c/he8/WEG-reles-de-sobrecarga-termicos-RW-50070232-es.pdf" target="_blank"><h6 class="catalogo">Ver catálogo</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenInterruptor" src="../img/releTermicoRW.jpg" alt="Rele térmico RW">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
           </div>
 
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">Relé Inteligente SRW01</h2>
               <p class="parrafoControles">El relé SRW01 es un sistema que gerencia motores eléctricos de baja tensión que cuenta con alta tecnología y capacidad de comunicación en rede. Siendo modular, las funcionalidades del relé pueden ser extendidas, convirtiéndose en un producto versátil preparado para diversas aplicaciones.</p>
               <p class="subParrafoControles">El SRW01 posee un design modular que permite la expansión de funcionalidad del relé.
@@ -164,7 +165,7 @@
               <a href= "https://static.weg.net/medias/downloadcenter/h53/h24/WEG-SRW01-rele-inteligente-50023626-catalogo-es.pdf" target="_blank"><h6 class="catalogo">Ver catálogo</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenInterruptor" src="../img/releInteligente.jpg" alt="Rele SRW01">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
@@ -234,7 +235,14 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+<!--SCRIPT SCROLL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 500
+  });
+</script>
 </body>
 
 </html>

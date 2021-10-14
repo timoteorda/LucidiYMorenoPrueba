@@ -17,9 +17,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+              
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-            <link href="./img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="./css/estilos.css">
+        <link href="./img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="./css/estilos.css">
 
 
 </head>
@@ -106,7 +109,7 @@
           <h1 class="titulo">Nuestros productos</h1>
 
                 
-              <div class="flexProductos">
+              <div class="flexProductos" data-aos="fade-right">
                       <div>
                           <a href="./vistasProductos/motores.html"><h3 class="tituloProductosIndex">Motores eléctricos</h3></a>     
                           <a href="./vistasProductos/motores.html"><img  src="img/bomba.jpg" class="imagenes" alt="Motor electrico"></a>
@@ -151,11 +154,11 @@
         <div class="presentacion">
 
         
-              <h2 class="tituloInfo">Presentación</h2>
+              <h2 class="tituloInfo" data-aos="fade-down">Presentación</h2>
 
                 <div class="presentacionFlex">
                                                                 <!--MAPA CON LA UBICACION-->
-                            <div class="itemUno">
+                            <div class="itemUno"  data-aos="fade-right">
                                         
                                 <p class="parrafoPresentacion">Somos <span class="negrita">Lucidi y Moreno S.A. - Asistente Técnico Autorizado Weg</span>, una reconocida empresa en la localidad de <span class="negrita">Gonnet</span> que se dedica a la <span class="negrita">venta y reparación de motores eléctricos.</span></p>
 
@@ -165,7 +168,7 @@
                                                         
                             </div>
 
-                            <div class="itemDos">            
+                            <div class="itemDos" data-aos="fade-left">            
                                         
                                         <iframe class="mapaIndexFrente" src="https://www.google.com/maps/embed?pb=!4v1630187809502!6m8!1m7!1syayt3qCeh4J__oXrlOaJNg!2m2!1d-34.89591794422791!2d-58.01316493012193!3f140.24061718773194!4f-3.1988103487754955!5f0.5730431705649516" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                                         
@@ -237,8 +240,16 @@
 
     </footer>
 
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--SCRIPT SCROLL-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init({
+          offset: 200,
+          duration: 500
+        });
+        </script>
 
 </body>
 </html>

@@ -17,8 +17,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -106,7 +109,7 @@
 
             <h1 class="tituloPrincipalMotores">Motores eléctricos</h1>
                                     
-            <div class="motorElectrico">
+            <div class="motorElectrico" data-aos="fade-right">
                 <h2 class="tipoMotor">Motor eléctrico W12</h2>
                   <div class="bordeMotor"><img class="imagenMotoresW12" src="../img/motorw12.jpg" alt="MotorW12"></div>
                   <p class="textoMotores">La línea W12 ha sido desarrollada para ofrecer versatilidad y eficiencia. Con bridas, pies, cajas y tapas de cajas de conexión en polímero industrial de alta resistencia y carcasa de aluminio sin mecanizado, el motor tiene el peso más bajo para aplicaciones robustas, lo que le confiere aún más posibilidades.</p>
@@ -117,7 +120,7 @@
                     </div>                  
             </div>
 
-            <div class="motorElectrico">
+            <div class="motorElectrico" data-aos="fade-left">
                 <h2 class="tipoMotor">Motor eléctrico W21</h2>
                   <img class="imagenMotores" src="../img/motorw21.jpg" alt="motorW21">
                   <p class="textoMotores">Los motores de aluminio WEG W21 son el resultado de un alto diseño tecnológico, componentes de primera calidad y una amplia experiencia en aplicaciones. Reconocido por su calidad, fiabilidad y eficiencia. estos motores se utilizan en todo el mundo en una variedad de aplicaciones industriales.</p>
@@ -130,7 +133,7 @@
                     </div>
             </div>
 
-            <div class="motorElectrico">
+            <div class="motorElectrico" data-aos="fade-right">
                 <h2 class="tipoMotor">Motor eléctrico W21Xdb</h2>
                 <img class="imagenMotores" src="../img/motorw21explosion.jpg" alt="Motorw21">
                 <p class="textoMotores">El W21Xdb es un motor a prueba de explosión proyectado especialmente para operar en ambientes con presencia de atmósferas explosivas. Presenta construcción robusta, sistema de retención de llamas con intersticios entre piezas cuidadosamente proyectados, mecanizado de precisión en la caja de conexión y tornillos con alta resistencia mecánica. Garantiza seguridad en áreas clasificadas como Zona 1 y Zona 2.</p>
@@ -143,7 +146,7 @@
                     </div>
             </div>
 
-            <div class="motorElectrico">
+            <div class="motorElectrico" data-aos="fade-left">
                 <h2 class="tipoMotor">Motor eléctrico W22</h2>
                 <img class="imagenMotores" src="../img/motorw22.jpg" alt="motor w22">
                 <p class="textoMotores">Alto rendimiento con máxima eficiencia de energía, esto es el significado del nuevo motor eléctrico WEG. Alto rendimiento y bajo costo de propiedad durante toda la vida útil del motor, han sido la base para el desarrollo del W22. Un diseño creado para anticipar conceptos en rendimiento y ahorro de energía.</p>
@@ -222,6 +225,14 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+  <!--SCRIPT SCROLL-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    offset: 200,
+    duration: 500
+  });
+  </script>
 
 </body>
 

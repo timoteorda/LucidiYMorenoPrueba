@@ -16,8 +16,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -107,7 +110,7 @@
 
                   <div class="productosDiv">
                                 
-                      <div class="bloqueDivProductos">
+                      <div class="bloqueDivProductos" data-aos="fade-right">
                           <h2 class="tituloProductosDiv">Convertidores de Frecuencia CFW300</h2>
                               <p class="parrafoDivProductos">Ideal para su aplicación en máquinas o equipos que necesitan un control preciso y facilidad de operación, el CFW300 es un variador de velocidad de alto rendimiento para motores de inducción trifásicos.
                               Cuenta con SoftPLC – (programado vía software WPS) que es un recurso de software, equivalente a un CLP (Controlador Lógico Programable) de pequeño porte, incorporado al CFW300 que permite al usuario la depuración e implementación de proyectos de lógica en lenguaje ladder, personalizando e integrando el CFW300 a la aplicación.
@@ -131,7 +134,7 @@
                   
                       </div>
                                     
-                      <div class="derechaDivProductos">
+                      <div class="derechaDivProductos" data-aos="fade-left">
                             <img class="imagenVariadores" src="../img/variadorUno.jpg" alt="Variador de frecuencias">
                             <input class="botonCompraProductos" type="button" value="Consultar">
                       </div>
@@ -141,7 +144,7 @@
                   
                   <div class="productosDiv">
                           
-                    <div class="bloqueDivProductos">
+                    <div class="bloqueDivProductos" data-aos="fade-right">
                         <h2 class="tituloProductosDiv">Convertidores de Frecuencia CFW500</h2>
                           <p class="parrafoDivProductos">Con diseño moderno y rango de potencias de 0,25 a 175 cv, el convertidor de frecuencia CFW500 es un accionamiento de velocidad variable de alta performance, que auxilia en el control de velocidad y del torque en motores de inducción trifásicos. El equipo cuenta con control vectorial sensorless, vectorial con Encoder o escalar y control de motores de imanes permanentes, SoftPLC, que agrega funciones de CLP (Controlador Lógico Programable), Funciones de Seguridad STO y SS1, Pump Genius, que trae funciones dedicadas para bombeo y módulos plug-in seleccionables, que proporcionan una solución flexible y optimizada para cualquier aplicación.</p>
                           <p class="subParrafoProductos">El CFW500 puede ser interconectado a las principales redes de comunicación industriales rápidas, tipo Fieldbus, con protocolos mundialmente difundidos como CANopen, Profibus-DP, EtherNet/IP, Modbus-TCP, PROFINET IO y DeviceNet, conforme el módulo plug-in seleccionado. Además de eso, cualquier módulo plug-in viene con interfaz serial RS485 Modbus RTU incorporada</p>
@@ -171,7 +174,7 @@
                   
                     </div>
                           
-                    <div class="derechaArranques">
+                    <div class="derechaArranques" data-aos="fade-left">
                         <img class="imagenVariadores" src="../img/variadorDos.jpg" alt="Variador de frecuencias">
                         <input class="botonCompraProductos" type="button" value="Consultar">
                     </div>
@@ -180,7 +183,7 @@
                   
                   <div class="productosDiv">
                                                       
-                      <div class="bloqueDivProductos">
+                      <div class="bloqueDivProductos" data-aos="fade-right">
                           <h2 class="tituloProductosDiv">Convertidores de Frecuencia CFW11</h2>
                               <p class="parrafoDivProductos">Con tecnología de punta para control de motores de inducción trifásicos y motores sincrónicos de imanes permanentes - WMagnet, la línea CFW11 objetiva el aumento de productividad para los más complejos sistemas. Proyectados exclusivamente para utilización industrial o profesional, el CFW11 presenta muchas innovaciones agregando grandes beneficios a los clientes, principalmente por su simplicidad de instalación y operación. Basado en la filosofía Plug-and-Play, el CFW11 permite una instalación simple y rápida de sus accesorios.
                               </p>
@@ -222,7 +225,7 @@
                               <a class="linkNegro" href="https://static.weg.net/medias/downloadcenter/he8/hbc/WEG-cfw11-manual-da-softplc-0899.5737-manual-portugues-br.pdf" target="_blank"><p>Ver manual de usuario Soft PLC</p></a>
                       </div>
                           
-                      <div class="derechaDivProductos">
+                      <div class="derechaDivProductos" data-aos="fade-left">
                         <img class="imagenVariadores" src="../img/variadorTres.jpg" alt="Variador de frecuencias">
                         <img class="imagenVariadores" src="../img/variadorCFW11.jpg" alt="Variador de frecuencias">
                         <input class="botonCompraProductos" type="button" value="Consultar">
@@ -286,6 +289,14 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+  <!--SCRIPT SCROLL-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init({
+    offset: 200,
+    duration: 500
+  });
+  </script>
 
 </body>
 

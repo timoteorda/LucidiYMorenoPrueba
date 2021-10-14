@@ -15,9 +15,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -105,7 +108,7 @@
               <h1 class="tituloProductosControl">Contactores auxiliares</h1>
 
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">CWCA0 - Contactores auxiliares compactos</h2>
               <h3 class="itemControles">Principales Características</h3>
               <ul>
@@ -119,14 +122,14 @@
               <a href= "https://static.weg.net/medias/downloadcenter/h04/h56/WEG-CWC0-50069381-es.pdf" target="_blank"><h6 class="catalogo">Ver catálogo</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenInterruptor" src="../img/contactorCWCA0.jpg" alt="ContactorCWCA0">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
           </div>
 
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">CAW04 - Mini contactores auxiliares</h2>
               <p class="parrafoControles">Este contactor presenta dimensiones reducidas, siendo la mejor alternativa donde el espacio es esencial.                               
               </p>
@@ -139,7 +142,7 @@
               <a href= "https://static.weg.net/medias/downloadcenter/hcd/h97/WEG-linea-de-productos-50019476-es.pdf" target="_blank"><h6 class="catalogo">Ver catálogo</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenInterruptor" src="../img/contactorCAW04.jpg" alt="ContactorCAW04">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
@@ -209,7 +212,14 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+<!--SCRIPT SCROLL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 500
+  });
+</script>
 </body>
 
 </html>

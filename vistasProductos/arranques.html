@@ -17,8 +17,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
 
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -105,7 +108,7 @@
       
       <div class="productosDiv">
               
-            <div class="bloqueDivProductos">
+            <div class="bloqueDivProductos" data-aos="fade-right">
                 <h2 class="tituloProductosDiv">Soft-Starter SSW05</h2>
                     <p class="parrafoDivProductos">Soft-Starter WEG son interruptores de arranque estáticos destinados a la aceleración, desaceleración y protección de motores de inducción trifásicos. Controlar el voltaje aplicado al motor, mediante el ajuste del ángulo de disparo de los tiristores, permite arranques y paradas suaves.
                     Con el adecuado ajuste de las variables, el par producido se ajusta a las necesidades de la carga, asegurando, de esta forma, que la corriente solicitada sea la mínima necesaria para el arranque.
@@ -128,17 +131,16 @@
 
             </div>
                   
-            <div class="derechaDivProductos">
+            <div class="derechaDivProductos" data-aos="fade-left">
                     <img class="imagenArranques" src="../img/arranquePaginaUno.jpg" alt="Arranque Suave">
                     <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
               
       </div>
   
-
       <div class="productosDiv">
         
-        <div class="bloqueDivProductos">
+        <div class="bloqueDivProductos" data-aos="fade-right">
             <h2 class="tituloProductosDiv">Soft-Starter SSW07</h2>
               <p class="parrafoDivProductos">El arrancador suave SSW07 es una llave de arranque estática, proyectado para la aceleración, desaceleración y protección de motores eléctricos de inducción trifásicos, a través del control de la tensión aplicada al motor. Compacto, contribuye a la optimización de espacios en tableros eléctricos, ofreciendo todas las protecciones para el motor eléctrico, adaptándose a las necesidades de las aplicaciones, a través de accesorios opcionales que pueden ser fácilmente instalados en él.</p>
               <p class="subParrafoProductos">El control de la tensión en tres fases, en el SSW07, permite que sea utilizado en aplicaciones consideradas pesadas, como bombas centrífugas, alternativas (saneamiento, irrigación y petróleo), ventiladores, extractores, sopladores, compresores de aire, refrigeración (tornillo y pistón), mezcladoras, aireadores, centrífugas, trituradores, moledoras, picadoras de madera, refinadoras de papel, hornos rotativos, sierras y cepillos (madera), molinos (bolas y martillo) y transportadoras de carga.</p>
@@ -164,7 +166,7 @@
 
         </div>
         
-        <div class="derechaArranques">
+        <div class="derechaArranques" data-aos="fade-left">
           <img class="imagenArranques" src="../img/arranquePaginaDos.jpg" alt="Arranque Suave">
           <input class="botonCompraProductos" type="button" value="Consultar">
         </div>
@@ -173,7 +175,7 @@
 
       <div class="productosDiv">
                                     
-        <div class="bloqueDivProductos">
+        <div class="bloqueDivProductos" data-aos="fade-right">
             <h2 class="tituloProductosDiv">Soft-Starter SSW08</h2>
               <p class="parrafoDivProductos">El arrancador suave SSW08 es una llave de arranque estática, proyectada para la aceleración, desaceleración y protección de motores eléctricos, a través del control de la tensión aplicada al motor. Compacto, contribuye a la optimización de espacios en tableros eléctricos, ofreciendo todas las protecciones para el motor eléctrico, adaptándose a las necesidades de las aplicaciones, a través de accesorios opcionales que pueden ser fácilmente instalados en él.</p>
               <p class="subParrafoProductos">Los Arrancadores Suaves WEG - SSW08 optimizan las secuencias de arranque y de parada, aumentan la productividad, permiten ahorro de energía / mantenimiento y protegen los motores de inducción trifásicos.
@@ -200,7 +202,7 @@
               <a class="linkNegro" href="https://static.weg.net/medias/downloadcenter/h45/h15/WEG-SSW08-users-manual-10000008521-en-es-pt.pdf" target="_blank"><p>Ver manual de usuario</p></a>
         </div>
         
-        <div class="derechaDivProductos">
+        <div class="derechaDivProductos" data-aos="fade-left">
           <img class="imagenArranquesTres" src="../img/arranquePaginaTres.jpg" alt="Arranque Suave">
           <input class="botonCompraProductos" type="button" value="Consultar">
         </div>
@@ -265,6 +267,14 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
+    <!--SCRIPT SCROLL-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+      offset: 200,
+      duration: 500
+    });
+    </script>
 
 </body>
 

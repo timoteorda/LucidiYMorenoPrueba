@@ -16,9 +16,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
-
-            <link href="../img/icono.png.jpg" rel="icon">
-            <link rel="stylesheet" href="../css/estilos.css">
+        <!--------------SCROLL ANIMATION-------------->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link href="../img/icono.png.jpg" rel="icon">
+        <link rel="stylesheet" href="../css/estilos.css">
 
 
 </head>
@@ -104,7 +105,7 @@
                                       <!--CARROUSEL-->
                         <h1 class="tituloProductosControl" >Guardamotores</h1>
           <div class="controles">
-            <div class="interruptoresTexto">
+            <div class="interruptoresTexto" data-aos="fade-right">
               <h2 class="modeloControles">Guardamotores MPW</h2>
               <p class="parrafoControles">Protección del Circuito Eléctrico + Maniobra y Protección del Motor.
                 El guardamotor MPW es una solución compacta para la protección del circuito eléctrico y arranque/protección de motores hasta 60 hp (380V) / 75 hp(440V). Posee elevada capacidad de interrupción, permitiendo su empleo incluso instalaciones con elevado nivel de corrientes de cortocircuito.</p> 
@@ -113,7 +114,7 @@
                 <a href= "https://static.weg.net/medias/downloadcenter/h19/he1/WEG-guardamotores-MPW-50030559-es.pdf" target="_blank"><h6 class="catalogo">Ver catálogo</h6></a>
             </div>
         
-            <div>
+            <div data-aos="fade-left">
               <img class="imagenInterruptor" src="../img/guardaMPW.jpg" alt="Imagen guardamotor">
               <input class="botonCompraProductos" type="button" value="Consultar">
             </div>
@@ -181,7 +182,14 @@
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+<!--SCRIPT SCROLL-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+    offset: 200,
+    duration: 500
+  });
+</script>
 </body>
 
 </html>
