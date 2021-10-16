@@ -1,4 +1,13 @@
 @import "../utilities/variables";
+
+
+%titulosProductosIndex{
+    color: $colorAzul;
+    font-size: 1.2rem;
+    text-decoration: none !important;
+    font-weight: bold;
+}
+                                                
                                                 /**TITULOS INDEX**/
 
 
@@ -16,16 +25,13 @@
         margin-top: -0.5rem;
        }
        @include tablet{
-        margin-left: -3rem;    
+        margin-left: 2rem;    
     }
 }
 
 .tituloProductosIndex{
-    color: $colorAzul;
-    font-size: 1.2rem;
+    @extend %titulosProductosIndex;
     margin-left: 2rem;
-    text-decoration: none !important;
-    font-weight: bold;
 
     @include telefono{
         font-size: 1.6rem;   
@@ -35,8 +41,8 @@
        }
     
     @include tablet{
-        font-size: 1.5rem;
-        margin-left: 0.7rem;
+        font-size: 1.7rem;
+        margin-left: 1rem;
     }   
 }
 
@@ -44,20 +50,39 @@
     color: $colorNegro;
 }
 
-.tituloProductosVariador{
-    color: $colorAzul;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-    text-decoration: none !important;
-    font-weight: bold;
+.tituloProductoElectrobomba{
+    @extend %titulosProductosIndex;
+    margin-left: 2.8rem;
 
     @include telefono{
-        font-size: 1.5rem;   
+        font-size: 1.6rem;   
         margin-bottom: 2rem;
-        margin-left: 0rem;
+        text-align: center;
+        margin-left: -2.5rem;
+       }
+    
+    @include tablet{
+        font-size: 1.7rem;
+        margin-left: 2.5rem;
+    }   
+}
+
+.tituloProductoElectrobomba:hover{
+    color: $colorNegro;
+}
+
+.tituloProductosVariador{
+    @extend %titulosProductosIndex;
+    margin-left: 1rem;
+
+    @include telefono{
+        font-size: 1.6rem;   
+        margin-bottom: 2rem;
+        margin-left: 2rem;
     }
     @include tablet{
         font-size: 1.5rem;
+        margin-bottom: 0.8rem;
     } 
 }
 
@@ -124,6 +149,11 @@
     @include telefono{
         margin-left: 0rem;
         font-size: 1.6rem;
+    }
+
+    @include tablet{
+        margin-left: -1rem;
+        font-size: 1.8rem;
     }
 }
 
@@ -311,7 +341,7 @@
     font-weight: bold;
 
     @include tablet{
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 }
 

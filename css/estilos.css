@@ -107,10 +107,8 @@ header {
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .mainElectro {
       width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.5fr 0.3fr 1fr;
-      grid-template-areas: "banner banner" "titulo titulo" "producto producto" "producto producto" "producto producto" "producto producto"; } }
+      display: flex;
+      flex-direction: column; } }
 
 /**CONTROL Y PROTECCION**/
 .mainControl {
@@ -561,6 +559,10 @@ a:hover {
     .parrafoDescriptivo {
       margin-left: 2.5rem;
       width: 15rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .parrafoDescriptivo {
+      width: 15rem;
+      margin-left: 0rem; } }
 
 .productosUbicacion {
   align-self: center;
@@ -1036,6 +1038,12 @@ p b {
 .horariosContacto {
   margin-top: 1rem; }
 
+.tituloProductosIndex, .tituloProductoElectrobomba, .tituloProductosVariador {
+  color: #005fa4;
+  font-size: 1.2rem;
+  text-decoration: none !important;
+  font-weight: bold; }
+
 /**TITULOS INDEX**/
 .titulo {
   font-size: 2.3rem;
@@ -1051,14 +1059,10 @@ p b {
       margin-top: -0.5rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .titulo {
-      margin-left: -3rem; } }
+      margin-left: 2rem; } }
 
 .tituloProductosIndex {
-  color: #005fa4;
-  font-size: 1.2rem;
-  margin-left: 2rem;
-  text-decoration: none !important;
-  font-weight: bold; }
+  margin-left: 2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosIndex {
       font-size: 1.6rem;
@@ -1067,26 +1071,39 @@ p b {
       margin-left: -0.8rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosIndex {
-      font-size: 1.5rem;
-      margin-left: 0.7rem; } }
+      font-size: 1.7rem;
+      margin-left: 1rem; } }
 
 .tituloProductosIndex:hover {
   color: black; }
 
+.tituloProductoElectrobomba {
+  margin-left: 2.8rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .tituloProductoElectrobomba {
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      margin-left: -2.5rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloProductoElectrobomba {
+      font-size: 1.7rem;
+      margin-left: 2.5rem; } }
+
+.tituloProductoElectrobomba:hover {
+  color: black; }
+
 .tituloProductosVariador {
-  color: #005fa4;
-  font-size: 1.2rem;
-  margin-left: 1rem;
-  text-decoration: none !important;
-  font-weight: bold; }
+  margin-left: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosVariador {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       margin-bottom: 2rem;
-      margin-left: 0rem; } }
+      margin-left: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosVariador {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem; } }
 
 .tituloProductosVariador:hover {
   color: black; }
@@ -1141,6 +1158,10 @@ p b {
     .tituloProductos {
       margin-left: 0rem;
       font-size: 1.6rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .tituloProductos {
+      margin-left: -1rem;
+      font-size: 1.8rem; } }
 
 .tituloProductos:hover {
   color: black; }
@@ -1290,7 +1311,7 @@ p b {
   font-weight: bold; }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tipoElectrobomba {
-      font-size: 1.4rem; } }
+      font-size: 1.8rem; } }
 
 /**TITULOS SERVICIOS**/
 .tituloServicios {
@@ -1521,6 +1542,10 @@ textarea {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenes {
       align-items: center; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenes {
+      margin-left: 1rem;
+      margin-top: 0.5rem; } }
 
 .imagenes:hover {
   width: 15rem;
@@ -1552,7 +1577,7 @@ textarea {
     .mapaIndexFrente {
       width: 90%;
       height: 30rem;
-      margin-left: -1.7rem; } }
+      margin-left: 1rem; } }
 
 /**IMAGENES PRODUCTOS**/
 .imagenesPaginaProducto {
@@ -1565,6 +1590,9 @@ textarea {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenesPaginaProducto {
       margin-left: 2rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenesPaginaProducto {
+      margin-left: 0rem; } }
 
 .imagenesPaginaProducto:hover {
   transform: scale(1.07); }
@@ -1636,6 +1664,10 @@ textarea {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenElectrobombas {
       margin-left: 1rem;
+      width: 18rem; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .imagenElectrobombas {
+      margin-left: 15rem;
       width: 18rem; } }
 
 /**IMAGENES CONTROL Y PROTECCION**/
@@ -1754,7 +1786,7 @@ textarea {
       margin-top: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .imagenNosotros {
-      width: 24rem;
+      width: 20rem;
       height: 15rem;
       margin-left: -11rem;
       margin-top: -3rem; } }
@@ -1769,10 +1801,10 @@ textarea {
       margin-top: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .imagenNosotrosDos {
-      width: 23rem;
+      width: 20rem;
       height: 15rem;
       margin-top: -3rem;
-      margin-left: 2rem; } }
+      margin-left: 0rem; } }
 
 .iconoNosotros {
   margin-left: 19rem;
