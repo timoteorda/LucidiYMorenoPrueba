@@ -1088,7 +1088,8 @@ p b {
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductoElectrobomba {
       font-size: 1.7rem;
-      margin-left: 2.5rem; } }
+      margin-left: 2.5rem;
+      color: #005fa4; } }
 
 .tituloProductoElectrobomba:hover {
   color: black; }
