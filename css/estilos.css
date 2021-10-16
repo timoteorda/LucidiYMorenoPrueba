@@ -650,6 +650,9 @@ a:hover {
 .subParrafoProductos {
   font-size: 1.1rem;
   margin-top: 1rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .subParrafoProductos {
+      width: 90%; } }
 
 .derechaDivProductos {
   width: 40%; }
@@ -1181,7 +1184,8 @@ p b {
   text-decoration: underline; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloArranques {
-      font-size: 2.2rem; } }
+      font-size: 2.5rem;
+      text-decoration: none; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloArranques {
       font-weight: bold; } }
