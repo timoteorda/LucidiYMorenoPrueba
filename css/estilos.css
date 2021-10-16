@@ -444,7 +444,7 @@ a:hover {
     .parrafoProductoIndex {
       font-size: 1.2rem;
       width: 90%;
-      margin-left: -0.5rem; } }
+      margin-left: -0.2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoProductoIndex {
       font-size: 1rem; } }
@@ -1043,10 +1043,9 @@ p b {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .titulo {
       width: 100%;
-      font-size: 1.75rem;
-      margin-left: 0.2rem;
-      margin-top: -1rem;
-      text-decoration: underline; } }
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      margin-top: -0.5rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .titulo {
       margin-left: -3rem; } }
@@ -1061,6 +1060,7 @@ p b {
     .tituloProductosIndex {
       font-size: 1.6rem;
       margin-bottom: 2rem;
+      text-align: center;
       margin-left: -0.8rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosIndex {
@@ -1078,9 +1078,9 @@ p b {
   font-weight: bold; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosVariador {
-      font-size: 1.4rem;
+      font-size: 1.5rem;
       margin-bottom: 2rem;
-      margin-left: -1rem; } }
+      margin-left: 0rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosVariador {
       font-size: 1.5rem; } }
@@ -1516,7 +1516,7 @@ textarea {
   margin-right: 1rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .imagenes {
-      margin-left: -1.2rem; } }
+      align-items: center; } }
 
 .imagenes:hover {
   width: 15rem;
