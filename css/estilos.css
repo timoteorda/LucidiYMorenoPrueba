@@ -25,7 +25,6 @@ header {
 /**INDEX**/
 .mainIndex {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 20rem 20 rem 20rem;
   grid-template-areas: "banner         banner " "productos      productos " "presentacion   presentacion "; }
 
 .banner {
@@ -213,6 +212,9 @@ header {
     .navegacion {
       width: 100%; } }
 
+.navbar-brand {
+  width: 100%; }
+
 .tituloBarra {
   font-size: 1.3rem;
   color: #005fa4 !important;
@@ -323,11 +325,12 @@ footer {
     .finalFooter {
       flex-direction: column;
       width: 100%;
-      height: 2rem; } }
+      height: 4rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .finalFooter {
       flex-direction: column;
-      width: 100%; } }
+      width: 100%;
+      height: 4rem; } }
 
 .copyright {
   color: white;
@@ -336,14 +339,22 @@ footer {
   margin-top: 0.5rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .copyright {
-      width: 100%;
-      margin-left: 0rem; } }
+      text-align: center; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .copyright {
+      text-align: center; } }
 
 .madeBy {
   font-family: 'Saira Stencil One', cursive;
   color: white;
   font-size: 1.2rem;
   margin-top: 0.5rem; }
+  @media screen and (min-width: 320px) and (max-width: 425px) {
+    .madeBy {
+      text-align: center; } }
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .madeBy {
+      text-align: center; } }
 
 .blancoFooter {
   color: white; }
@@ -454,8 +465,8 @@ a:hover {
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoProductoIndex {
       font-size: 1.2rem;
-      width: 90%;
-      margin-left: -0.2rem; } }
+      text-align: center;
+      width: 90%; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .parrafoProductoIndex {
       font-size: 1rem; } }
@@ -1125,7 +1136,7 @@ p b {
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .tituloProductosVariador {
       font-size: 1.5rem;
-      margin-bottom: 0.8rem; } }
+      margin-bottom: 2.3rem; } }
 
 .tituloProductosVariador:hover {
   color: black; }

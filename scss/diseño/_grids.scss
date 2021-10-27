@@ -36,7 +36,6 @@ header{
 .mainIndex{
     @extend %gridArea;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20rem 20 rem 20rem;
     grid-template-areas: 
     "banner         banner "
     "productos      productos "
