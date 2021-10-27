@@ -9,6 +9,7 @@ footer{
     display: flex;
     flex-direction: row;
     background-image: linear-gradient(to right bottom, #4d4d4d, #3c3c3c, $colorNegro);
+    padding: 1.5rem 0rem;
 
     @include telefono{
         flex-direction: column;
@@ -107,15 +108,20 @@ footer{
 }
 
 .finalFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: #4d4d4d;
-    height: 2rem;
+    height: 2.5rem;
 
     @include telefono{
+        flex-direction: column;
         width: 100%;
         height: 2rem;  
        }
 
     @include tablet{
+        flex-direction: column;
         width: 100%;
     }
 
@@ -125,11 +131,19 @@ footer{
     color: $colorBlanco;
     font-size: 1.2rem;
     margin-left: 1rem;
+    margin-top: 0.5rem;
 
     @include telefono{
         width: 100%;
         margin-left: 0rem;  
        }
+}
+
+.madeBy{
+    font-family: 'Saira Stencil One', cursive;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 .blancoFooter{

@@ -233,7 +233,8 @@ footer {
 .piePagina {
   display: flex;
   flex-direction: row;
-  background-image: linear-gradient(to right bottom, #4d4d4d, #3c3c3c, black); }
+  background-image: linear-gradient(to right bottom, #4d4d4d, #3c3c3c, black);
+  padding: 1.5rem 0rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .piePagina {
       flex-direction: column;
@@ -313,24 +314,36 @@ footer {
   font-size: 0.9rem; }
 
 .finalFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   background-color: #4d4d4d;
-  height: 2rem; }
+  height: 2.5rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .finalFooter {
+      flex-direction: column;
       width: 100%;
       height: 2rem; } }
   @media screen and (min-width: 426px) and (max-width: 768px) {
     .finalFooter {
+      flex-direction: column;
       width: 100%; } }
 
 .copyright {
   color: white;
   font-size: 1.2rem;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  margin-top: 0.5rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .copyright {
       width: 100%;
       margin-left: 0rem; } }
+
+.madeBy {
+  font-family: 'Saira Stencil One', cursive;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 0.5rem; }
 
 .blancoFooter {
   color: white; }
@@ -456,7 +469,8 @@ a:hover {
     flex-direction: column; } }
 
 .presentacion {
-  background-image: linear-gradient(to bottom, #bfbfbf, #a7a7a7); }
+  background-image: linear-gradient(to bottom, #bfbfbf, #a7a7a7);
+  padding: 2rem 0rem; }
 
 .itemUno {
   width: 50%;
@@ -510,7 +524,8 @@ a:hover {
 
 .dondeEstamos {
   margin-left: 4rem;
-  width: 70%; }
+  width: 70%;
+  padding: 1rem 0rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .dondeEstamos {
       width: 70%;
@@ -521,7 +536,8 @@ a:hover {
       margin-left: 0rem; } }
 
 .parrafoUbicacion {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  padding: 0.5rem 0rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .parrafoUbicacion {
       font-size: 1.2rem;
@@ -539,7 +555,8 @@ a:hover {
 .telefonoIndex {
   color: black;
   font-size: 1.4rem;
-  font-weight: bold; }
+  font-weight: bold;
+  padding: 0.5rem 0rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .telefonoIndex {
       font-size: 1.1rem;
@@ -1062,7 +1079,8 @@ p b {
       margin-left: 2rem; } }
 
 .tituloProductosIndex {
-  margin-left: 2rem; }
+  margin-left: 2rem;
+  margin-bottom: 2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosIndex {
       font-size: 1.6rem;
@@ -1078,6 +1096,7 @@ p b {
   color: black; }
 
 .tituloProductoElectrobomba {
+  margin-bottom: 2rem;
   margin-left: 2.8rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductoElectrobomba {
@@ -1095,7 +1114,9 @@ p b {
   color: black; }
 
 .tituloProductosVariador {
-  margin-left: 1rem; }
+  align-items: center;
+  margin-left: 1rem;
+  margin-bottom: 2rem; }
   @media screen and (min-width: 320px) and (max-width: 425px) {
     .tituloProductosVariador {
       font-size: 1.6rem;

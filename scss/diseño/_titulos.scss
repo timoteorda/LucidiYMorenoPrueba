@@ -32,6 +32,7 @@
 .tituloProductosIndex{
     @extend %titulosProductosIndex;
     margin-left: 2rem;
+    margin-bottom: 2rem;
 
     @include telefono{
         font-size: 1.6rem;   
@@ -52,6 +53,7 @@
 
 .tituloProductoElectrobomba{
     @extend %titulosProductosIndex;
+    margin-bottom: 2rem;
     margin-left: 2.8rem;
 
     @include telefono{
@@ -74,7 +76,9 @@
 
 .tituloProductosVariador{
     @extend %titulosProductosIndex;
+    align-items: center;
     margin-left: 1rem;
+    margin-bottom: 2rem;
 
     @include telefono{
         font-size: 1.6rem;   
