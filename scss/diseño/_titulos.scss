@@ -7,91 +7,64 @@
     text-decoration: none !important;
     font-weight: bold;
 }
-                                                
+                        
+.fondoTitulo{
+    width: 40%;
+    height: 4rem;
+    background-color: $colorAzul;
+    border-radius: 50px;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    @include telefono{
+        width: 85%;
+        height: 5.5rem;
+    }
+    @include tablet{
+        width: 60%; 
+        height: 4.5rem; 
+    }
+}
+
                                                 /**TITULOS INDEX**/
 
 
 .titulo{
-    font-size: 2.3rem;
-    color: $colorAzul;
+    font-size: 2.5rem;
+    color: $colorBlanco;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 3rem;
 
     @include telefono{
         width: 100% ;
         font-size: 2rem;
-        margin-left: 0.5rem;
-        margin-top: -0.5rem;
+        margin-left: 0rem;
+        margin-top: 0rem;
        }
        @include tablet{
-        margin-left: 2rem;    
+        margin: 0rem    
     }
 }
 
 .tituloProductosIndex{
     @extend %titulosProductosIndex;
-    margin-left: 2rem;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-left: -1.5rem;
+    margin-bottom: 1.5rem;
 
     @include telefono{
         font-size: 1.6rem;   
         margin-bottom: 2rem;
         text-align: center;
-        margin-left: -0.8rem;
+        margin-left: -5%;
        }
     
     @include tablet{
         font-size: 1.7rem;
-        margin-left: 1rem;
     }   
 }
 
 .tituloProductosIndex:hover{
-    color: $colorNegro;
-}
-
-.tituloProductoElectrobomba{
-    @extend %titulosProductosIndex;
-    margin-bottom: 2rem;
-    margin-left: 2.8rem;
-
-    @include telefono{
-        font-size: 1.6rem;   
-        margin-bottom: 2rem;
-        text-align: center;
-        margin-left: -2.5rem;
-       }
-    
-    @include tablet{
-        font-size: 1.7rem;
-        margin-left: 2.5rem;
-        color: $colorAzul;
-    }   
-}
-
-.tituloProductoElectrobomba:hover{
-    color: $colorNegro;
-}
-
-.tituloProductosVariador{
-    @extend %titulosProductosIndex;
-    align-items: center;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-
-    @include telefono{
-        font-size: 1.6rem;   
-        margin-bottom: 2rem;
-        margin-left: 2rem;
-    }
-    @include tablet{
-        font-size: 1.5rem;
-        margin-bottom: 2.3rem;
-    } 
-}
-
-.tituloProductosVariador:hover{
     color: $colorNegro;
 }
 

@@ -92,7 +92,9 @@
 
 .flexProductos{
     @extend %flexRow;
-    margin-right: 1rem;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0.5rem 0.5rem;
 
         @include telefono{
             flex-direction: column;
@@ -108,8 +110,18 @@
     }
 }
 
+.contenedorFlex{
+    width: 18rem;
+    @include telefono{
+        width: 90%; 
+    }
+    @include tablet{
+        width: 90%;   
+    }
+}
+
 .parrafoProductoIndex{
-    text-align: justify;
+    text-align: center;
     font-size: 1rem;
     width: 80%;
     margin-left: 0.5rem;
@@ -118,6 +130,7 @@
     @include telefono{
         font-size: 1.2rem;
         text-align: center;
+        margin-left: 0rem;
         width: 90%; 
     }
     @include tablet{

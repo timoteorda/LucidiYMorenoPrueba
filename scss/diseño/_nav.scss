@@ -19,12 +19,21 @@
     width: 100%;
 }
 
+.nav-item{
+    padding: 1rem 1rem;
+    @include telefono{
+        padding: 0rem 0rem;  
+       }
+       @include tablet{
+        padding: 0rem 0rem;}
+    
+}
+
 .tituloBarra{
     font-size: 1.3rem;
     color: $colorAzul !important;
     font-weight: bold;
     margin-top: 1rem;
-    
 }
 
 .tituloBarra:hover{

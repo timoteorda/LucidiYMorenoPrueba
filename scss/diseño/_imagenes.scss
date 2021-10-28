@@ -11,6 +11,7 @@
     
     @include telefono{
         align-items: center;
+        margin-left: 0rem;
     }
     @include tablet{
         margin-left: 1rem;
