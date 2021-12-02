@@ -151,7 +151,7 @@
 }
 
 .presentacion{
-    background-image: linear-gradient(to bottom,rgb(191,191,191), rgb(167,167,167));
+    background-image: linear-gradient(to bottom,rgb(220,220,220), rgb(200,200,200));
     padding: 2rem 0rem;
 }
 
@@ -881,7 +881,6 @@ p b{
     @include telefono{
      font-size: 1.1rem;   
     }
-
 }
 
 .direccionContacto{
@@ -903,4 +902,51 @@ p b{
 
 .horariosContacto{
     margin-top: 1rem;  
+}
+
+
+/****************************TIENDA******************************/
+
+.flexTienda{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @include telefono{
+        flex-direction: column;
+        margin-left: 2.5rem;
+       }
+}
+
+#divProductos{
+    width: 100%;
+}
+
+.busquedaProducto{
+    width: 35%;
+    height: 3rem;
+    border: solid 2px $colorAzul;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 60%;
+}
+
+.card{
+    width: 15rem;
+    height: 30rem;
+    margin: 1rem 0.8rem;
+    border: solid gray 1px;
+    border-radius: 10px;
+}
+
+.btn.btn-primary{
+    width: 10rem;
+    margin-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+.btn.btn-danger{
+    width: 10rem;
+    margin-left: 0.5rem;
 }

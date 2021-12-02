@@ -311,3 +311,15 @@ header{
     "banner         banner"
     "contacto       contacto";   
 }
+
+                                                /**TIENDA**/
+
+.mainTienda{
+    @extend %gridArea;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "banner"
+    "productos";   
+    margin-bottom: 2rem;
+}

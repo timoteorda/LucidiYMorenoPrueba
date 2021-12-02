@@ -8,32 +8,16 @@
     font-weight: bold;
 }
                         
-.fondoTitulo{
-    width: 40%;
-    height: 4rem;
-    background-color: $colorAzul;
-    border-radius: 50px;
-    margin-bottom: 3rem;
-    margin-left: auto;
-    margin-right: auto;
-    @include telefono{
-        width: 85%;
-        height: 5.5rem;
-    }
-    @include tablet{
-        width: 60%; 
-        height: 4.5rem; 
-    }
-}
 
                                                 /**TITULOS INDEX**/
 
 
 .titulo{
-    font-size: 2.5rem;
-    color: $colorBlanco;
+    font-size: 2.8rem;
+    color: $colorAzul;
     font-weight: bold;
     text-align: center;
+    margin-bottom: 2.5rem;
 
     @include telefono{
         width: 100% ;
@@ -74,7 +58,6 @@
     color: $colorNegro;
     margin-left: 13rem;
     margin-bottom: 2rem;
-    text-decoration: underline;
 
     @include telefono{
         font-size: 2rem;
@@ -91,7 +74,6 @@
     text-align:left;
     font-size: 2rem;
     font-weight: bold;
-    text-decoration: underline;
     color: $colorNegro;
     margin-bottom: 2rem;
     
@@ -145,9 +127,11 @@
     grid-area: titulo;
     text-align: center;
     color: $colorAzul;
+    font-weight: bold;
+    font-size: 3rem;
     margin-bottom: 3rem;
     margin-top: 2rem;
-    text-decoration: underline;
+
 
     @include telefono{
         margin-left: 1rem;
@@ -182,7 +166,8 @@
     text-align: center;
     margin-top: 2rem;
     color: $colorAzul;
-    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: bold;
 
     @include telefono{
         font-size: 2.5rem;
@@ -215,7 +200,7 @@
                                              /**CONTROl Y PROTECCION**/
 .tituloPrincipalControl{
     grid-area: titulo;
-    font-size: 2.3rem;
+    font-size: 3rem;
     color: $colorAzul;
     font-weight: bold;
     text-align: center;
@@ -303,8 +288,8 @@
 .tituloElectrobombas{
     grid-area: titulo;
     font-size: 3rem;
-    text-decoration: underline;
     color: $colorAzul;
+    font-weight: bold;
     text-align: center;
 
     @include telefono{
@@ -363,6 +348,7 @@
 
 .tituloServicioBalanceo{
     text-align: center;
+    font-size: 2.2rem;
     margin-top: 1.5rem;
     margin-bottom: 2rem;
     font-weight: bold;
@@ -378,10 +364,10 @@
                                                             /**TITULOS MANTENIMIENTO**/
 
 .tituloServicioMantenimiento{
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 2rem;
-    font-weight: 600;
-    margin-left: 3rem;
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 1.5rem;
     color: $colorAzul;
 
@@ -395,8 +381,8 @@
 
 .tituloServicioReparacion{
     font-size: 2.2rem;
-    font-weight: 600;
-    margin-left: 2rem;
+    font-weight: bold;
+    text-align: center;
     color: $colorAzul;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -444,7 +430,7 @@
                                                         /**TITULOS NOSOTROS**/
 
 .tituloNosotros{
-    font-size: 1.9rem;
+    font-size: 2.5rem;
     width: 100%;
     text-align: center;
     margin: 3rem;
@@ -501,5 +487,17 @@
     @include telefono{
         margin-top: -0.5rem;
     }
+}
+
+                                                        /**TITULOS TIENDA**/
+        
+.card-title{
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 1rem;
+    font-weight: 500;
 }
 

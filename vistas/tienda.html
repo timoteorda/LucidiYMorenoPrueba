@@ -77,76 +77,36 @@
       </nav>
     </header>
     <!------------------ACA COMIENZA EL MAIN------------------->
-    <main class="servicios">
-    <!------------------CARROUSEL------------------->
-    <div class="banner">                          
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner .active">
-            <div class="carousel-item active">
-                <img src="../img/banner.jpg" class="d-block w-100" alt="Banner Uno">
+    <main class="mainTienda">
+        <!------------------CARROUSEL------------------->
+        <div class="banner">                          
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner .active">
+                <div class="carousel-item active">
+                    <img src="../img/banner.jpg" class="d-block w-100" alt="Banner Uno">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/bannerdos.jpg" class="d-block w-100" alt="Banner Dos">
+                </div>
+                <div class="carousel-item">
+                    <img src="../img/bannertres.jpg" class="d-block w-100" alt="Banner Tres">
+                </div>
             </div>
-            <div class="carousel-item">
-                <img src="../img/bannerdos.jpg" class="d-block w-100" alt="Banner Dos">
-            </div>
-            <div class="carousel-item">
-                <img src="../img/bannertres.jpg" class="d-block w-100" alt="Banner Tres">
-            </div>
-          </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-      </div>                       
-    </div>                       
-      <div class="paginaServicios">
-          <div class="textoServicios" data-aos="fade-up" data-aos-once="true">
-            <div>
-                <h1 class="tituloServicios">Servicios que ofrecemos</h1>
-            </div>
-            <div  class="serviciosEnMain"> 
-                <a href="../vistasServicios/balanceo.html"><h2 class="tituloServiciosEnMain">Balanceo Dinámico</h2></a>
-                <p class="parrafoDescriptivoServicios"> Balanceo dinámico es el nombre que recibe el arte de compensar y redistribuir masa, por el efecto producido por la descompensación de las masas por errores generados... <a class="botonVerMas" href="../vistasServicios/balanceo.html"><p>Ver mas...</p></a>
-                </p>
-            </div>        
-            <div class="serviciosEnMain">
-                <a href="../vistasServicios/reparacion.html"><h2 class="tituloServiciosEnMain">Reparación de motores eléctricos</h2></a>
-                <p class="parrafoDescriptivoServicios"> En Lucidi y Moreno SA nos dedicamos a la reparación de motores eléctricos. En primer lugar, una vez llegado el motor a nuestro taller, se realiza una evaluación de... <a class="botonVerMas" href="../vistasServicios/reparacion.html"><p>Ver mas...<p></a>
-                </p>
-            </div> 
-            <div class="serviciosEnMain">
-                <a href="../vistasServicios/mantenimiento.html"><h2 class="tituloServiciosEnMain">Mantenimiento de motores eléctricos</h2></a>
-                <p class="parrafoDescriptivoServicios"> La finalidad del mantenimiento es prolongar lo máximo posible la vida útil del equipo. La no observancia de uno de los ítems relacionados a seguir puede llevar a paradas... <a class="botonVerMas" href="../vistasServicios/mantenimiento.html"><p>Ver mas...</p></a> 
-                </p>
-            </div>
-          </div>
-            <!--------------FORMULARIO DE CONTACTO-------------->   
-              <div class="formServicios" data-aos="fade-down" data-aos-once="true">            
-                <h3 class="tituloFormulario">Formulario de contacto</h3>
-                    <form>
-                      <div class="form-group formularioContacto">
-                        <label class="labelTitulo" for="nombreyapellido">Nombre y apellido:</label>
-                        <input type="email" class="formControl" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre y apellido">                     
-                      </div>
-                      <div class="form-group">
-                        <label class="labelTitulo" for="email">E-mail:</label>
-                        <input type="text" class="formControl" id="exampleInputPassword1" placeholder="E-mail">
-                      </div>
-                      <div class="form-group">
-                        <label class="labelTitulo" for="asunto">Asunto:</label>
-                        <input type="text" class="formControl" id="asunto" aria-describedby="asuntoEmail" placeholder="Asunto">                                             
-                      </div>
-                      <div class="form-group">
-                        <label for="TextArea"></label>
-                        <textarea class="formControl" id="exampleFormControlTextarea1" rows="3" placeholder="Inserte texto"></textarea>
-                      </div>
-                      <button type="submit" class="btn btn-primary botonFormulario">Enviar</button>
-                    </form>        
-              </div>                
-      </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>                       
+        </div>
+        <div id="tituloPrincipal"></div>
+        <input class="busquedaProducto" type="text" id="input" placeholder="Ingrese un Producto">
+        <div class="flexTienda">  
+          <div id="divProductos" class="row"></div>
+        </div>  
     </main>
     <!--COMIENZO FOOTER-->
     <footer>
@@ -193,15 +153,12 @@
     </div>
     </footer>
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>    
-    <!--SCRIPT SCROLL-->
-      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script>
-        AOS.init({
-        offset: 200,
-        duration: 500
-        });
-      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- JAVASCRIPT -->
+    <<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/javascript.js"></script>
 </body>
 </html>
 

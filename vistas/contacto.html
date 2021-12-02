@@ -68,6 +68,9 @@
                   <li class="nav-item">
                     <a class="nav-link tituloBarra" href="../vistas/contacto.html">Contacto</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link tituloBarra" href="../vistas/tienda.html">Tienda</a>
+                  </li>
                 </ul>
               </div>
         </div>
@@ -133,21 +136,21 @@
             </div>                                            
                 <div class="formServicios" data-aos="fade-down" data-aos-once="true">                          
                       <h3 class="tituloFormulario">Formulario de contacto</h3>
-                    <form>
+                    <form id="formContacto">
                       <div class="form-group formularioContacto">
-                        <label class="labelTitulo" for="nombreyapellido">Nombre y apellido:</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre y apellido">                     
+                        <label for="nombreyapellido" class="labelTitulo" >Nombre y apellido:</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre y apellido">                     
                       </div>
                       <div class="form-group">
-                        <label class="labelTitulo" for="email">E-mail:</label>
+                        <label for="email" class="labelTitulo" >E-mail:</label>
                         <input type="text" class="form-control" id="exampleInputPassword1" placeholder="E-mail">
                       </div>
                       <div class="form-group">
-                        <label class="labelTitulo" for="asunto">Asunto:</label>
+                        <label for="asunto" class="labelTitulo" >Asunto:</label>
                         <input type="text" class="form-control" id="asunto" aria-describedby="asuntoEmail" placeholder="Asunto">                                             
                       </div>
                       <div class="form-group">
-                        <label for="TextArea"></label>
+                        <label for="textArea"></label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserte texto"></textarea>
                       </div>
                       <button type="submit" class="btn btn-primary botonFormulario">Enviar</button>
@@ -209,6 +212,8 @@
       duration: 350
     });
   </script>
+  <!--------------JAVASCRIPT-------------->
+  <script src="../js/javascript.js"></script>
 </body>   
 </html>
 
