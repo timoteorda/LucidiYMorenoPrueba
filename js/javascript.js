@@ -1,3 +1,30 @@
+/*BOTON OSCURDO-CLARO*/
+
+let darkMode; 
+
+if (localStorage.getItem("blackMode")) {
+    darkMode = localStorage.getItem("blackMode");
+    
+}else{
+    darkMode = "light"
+}
+localStorage.setItem("blackMode", darkMode)
+
+$( () =>{
+    if(localStorage.getItem("blackMode") == "dark"){
+        $("body").addClass("blackMode")
+        $("#botonNegro").hide()
+        $("#botonBlanco").show()
+    } else{
+        $("#botonBlanco").hide()
+    }
+})
+
+
+
+
+
+
 /*TITULO DE LA TIENDA*/
 
 $(() => {
@@ -68,7 +95,7 @@ const centrifugaVertical = new Producto("Electrobomba", "Centrífuga vertical", 
 producto.push(centrifugaVertical)
 const desagoteDomestico = new Producto("Electrobomba", "Desagote doméstico", 20000, 10)
 producto.push(desagoteDomestico)
-const centrifugaAcero = new Producto("Electrobomba", "Centrifuga de acero inoxidable", 40000, 10)
+const centrifugaAcero = new Producto("Electrobomba", "Centrífuga de acero inoxidable", 40000, 10)
 producto.push(centrifugaAcero)
 const sumergiblePozo = new Producto("Electrobomba", "Sumergible pozo profundo", 20000, 10)
 producto.push(sumergiblePozo)
@@ -111,24 +138,25 @@ producto.forEach((producto, indice) =>{
     botonAgregar.onclick = agregarProducto
 })
 
-producto.forEach((producto, indice) =>{
+producto.forEach((productos, indice) =>{
     let botonEliminar = document.getElementById(`botonEliminar${indice+1}`)
     function eliminarProducto (){
         let idProducto = document.getElementById(`producto${indice+1}`)
         idProducto.remove;
-        console.log(`Usted a eliminado ${producto.tipo} ${producto.modelo} del carrito`)
+        console.log(`Usted a eliminado ${productos.tipo} ${productos.modelo} del carrito`)
         divProductos.removeChild(document.getElementById(`producto${indice + 1}`))
         producto.splice(indice + 1)
     }
     botonEliminar.onclick = eliminarProducto
 })
 
+// JQUERY
 
-let input = document.getElementById("input")
-
-input.addEventListener(`input`, (e) => {
-    input.textContent= e.target.value
-    let busqueda = producto.find(producto => producto.tipo.includes(e.target.value))
-    console.log(busqueda)
+$(() => {
+    $('#input').keydown((e) => {
+        let productoInput = e.target.value
+        let productoBuscar = productoInput.toLowerCase()
+        let productoEncontrado = producto.filter(producto => producto.tipo.toLowerCase() === productoBuscar)
+        console.log(productoEncontrado)
+    })
 })
-

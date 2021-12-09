@@ -20,7 +20,12 @@ body {
 
 header {
   grid-area: header;
-  height: 8rem; }
+  height: 8rem;
+  transform: background-color 700ms ease; }
+
+.blackMode {
+  background-color: black;
+  color: white; }
 
 /**INDEX**/
 .mainIndex {
