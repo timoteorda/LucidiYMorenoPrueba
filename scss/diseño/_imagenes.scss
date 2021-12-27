@@ -1,5 +1,6 @@
 @import "../utilities/variables";
  
+
  /**IMAGENES INDEX**/
 
 .imagenes{
@@ -373,4 +374,24 @@
 .errorImagen{
     height:22rem;
     width: 50rem;
+}
+
+
+.card-img-top{
+    margin-top: 0.5rem;
+    margin-left: 1.7rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.carrito{
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.boton{
+    background-color: transparent;
+    border: none;
 }

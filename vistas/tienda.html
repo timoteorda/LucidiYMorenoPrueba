@@ -7,7 +7,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!--------------TITULO-------------->
-    <title>Servicios que ofrecemos | Lucidi y Moreno S.A</title>
+    <title>Tienda Online | Lucidi y Moreno S.A</title>
     <!--------------SEO-------------->
     <meta name="keywords" content="Servicios, bobinado de motores, reparacion de motores electricos, balanceo dinámico, mantenimiento de motores.">
     <meta name="description" content="Somos Lucidi y Moreno S.A, representantes oficiales de WEG. Ofrecemos mantenimiento y reparación de motores y más. Contactanos, estamos para ayudarte.">
@@ -63,7 +63,7 @@
                   <a class="nav-link tituloBarra" href="../vistas/manuales.html">Manuales</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link tituloBarra" href="../vistas/nosotros.html">Acerca de Nosotros</a>
+                  <a class="nav-link tituloBarra" href="../vistas/nosotros.html">Nosotros</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link tituloBarra" href="../vistas/contacto.html">Contacto</a>
@@ -71,9 +71,12 @@
                 <li class="nav-item">
                   <a class="nav-link tituloBarra" href="../vistas/tienda.html">Tienda</a>
                 </li>
-                <div>
-                  <button id="botonBlanco" class="btn btn-light"><li><img src="../img/brightness.png" alt="Modo Dia"></li></button> 
-                  <button id="botonNegro" class="btn btn-light"><li><img src="../img/night-mode.png" alt="Modo Nocturno"></li></button>
+                <li class="nav-item botonCarritoEstilo" >
+                  <a id="botonCarrito" data-bs-toggle="modal" data-bs-target="#idModal" class="btn btn-link"><img class="logoCarritoBarra" src="../img/carrito.png" alt="carrito"></a>
+                </li>
+                <div class="botonesTema">
+                  <button id="botonBlanco" class="btn btn-light botonTemaFondo"><li><img src="../img/brightness.png" alt="Modo Dia"></li></button> 
+                  <button id="botonNegro" class="btn btn-light botonTemaFondo"><li><img src="../img/night-mode.png" alt="Modo Nocturno"></li></button>
                 </div>
               </ul>
             </div>
@@ -106,11 +109,30 @@
                 </button>
         </div>                       
         </div>
-        <div id="tituloPrincipal"></div>
         <input class="busquedaProducto" type="text" id="input" placeholder="Ingrese un Producto">
         <div class="flexTienda">  
           <div id="divProductos" class="row"></div>
-        </div>  
+        </div>
+        <div class="modal fade" id="idModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body" id="modalBody">
+
+                </div>
+              <div class="row ml-ato">
+                  <p id="precioTotal"></p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" data-bs-dismiss="modal" class="btn btn-primary" id="botonFinalizarCompra">Finalizar Compra</button>
+              </div>
+            </div>
+          </div>
+        </div> 
     </main>
     <!--COMIENZO FOOTER-->
     <footer>
@@ -160,8 +182,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!--JQUERY-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--ALERTA EXITO-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- JAVASCRIPT -->
-    <<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="../js/clase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="../js/javascript.js"></script>
 </body>
 </html>

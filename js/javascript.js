@@ -1,4 +1,5 @@
-/*BOTON OSCURDO-CLARO*/
+
+                                                /*BOTON OSCURDO-CLARO*/
 
 let darkMode; 
 
@@ -13,144 +14,159 @@ localStorage.setItem("blackMode", darkMode)
 $( () =>{
     if(localStorage.getItem("blackMode") == "dark"){
         $("body").addClass("blackMode")
+        $(".navbar-nav").addClass("blackMode")
+        $(".navbar").addClass("blackMode")
+        $("header").addClass("blackMode")
+        $(".container-fluid").addClass("blackMode")
+        $(".card").addClass("cardOscura")
+        $(".nav-link").addClass("tituloDarkMode")
+        $(".tituloTienda").addClass("tituloModoOscuro")
+        $(".botonCarritoEstilo").addClass("botonCarritoEstiloBlack")
+        $(".logoCarritoBarra").addClass("logoCarritoBarraDark")
         $("#botonNegro").hide()
         $("#botonBlanco").show()
     } else{
         $("#botonBlanco").hide()
     }
+
+    $("#botonBlanco").click(() => {
+        $("#botonBlanco").hide()
+        $("#botonNegro").show()
+    
+    $("body").removeClass("blackMode")
+    $(".navbar-nav").removeClass("blackMode")
+    $(".navbar").removeClass("blackMode")
+    $("header").removeClass("blackMode")
+    $(".container-fluid").removeClass("blackMode")
+    $(".card").removeClass("cardOscura")
+    $(".nav-link").removeClass("tituloDarkMode")
+    $(".tituloTienda").removeClass("tituloModoOscuro")
+    $(".botonCarritoEstilo").removeClass("botonCarritoEstiloBlack")
+    $(".logoCarritoBarra").removeClass("logoCarritoBarraDark")
+    localStorage.setItem("blackMode", "light")
+    localStorage.setItem("cardOscura", "light")
+    localStorage.setItem("tituloDarkMode", "light")
+    localStorage.setItem("tituloModoOscuro", "light")
+    })
+
+    $("#botonNegro").click(() => {
+        $("#botonNegro").hide()
+        $("#botonBlanco").show()
+        
+    $("body").addClass("blackMode")
+    $(".navbar-nav").addClass("blackMode")
+    $(".navbar").addClass("blackMode")
+    $("header").addClass("blackMode")
+    $(".container-fluid").addClass("blackMode")
+    $(".card").addClass("cardOscura")
+    $(".nav-link").addClass("tituloDarkMode")
+    $(".tituloTienda").addClass("tituloModoOscuro")
+    $(".botonCarritoEstilo").addClass("botonCarritoEstiloBlack")
+    $(".logoCarritoBarra").addClass("logoCarritoBarraDark")
+    localStorage.setItem("blackMode", "light")
+    localStorage.setItem("cardOscura", "light")
+    localStorage.setItem("tituloDarkMode", "light")
+    localStorage.setItem("tituloModoOscuro", "light")
+    })
+
 })
 
-
-
-
-
-
-/*TITULO DE LA TIENDA*/
-
-$(() => {
-$('#tituloPrincipal').prepend(`
-    <h1 id="parrafo1" class="tituloArranques">Bienvenido a nuestra tienda virtual</h1>
-    `
-)
-})
-
-
-/*CARTAS DE LA TIENDA*/
-
-let producto = []
-
-class Producto {
-    constructor(tipo, modelo, precio, stock){
-        this.tipo = tipo
-        this.modelo = modelo
-        this.precio = precio
-        this.stock = stock
-    }
-}
-
-/*MOTORES ELECTRICOS*/
-
-const w12 = new Producto("Motor eléctrico", "W12", 25000, 20)
-producto.push(w12)
-const w21 = new Producto ("Motor eléctrico", "W21", 33000, 20)
-producto.push(w21)
-const w21Xdb = new Producto("Motor eléctrico", "W1Xdb", 36000, 20)
-producto.push(w21Xdb)
-const w22 = new Producto("Motor eléctrico", "W22", 40000, 20)
-producto.push(w22)
-
-/*VARIADORES DE FRECUENCIA*/
-
-const cfw300 = new Producto ("Variador de frecuencia", "CFW300", 28000, 15)
-producto.push(cfw300)
-const cfw500 = new Producto ("Variador de frecuencia", "CFW500", 32000, 15)
-producto.push(cfw500)
-const cfw11 = new Producto ("Variador de frecuencia", "CFW11", 35000, 15)
-producto.push(cfw11)
-
-/*ARRANQUES SUAVES*/
-
-const ssw05 = new Producto ("Arranques suave", "SSW05", 25000, 15)
-producto.push(ssw05)
-const ssw07 = new Producto ("Arranques suave", "SSW07", 29000, 15)
-producto.push(ssw07)
-const ssw08 = new Producto ("Arranques suave", "SSW08", 34000, 15)
-producto.push(ssw08)
-
-/*ELECTROBOMBAS*/
-
-const presurizadora = new Producto("Electrobomba", "Presurizadora", 20000, 10)
-producto.push(presurizadora)
-const circuladoraCalefaccion = new Producto("Electrobomba", "Circuladora para calefacción", 22000, 10)
-producto.push(circuladoraCalefaccion)
-const periferica = new Producto("Electrobomba", "Electrobomba periférica", 23500, 10)
-producto.push(periferica)
-const centrifuga = new Producto("Electrobomba", "Electrobomba Centrífuga", 24000, 10)
-producto.push(centrifuga)
-const centrifugaAltoCaudal = new Producto("Electrobomba", "Centrífuga de alto caudal", 28000, 10)
-producto.push(centrifugaAltoCaudal)
-const centrifugaAltaPresion = new Producto("Electrobomba", "Centrífuga de alta presión", 32000, 10)
-producto.push(centrifugaAltaPresion)
-const centrifugaVertical = new Producto("Electrobomba", "Centrífuga vertical", 26000, 10)
-producto.push(centrifugaVertical)
-const desagoteDomestico = new Producto("Electrobomba", "Desagote doméstico", 20000, 10)
-producto.push(desagoteDomestico)
-const centrifugaAcero = new Producto("Electrobomba", "Centrífuga de acero inoxidable", 40000, 10)
-producto.push(centrifugaAcero)
-const sumergiblePozo = new Producto("Electrobomba", "Sumergible pozo profundo", 20000, 10)
-producto.push(sumergiblePozo)
-const desagoteTriturador = new Producto("Electrobomba", "Desagote con triturador", 24000, 10)
-producto.push(desagoteTriturador)
-
-/*CONTROL Y PROTECCION*/
-
-
-
-localStorage.setItem(`producto`, JSON.stringify(producto))
-
-/*CARDS*/
+                                                    /*CARDS*/
 
 let divProductos = document.getElementById(`divProductos`)
+let botonCarrito = document.getElementById(`botonCarrito`)
+let modalBody = document.getElementById(`modalBody`)
+let botonFinalizarCompra = document.getElementById(`botonFinalizarCompra`)
 
-producto.forEach((producto, indice) => {
-    divProductos.innerHTML += `
-    <div class="card" id= "producto${indice + 1}">
-        <img src="../img/producto${indice + 1}.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h3 class="card-title">${producto.tipo}</h3>
-                <h4 class="card-text">Modelo: ${producto.modelo}</h4>
-                <h5 class="card-text">Precio: $${producto.precio}</h5>
-                <a id="botonAgregar${indice+1}" class="btn btn-primary">Añadir a carrito</a>
-                <a id="botonEliminar${indice+1}" class="btn btn-danger">Eliminar</a>
+fetch('../productos.json')
+    .then(promesa => promesa.json())
+    .then(datosProductos =>{
+        datosProductos.forEach((productoEnArray, indice) => {
+            divProductos.innerHTML += `
+            <div class="card" id= "producto${indice}">
+                <img src="../img/producto${indice}.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title">${productoEnArray.tipo}</h3>
+                        <h4 class="card-text"><b>Modelo:</b> ${productoEnArray.modelo}</h4>
+                        <h5 class="card-text"><b>Precio:</b> ${productoEnArray.precio}</h5>
+                        <button  id="botonAgregar${indice}" class="boton"><img class="carrito" src="../img/carrito.png" alt="carrito"></button>                        
+                    </div>
+            </div> 
+            `        
+        });
+        datosProductos.forEach((productoEnArray, indice) =>{
+            document.getElementById(`botonAgregar${indice}`).addEventListener('click', () => {
+                if (productos.find(producto => producto.nombre == productoEnArray.nombre)){
+                    let index = productos.findIndex(producto => producto.nombre == productoEnArray.nombre)
+                    productos[index].cant++
+                    localStorage.setItem('carrito', JSON.stringify(productos))
+                } else {
+                    let producto = new Producto(productoEnArray.tipo, productoEnArray.modelo, productoEnArray.precio, productoEnArray.stock,productoEnArray.img)
+                    productos.push(producto)
+                    localStorage.setItem('carrito', JSON.stringify(productos))
+                }                
+            })
+        })
+})
+
+
+                                                    /*CARRITO*/
+
+    botonCarrito.addEventListener('click', () => {
+        let productoEnStorage = JSON.parse(localStorage.getItem(`carrito`))
+        productoEnStorage.forEach((productoCarrito, indice) => {
+        modalBody.innerHTML += `
+            <div class="card mb-3" id="productoCarrito${indice} style="max-width: 540px;">
+            <div class="row g-0">
+            <div class="col-md-4">
+                <img src="../img/${productoCarrito.img}" class="img-fluid rounded-start" alt="...">
             </div>
-    </div> 
-    `
+            <div class="col-md-8">
+                <div class="card-body">
+                <h5 class="card-title">${productoCarrito.tipo}</h5>
+                <p class="card-text"><b>Modelo:</b>${productoCarrito.modelo}</p>
+                <p class="card-text"><b>Precio:</b>$${productoCarrito.precio}</p>
+                <button id= "botonTacho" class = "btn btn-danger"><img src="../img/tacho.png" alt="tacho"></button>
+                </div>
+            </div>
+            </div>
+        </div>    
+        ` 
+        })
+        let botonTacho = document.getElementById('botonTacho')
+        botonTacho.addEventListener('click', () => {
+        producto.remove()
+        })        
+    })
+
+// function compraTotal(productosDelStorage) {
+//     acumulador = 0;
+//     productosDelStorage.forEach((productoCarrito) => {
+//         acumulador += productoCarrito.precio * productoCarrito.cant
+//     })
+
+//     if(acumulador == 0) {
+//         parrafoCompra.innerHTML = ""
+//         modalBody.innerHTML = "<p>No hay productos agregados en el carrito </p>" 
+//     } else {
+//         parrafoCompra.innerHTML = `Importe total $${new Intl.NumberFormat("de-DE").format(acumulador)}`
+//     }
+   
+// }   
+
+
+
+botonFinalizarCompra.addEventListener(`click`, () => {
+    localStorage.setItem('carrito', JSON.stringify([]))
+    swal.fire({
+        title:"¡Muchas gracias!",
+        text: "Los productos seran enviados en la brevedad",
+        icon: `success`,
+        confirmButtonText: `Salir`
+    })
 })
 
-
-producto.forEach((producto, indice) =>{
-    let botonAgregar = document.getElementById(`botonAgregar${indice+1}`)
-    function agregarProducto (){
-        let idProducto = document.getElementById(`producto${indice+1}`)
-        idProducto.add;
-        console.log(`Usted a añadido ${producto.tipo} ${producto.modelo} al carrito`)
-    }
-    botonAgregar.onclick = agregarProducto
-})
-
-producto.forEach((productos, indice) =>{
-    let botonEliminar = document.getElementById(`botonEliminar${indice+1}`)
-    function eliminarProducto (){
-        let idProducto = document.getElementById(`producto${indice+1}`)
-        idProducto.remove;
-        console.log(`Usted a eliminado ${productos.tipo} ${productos.modelo} del carrito`)
-        divProductos.removeChild(document.getElementById(`producto${indice + 1}`))
-        producto.splice(indice + 1)
-    }
-    botonEliminar.onclick = eliminarProducto
-})
-
-// JQUERY
+                                                    /*BUSCADOR DE PRODUCTOS*/
 
 $(() => {
     $('#input').keydown((e) => {

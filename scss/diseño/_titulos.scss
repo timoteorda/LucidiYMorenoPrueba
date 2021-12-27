@@ -492,7 +492,9 @@
                                                         /**TITULOS TIENDA**/
         
 .card-title{
-    font-size: 1.6rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
@@ -501,3 +503,14 @@
     font-weight: 500;
 }
 
+.tituloTienda{
+    font-size: 2.5rem;
+    color: $colorAzul;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.tituloModoOscuro{
+    color: white;
+}

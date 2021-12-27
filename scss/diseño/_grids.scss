@@ -18,7 +18,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:  0.5fr 1fr 1fr;
+    grid-template-rows:  0.5fr 1fr 0.8fr;
     grid-template-areas:
     "header header"
     "main main"
@@ -28,15 +28,17 @@ body{
     
 }
 
+.blackMode{
+    background-color: black;
+    color: white;
+}
+
 header{
     grid-area: header;
     height: 8rem;
     transform: background-color 700ms ease;
 }
-.blackMode{
-    background-color: black;
-    color: white;
-}
+
 
 
 
