@@ -934,7 +934,7 @@ p b{
 
 .card{
     width: 15rem;
-    height: 24rem;
+    height: 23rem;
     margin: 1rem 0.8rem;
     border: solid gray 1px;
     border-radius: 10px;
@@ -970,9 +970,14 @@ p b{
 
 /****************************CARRITO******************************/
 
+.modal-content-oscuro{
+    background-color:black;
+}
+
 .card.mb-3{
-    width: 28rem;
-    height: 16rem;
+    width: 30rem;
+    height: 23rem;
+    margin-left: -0.5rem;
 }
 
 .img-fluid.rounded-start{
@@ -983,4 +988,22 @@ p b{
     margin-left: 10rem;
     border: none;
     background-color: transparent;
+}
+
+.sumar{
+    background-color: $colorAzul;
+    height: 2.5rem;
+    width: 4rem;
+    margin-left: 0.5rem;
+}
+
+.restar{
+    background-color: red;
+    height: 2.5rem;
+    width: 4rem;
+}
+
+.precioTotalCarrito{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
