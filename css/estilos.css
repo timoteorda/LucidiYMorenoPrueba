@@ -1208,7 +1208,8 @@ p b {
 .restar {
   background-color: red;
   height: 2.5rem;
-  width: 4rem; }
+  width: 4rem;
+  margin-left: 0.5rem; }
 
 .precioTotalCarrito {
   margin-top: 1rem;
